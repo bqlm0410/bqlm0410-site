@@ -40,7 +40,7 @@ const tags = [...tagCount.entries()]
     <p class="small dim">共 {photos.length} 张 · 支持 ← → 键翻页，Esc 关闭</p>
   </PageHeader>
 
-  <!-- ========== 标签筛选 ========== -->
+  {/* ========== 标签筛选 ========== */}
   {
     tags.length > 0 && (
       <div class="filters" id="photo-filters" role="group" aria-label="按标签筛选照片">
@@ -72,7 +72,7 @@ const tags = [...tagCount.entries()]
     )
   }
 
-  <!-- 筛选后一张都不剩时显示 -->
+  {/* 筛选后一张都不剩时显示 */}
   <div class="empty-state" id="photo-empty" hidden>
     <p>这个标签下暂时没有照片 🙈</p>
     <p class="small" style="margin-top:.4rem">换个标签，或者点「全部」看所有照片。</p>

@@ -40,7 +40,7 @@ const tags = [...tagCount.entries()]
     </p>
   </PageHeader>
 
-  <!-- ========== 标签筛选 ========== -->
+  {/* ========== 标签筛选 ========== */}
   {
     tags.length > 0 && (
       <div class="filters" id="project-filters" role="group" aria-label="按标签筛选项目">
@@ -56,7 +56,7 @@ const tags = [...tagCount.entries()]
     )
   }
 
-  <!-- ========== 精选项目 ========== -->
+  {/* ========== 精选项目 ========== */}
   {
     featured.length > 0 && (
       <section class="section" data-project-section>
@@ -73,7 +73,7 @@ const tags = [...tagCount.entries()]
     )
   }
 
-  <!-- ========== 其余项目 ========== -->
+  {/* ========== 其余项目 ========== */}
   <section class="section" data-project-section id="all">
     <h2 class="section-title">
       <span>全部项目</span>
@@ -92,7 +92,7 @@ const tags = [...tagCount.entries()]
     }
   </section>
 
-  <!-- 筛选后一个都不剩时显示 -->
+  {/* 筛选后一个都不剩时显示 */}
   <div class="empty-state" id="filter-empty" hidden>
     <p>这个标签下暂时没有项目 🙈</p>
     <p class="small" style="margin-top:.4rem">换个标签，或者点「全部」看看所有内容。</p>

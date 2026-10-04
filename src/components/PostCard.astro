@@ -44,7 +44,7 @@ const url = `/blog/${post.id}/`;
 ---
 
 <a class="card post-card" href={url}>
-  <!-- 封面是可选项：frontmatter 里给了 cover 才渲染，绝不用外部占位图服务 -->
+  {/* 封面是可选项：frontmatter 里给了 cover 才渲染，绝不用外部占位图服务 */}
   {
     cover && <img class="post-card__cover" src={cover} alt="" loading="lazy" decoding="async" />
   }

@@ -78,7 +78,7 @@ const span =
       </div>
     ) : (
       <>
-        <!-- ========== 标签云 ========== -->
+        {/* ========== 标签云 ========== */}
         <section class="section tag-cloud" aria-label="按标签筛选">
           <h2 class="section-title">
             <span>按标签挑选</span>
@@ -106,7 +106,7 @@ const span =
           </p>
         </section>
 
-        <!-- ========== 按年份分组的文章列表 ========== -->
+        {/* ========== 按年份分组的文章列表 ========== */}
         {groups.map((group) => (
           <section class="section blog-year" data-year-group={group.year}>
             <h2 class="section-title">
@@ -123,7 +123,7 @@ const span =
           </section>
         ))}
 
-        <!-- 筛选之后一篇都不剩时的兜底（默认隐藏，脚本会打开） -->
+        {/* 筛选之后一篇都不剩时的兜底（默认隐藏，脚本会打开） */}
         <div class="empty-state blog-tag-empty" data-tag-empty hidden>
           <p>
             标签「<strong data-active-tag />」下暂时没有文章。
