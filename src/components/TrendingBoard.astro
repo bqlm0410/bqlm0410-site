@@ -26,7 +26,7 @@ const degradedLabels = degraded.map((key) =>
 {
   degradedLabels.length > 0 && (
     <div class="notice">
-      ⚠️ 本次抓取中「{degradedLabels.join('、')}」暂时失败，已沿用上一次的数据顶上。
+      ⚠️ 本次抓取中「{degradedLabels.join('、')}」失败了，展示的可能是上一次的数据；若还没有历史数据，这一块会是空的。
     </div>
   )
 }

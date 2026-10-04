@@ -189,15 +189,19 @@ async function main() {
   let top = topRaw;
   const degraded = [];
 
-  if (!trending.length && previous?.trending?.length) {
-    trending = previous.trending;
+  if (!trending.length) {
     degraded.push('trending');
-    log.warn('本次 Trending 抓取为空，暂用上一次的数据顶上');
+    if (previous?.trending?.length) {
+      trending = previous.trending;
+      log.warn('本次 Trending 抓取为空，暂用上一次的数据顶上');
+    }
   }
-  if (!top.length && previous?.top?.length) {
-    top = previous.top;
+  if (!top.length) {
     degraded.push('top');
-    log.warn('本次 Top100 抓取为空，暂用上一次的数据顶上');
+    if (previous?.top?.length) {
+      top = previous.top;
+      log.warn('本次 Top100 抓取为空，暂用上一次的数据顶上');
+    }
   }
 
   if (!trending.length && !top.length) {
@@ -205,13 +209,14 @@ async function main() {
     process.exit(1);
   }
 
-  const trending = diffAgainstPrevious(trending, previous?.trending);
-  const top = diffAgainstPrevious(top, previous?.top);
+  // 与上一次快照对比，算出排名变化、涨星数与是否新上榜
+  const trendingList = diffAgainstPrevious(trending, previous?.trending);
+  const topList = diffAgainstPrevious(top, previous?.top);
 
   // 只对新出现的项目调用大模型，控制成本
   if (llmEnabled()) {
     log.step('生成中文摘要（仅新条目）');
-    const all = [...trending, ...top].map((r) => ({
+    const all = [...trendingList, ...topList].map((r) => ({
       id: r.fullName,
       title: r.fullName,
       description: r.description,
@@ -221,7 +226,7 @@ async function main() {
     }));
     const uniq = [...new Map(all.map((i) => [i.id, i])).values()];
     const summaries = await summarizeItems(uniq, { kind: 'repo', batchSize: 10 });
-    for (const repo of [...trending, ...top]) {
+    for (const repo of [...trendingList, ...topList]) {
       const s = summaries.get(repo.fullName);
       if (s) {
         repo.titleZh = s.titleZh;
@@ -235,10 +240,10 @@ async function main() {
     source: 'github',
     degraded,
     trendingSince: 'daily',
-    trendingCount: trending.length,
-    topCount: top.length,
-    trending,
-    top,
+    trendingCount: trendingList.length,
+    topCount: topList.length,
+    trending: trendingList,
+    top: topList,
   });
 
   log.ok(`快照已写入：${file}`);
