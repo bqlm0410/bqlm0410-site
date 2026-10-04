@@ -1,158 +1,156 @@
-# 上线检查清单
+# 部署与运维手册
 
-站点代码已经全部就绪并验证完毕，剩下的都是**在浏览器里点几下**的事。
-按顺序做完下面这些，`https://bqlm0410.top` 就正式上线了。
+> 最后更新：2026-10-04 · 站点已上线
+
+## 当前状态
+
+| 项目 | 状态 |
+|---|---|
+| 站点地址 | **https://bqlm0410.top** ✅ 已上线 |
+| HTTPS | ✅ Google Trust Services 证书，有效期至 2027-01-02，自动续期 |
+| www 跳转 | ✅ `www.bqlm0410.top` 301 → `bqlm0410.top`（Cloudflare Page Rule） |
+| 托管 | Cloudflare Pages，项目名 `bqlm0410-site` |
+| 备用地址 | https://bqlm0410-site.pages.dev |
+| 代码仓库 | https://github.com/bqlm0410/bqlm0410-site |
+| 自动部署 | ✅ 推送 `main` 触发 `.github/workflows/deploy.yml` |
+| 每日抓取 | ✅ 每天北京时间 6:00 抓取 → 提交 → 触发部署 |
+| **域名续费** | ❌ **未完成**，到期日 2026-11-15 |
 
 ---
 
-## 🔴 第 1 步：给域名续费（最紧急）
+## 部署是怎么工作的
 
-`bqlm0410.top` 的注册商是 **NameSilo**，到期日 **2026-11-15**。
+本站**没有走 Cloudflare 控制台的 Git 集成**（那一步必须网页 OAuth 授权），
+而是用 Cloudflare Pages 的「直接上传」+ 自己的 GitHub Actions 工作流：
+
+```
+你修改内容 → git push
+                ↓
+     .github/workflows/deploy.yml 触发
+                ↓
+   npm ci → npm run build（含 Pagefind 建索引）
+                ↓
+   wrangler pages deploy dist → Cloudflare Pages
+                ↓
+           https://bqlm0410.top 更新
+```
+
+每日抓取产生的数据提交，同样会触发这条链路，所以**网站是自动更新的**。
+
+### 依赖的仓库 Secrets
+
+| Secret | 用途 |
+|---|---|
+| `CLOUDFLARE_API_TOKEN` | 部署用的 Cloudflare Token（权限：Cloudflare Pages 编辑） |
+| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare 账号 ID |
+
+> Token 只授予了 Pages 权限，是**最小权限**配置。
+> 如果要换 Token，记得同时更新这个 Secret。
+
+---
+
+## 你还需要做的事
+
+### 🔴 给域名续费（唯一紧急项）
+
+`bqlm0410.top` 注册商是 **NameSilo**，到期日 **2026-11-15**。
 
 1. 登录 https://www.namesilo.com → **Domain Manager**
-2. 找到 `bqlm0410.top`，确认状态是 **Active**
-3. **打开 Auto-Renew（自动续费）** ← 这一步最重要，开了就一劳永逸
-4. 顺便确认 `Account Settings` 里的注册邮箱是你常用的那个
-   （以后续费提醒、找回密码都靠它）
+2. 找到 `bqlm0410.top`，确认状态 **Active**
+3. **打开 Auto-Renew（自动续费）** ← 最重要
+4. 确认账号邮箱是你常用的那个
 
-> ⚠️ 域名过期后有 30 天宽限期，之后进入赎回期（费用是续费的十倍以上），
-> 再之后就会被释放给别人注册。**这是整个项目里唯一不可逆的损失。**
+> 域名过期后有 30 天宽限期，之后进入赎回期（费用是续费的十倍以上），
+> 再之后会被释放给别人注册。**这是整个项目唯一不可逆的损失。**
 
----
+### 🟡 可选配置
 
-## 🔴 第 2 步：部署到 Cloudflare Pages
-
-1. 打开 https://dash.cloudflare.com
-2. 左侧 **Workers 和 Pages** → **创建** → 选 **Pages** 标签 → **连接到 Git**
-3. 首次会让你授权 GitHub，选中仓库 **`bqlm0410-site`** → **开始设置**
-4. 按下表填构建配置：
-
-   | 字段 | 填什么 |
-   |---|---|
-   | 项目名称 | `bqlm0410-site` |
-   | 生产分支 | `main` |
-   | 框架预设 | **Astro** |
-   | 构建命令 | `npm run build` |
-   | 构建输出目录 | `dist` |
-   | 环境变量 | `NODE_VERSION` = `22` |
-
-5. 点 **保存并部署**，等 1~2 分钟
-
-**构建成功的标志**（日志里能看到）：
-
-```
-[build] 23 page(s) built in ~1s
-[build] Complete!
-Running Pagefind v1.5.2
-Indexed 23 pages
-```
-
-这时 `bqlm0410-site.pages.dev` 已经可以访问了。
+| 功能 | 怎么配 | 不配的后果 |
+|---|---|---|
+| **DeepSeek 中文摘要** | 仓库 Settings → Secrets and variables → Actions → 新建 `DEEPSEEK_API_KEY` | 抓来的内容显示英文原文 |
+| **Giscus 评论** | 仓库 Settings → Features 勾选 Discussions；去 https://giscus.app 拿两个 ID 填进 `src/consts.ts` 的 `GISCUS`，并把 `enabled` 改成 `true` | 评论区静默不显示 |
+| **访问统计** | Cloudflare 控制台 → Analytics & Logs → Web Analytics 拿 token；加到 Pages 项目环境变量 `PUBLIC_CF_BEACON_TOKEN` | 不加载统计脚本 |
+| **头像** | 图片命名为 `avatar.png` 放进 `public/` | 首页显示渐变占位圆 |
 
 ---
 
-## 🔴 第 3 步：绑定自定义域名
-
-在 Pages 项目里 → **自定义域** 标签：
-
-1. **设置自定义域** → 输入 `bqlm0410.top` → 保存
-   （因为你的 DNS 已经在 Cloudflare，它会**自动加好解析记录**）
-2. 重复一次，添加 `www.bqlm0410.top`
-   （仓库里的 `public/_redirects` 会让 www 自动 301 跳到主域名）
-
-**HTTPS 证书由 Cloudflare 自动签发和续期，不需要任何操作。**
-`bqlm0410.top` 是海外域名 + 海外托管，**完全不需要备案**。
-
----
-
-## 🔴 第 4 步：打开 Actions 写权限
-
-每日抓取任务需要把数据提交回仓库，所以必须有写权限：
-
-GitHub 仓库 → **Settings** → **Actions** → **General** → 拉到底部
-→ **Workflow permissions** → 选 **Read and write permissions** → 保存
-
-> 不做这一步，每天 6:00 的抓取会成功但**提交失败**，数据进不了仓库。
-
----
-
-## 🟡 第 5 步：配置 DeepSeek 中文摘要（可选）
-
-不配也能跑，只是抓来的内容没有中文摘要，页面上显示英文原文。
-
-GitHub 仓库 → **Settings** → **Secrets and variables** → **Actions**
-→ **New repository secret**
-
-- Name: `DEEPSEEK_API_KEY`
-- Secret: 你的 Key
-
-配好之后，下次抓取会自动为**新出现的**条目生成中文标题与摘要
-（结果缓存在 `src/data/.summary-cache.json`，同一条内容永远只调用一次，很省钱）。
-
----
-
-## 🟡 第 6 步：开启评论（可选）
-
-Giscus 靠 GitHub Discussions 存评论，所以：
-
-1. **仓库必须是公开的**（已经是了 ✅）
-2. 仓库 → **Settings** → **General** → **Features** → 勾选 **Discussions**
-3. 安装 Giscus App：https://github.com/apps/giscus ，授权给这个仓库
-4. 打开 https://giscus.app ，填入仓库名，页面会生成两个 ID：
-   - `data-repo-id` → 填进 `src/consts.ts` 的 `GISCUS.repoId`
-   - `data-category-id` → 填进 `src/consts.ts` 的 `GISCUS.categoryId`
-5. 把 `src/consts.ts` 里的 `GISCUS.enabled` 改成 `true`，提交推送
-
-> 没配置时评论区**完全静默**：不渲染任何元素、不报错、不加载外部脚本。
-
----
-
-## 🟡 第 7 步：开启访问统计（可选）
-
-1. Cloudflare 控制台 → **Analytics & Logs** → **Web Analytics** → **Add a site**
-2. 填 `bqlm0410.top`（纯前端 JS 统计，不需要改 DNS）
-3. 创建后会给你一段带 token 的脚本，把 **token** 的值抄下来
-4. Pages 项目 → **Settings** → **Environment variables** 加一条：
-   - `PUBLIC_CF_BEACON_TOKEN` = 你的 token
-   - （Production 和 Preview 都加）
-5. 重新部署一次
-
-> 不配置时统计脚本**完全不加载**，不会产生无效请求，也不会污染别人账号的数据。
-
----
-
-## 🟢 第 8 步：换成你自己的内容
+## 日常怎么改内容
 
 | 想改什么 | 改哪里 |
 |---|---|
 | 站点名、标语、导航、社交链接 | `src/consts.ts` |
-| 头像 | 把图片放到 `public/avatar.png`（首页会自动用它，没有则显示渐变占位圆） |
 | 写新文章 | `npm run new:post -- "文章标题"`，然后编辑生成的 md |
 | 项目 / 相册 | `src/content/projects/`、`src/content/photos/` 下加 md |
 | 关于我 | `src/pages/about.astro` |
 | 配色 | `src/styles/global.css` 顶部的 CSS 变量 |
-| 相册换真图 | 图片放 `public/photos/`，改 md 里的 `src` 字段（或直接同名替换占位图） |
+| 相册换真图 | 图片放 `public/photos/`，改 md 里的 `src` 字段 |
+
+改完 `git push` 就会自动部署，不需要任何手动操作。
+
+**本地预览**：`npm run build` 之后，可以起一个本地服务器看效果：
+
+```bash
+node ../_preview-server.mjs      # http://127.0.0.1:4321
+```
 
 ---
 
-## 上线后怎么更新
+## 每日抓取管道
 
-**改内容**：本地改 → `git push` → Cloudflare 自动重新构建部署。
+```
+每天北京时间 6:00
+      ↓
+.github/workflows/daily-fetch.yml
+      ↓
+scripts/fetch-github.mjs  →  src/data/github-trending/YYYY-MM-DD.json
+scripts/fetch-news.mjs    →  src/data/ai-news/YYYY-MM-DD.json
+      ↓
+（可选）调用 DeepSeek 生成中文摘要，缓存于 src/data/.summary-cache.json
+      ↓
+自动 git commit + push  →  触发 deploy.yml  →  网站更新
+```
 
-**每日数据**：完全自动。GitHub Actions 每天北京时间 6:00 抓取并提交，
-Cloudflare 检测到提交后自动重建。你什么都不用做。
+**为什么历史记录不会丢？** 每天是**新增一个以日期命名的文件**，不是覆盖旧文件。
+Git 里保留着每一次提交，页面上也能翻看任意一天。
 
-**想手动跑一次抓取**：仓库 → **Actions** → **每日数据抓取** → **Run workflow**。
+某个源抓取失败时，脚本会沿用上一次的数据并在页面标注，不会出现空白页。
+
+**手动跑一次**：仓库 → Actions → 每日数据抓取 → Run workflow。
 
 ---
 
-## 出问题了怎么办
+## 出问题时怎么排查
 
 | 现象 | 大概率原因 |
 |---|---|
-| 构建失败，提示 `npm ci` 相关 | 检查 `.npmrc` 有没有被人改回国内镜像（Cloudflare 在境外，连国内源会超时） |
-| 构建失败，提示 Node 版本 | 确认建了 `NODE_VERSION=22` 环境变量 |
-| 页面能开但样式全无 | 构建输出目录填错了，必须是 `dist` |
-| 每天数据不更新 | 第 4 步的 Workflow permissions 没开 |
-| 评论区空白 | `GISCUS.enabled` 没改成 true，或 repoId/categoryId 没填 |
-| 搜索页提示"索引尚未生成" | 构建命令必须是 `npm run build`（它包含 Pagefind 建索引那一步），不能用 `astro build` |
+| 推送后网站没更新 | 去 Actions 看 `部署到 Cloudflare Pages` 是否失败；检查两个 Cloudflare Secrets 是否还在 |
+| 构建失败提示 `npm ci` | `.npmrc` 有没有被人改回国内镜像（Cloudflare 和 GitHub 都在境外，连国内源会超时） |
+| 构建失败提示 Node 版本 | 检查 `.nvmrc` / `.node-version` / `NODE_VERSION` 环境变量都没被改动 |
+| 页面能开但样式全无 | 构建输出目录必须是 `dist` |
+| 每天数据不更新 | 仓库 Settings → Actions → General → Workflow permissions 要选 **Read and write** |
+| 搜索页提示"索引尚未生成" | 构建命令必须是 `npm run build`（它包含 Pagefind 建索引），不能用 `astro build` |
+| `www` 不跳转 | Cloudflare 控制台 → 规则 → Page Rules，确认那条 301 规则还在 |
+
+---
+
+## 技术上的几个坑（给未来的自己）
+
+1. **不要用 `astro/loaders` 的 `glob()`**。
+   它顶层 `import picomatch`，而 picomatch 是 CommonJS 包，
+   在 Vite 的模块运行器里会抛 `require is not defined`，把构建整个打挂。
+   本项目改用自研的 `src/loaders/markdown.ts`，只依赖 node 内置模块。
+
+2. **`pagefind` 必须在 `dependencies` 里，不能放 `devDependencies`**。
+   Cloudflare 构建时会设 `NODE_ENV=production`，`npm ci` 在该变量下会跳过
+   devDependencies，导致 `pagefind --site dist` 找不到命令。
+
+3. **Cloudflare Pages 的 `_redirects` 不能跨自定义域做跳转**。
+   `https://www.bqlm0410.top/* https://bqlm0410.top/:splat 301` 实测不生效，
+   已改用 Zone 级 Page Rule 实现。
+
+4. **`package-lock.json` 的 `resolved` 地址要指向 npm 官方源**。
+   国内镜像会让境外构建机拉包超时。已抽样 12 个包重算 sha512 验证过，
+   镜像记录的 integrity 与官方源逐字节一致。
+
+5. **Astro 模板里的 `<!-- -->` 会被原样输出到页面源码**。
+   开发笔记请用 `{/* */}`，否则访客查看源代码就能看到。
