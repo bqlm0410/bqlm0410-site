@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "generatedAt": "2026-10-04T22:02:25.744+08:00",
+  "generatedAt": "2026-10-04T22:04:38.722+08:00",
   "source": "news",
   "degraded": [
     "venturebeat"
@@ -43,8 +43,8 @@
       "source": "hackernews",
       "sourceName": "Hacker News",
       "publishedAt": "2026-10-04T12:51:53.000Z",
-      "score": 83,
-      "comments": 28,
+      "score": 87,
+      "comments": 31,
       "tags": [
         "模型"
       ]
@@ -58,7 +58,7 @@
       "source": "hackernews",
       "sourceName": "Hacker News",
       "publishedAt": "2026-10-04T09:24:52.000Z",
-      "score": 26,
+      "score": 28,
       "comments": 14,
       "tags": []
     },
@@ -87,7 +87,7 @@
       "sourceName": "Hacker News",
       "publishedAt": "2026-10-04T02:34:22.000Z",
       "score": 118,
-      "comments": 252,
+      "comments": 253,
       "tags": []
     },
     {
@@ -115,7 +115,7 @@
       "sourceName": "Hacker News",
       "publishedAt": "2026-10-03T17:44:29.000Z",
       "score": 213,
-      "comments": 318,
+      "comments": 319,
       "tags": []
     },
     {
@@ -127,7 +127,7 @@
       "source": "hackernews",
       "sourceName": "Hacker News",
       "publishedAt": "2026-10-03T17:03:37.000Z",
-      "score": 243,
+      "score": 244,
       "comments": 132,
       "tags": [
         "Agent"
@@ -214,7 +214,7 @@
       "sourceName": "Hacker News",
       "publishedAt": "2026-10-03T13:46:34.000Z",
       "score": 315,
-      "comments": 550,
+      "comments": 551,
       "tags": []
     },
     {
