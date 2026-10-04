@@ -1,3 +1,0 @@
-# www 统一 301 跳转到主域名，避免同一个站点有两个地址
-# 文档：https://developers.cloudflare.com/pages/configuration/redirects/
-https://www.bqlm0410.top/* https://bqlm0410.top/:splat 301
