@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 搜索页和归档页没必要被索引，但也不屏蔽（避免影响站内链接权重）
+Sitemap: https://bqlm0410.top/sitemap-index.xml
