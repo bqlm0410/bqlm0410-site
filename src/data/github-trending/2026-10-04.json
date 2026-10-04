@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "generatedAt": "2026-10-04T21:59:37.778+08:00",
+  "generatedAt": "2026-10-04T22:02:07.251+08:00",
   "source": "github",
   "degraded": [],
   "trendingSince": "daily",
@@ -15,15 +15,15 @@
       "description": "Next generation e2e testing framework for web and mobile apps.",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 2519,
+      "stars": 2521,
       "forks": 96,
       "starsToday": 344,
       "builtBy": "",
       "rank": 1,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 1,
+      "rankChange": 0,
+      "starsGained": 2,
+      "isNew": false
     },
     {
       "fullName": "pbakaus/impeccable",
@@ -33,15 +33,15 @@
       "description": "The design language that makes your AI harness better at design.",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 75890,
+      "stars": 75893,
       "forks": 4538,
       "starsToday": 1170,
       "builtBy": "",
       "rank": 2,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 2,
+      "rankChange": 0,
+      "starsGained": 3,
+      "isNew": false
     },
     {
       "fullName": "coreyhaines31/marketingskills",
@@ -51,15 +51,15 @@
       "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 52822,
+      "stars": 52823,
       "forks": 7910,
       "starsToday": 345,
       "builtBy": "",
       "rank": 3,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 3,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "DietrichGebert/ponytail",
@@ -69,15 +69,15 @@
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 154318,
+      "stars": 154321,
       "forks": 8303,
       "starsToday": 1894,
       "builtBy": "",
       "rank": 4,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 4,
+      "rankChange": 0,
+      "starsGained": 3,
+      "isNew": false
     },
     {
       "fullName": "earthtojake/text-to-cad",
@@ -87,15 +87,15 @@
       "description": "Give your agent CAD superpowers.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 16687,
+      "stars": 16688,
       "forks": 1730,
       "starsToday": 75,
       "builtBy": "",
       "rank": 5,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 5,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "Panniantong/Agent-Reach",
@@ -110,10 +110,10 @@
       "starsToday": 979,
       "builtBy": "",
       "rank": 6,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 6,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "getsentry/sentry",
@@ -128,10 +128,10 @@
       "starsToday": 152,
       "builtBy": "",
       "rank": 7,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 7,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "calesthio/OpenMontage",
@@ -141,15 +141,15 @@
       "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
       "language": "Python",
       "languageColor": "#3572A5",
-      "stars": 62886,
+      "stars": 62889,
       "forks": 8027,
       "starsToday": 292,
       "builtBy": "",
       "rank": 8,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 8,
+      "rankChange": 0,
+      "starsGained": 3,
+      "isNew": false
     },
     {
       "fullName": "pingdotgg/t3code",
@@ -164,10 +164,10 @@
       "starsToday": 492,
       "builtBy": "",
       "rank": 9,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 9,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "caddyserver/caddy",
@@ -177,15 +177,15 @@
       "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
       "language": "Go",
       "languageColor": "#00ADD8",
-      "stars": 76325,
+      "stars": 76326,
       "forks": 5035,
       "starsToday": 31,
       "builtBy": "",
       "rank": 10,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 10,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "addyosmani/agent-skills",
@@ -195,15 +195,15 @@
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "stars": 101024,
+      "stars": 101025,
       "forks": 10611,
       "starsToday": 336,
       "builtBy": "",
       "rank": 11,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 11,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "thedotmack/claude-mem",
@@ -218,10 +218,10 @@
       "starsToday": 627,
       "builtBy": "",
       "rank": 12,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 12,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "garrytan/gstack",
@@ -231,15 +231,15 @@
       "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "stars": 135033,
+      "stars": 135034,
       "forks": 20081,
       "starsToday": 121,
       "builtBy": "",
       "rank": 13,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 13,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "OpenCut-app/OpenCut",
@@ -254,10 +254,10 @@
       "starsToday": 512,
       "builtBy": "",
       "rank": 14,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 14,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "antirez/ds4",
@@ -267,15 +267,15 @@
       "description": "DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA and ROCm",
       "language": "C",
       "languageColor": "#555555",
-      "stars": 23300,
+      "stars": 23301,
       "forks": 2239,
       "starsToday": 211,
       "builtBy": "",
       "rank": 15,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 15,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     }
   ],
   "top": [
@@ -303,10 +303,10 @@
       "pushedAt": "2026-07-14T19:25:58Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/58904235?v=4",
       "rank": 1,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 1,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "sindresorhus/awesome",
@@ -316,7 +316,7 @@
       "description": "😎 Awesome lists about all kinds of interesting topics [NOTE: Pull requests are temporarily disabled until I have a chance to catch up with the existing ones]",
       "language": "",
       "languageColor": "",
-      "stars": 514479,
+      "stars": 514485,
       "forks": 37252,
       "openIssues": 107,
       "topics": [
@@ -331,10 +331,10 @@
       "pushedAt": "2026-09-02T02:10:47Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/170270?v=4",
       "rank": 2,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 2,
+      "rankChange": 0,
+      "starsGained": 6,
+      "isNew": false
     },
     {
       "fullName": "public-apis/public-apis",
@@ -360,10 +360,10 @@
       "pushedAt": "2026-10-04T05:41:46Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/51121562?v=4",
       "rank": 3,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 3,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "freeCodeCamp/freeCodeCamp",
@@ -374,7 +374,7 @@
       "language": "TypeScript",
       "languageColor": "",
       "stars": 456727,
-      "forks": 48187,
+      "forks": 48188,
       "openIssues": 211,
       "topics": [
         "careers",
@@ -389,10 +389,10 @@
       "pushedAt": "2026-10-04T11:40:22Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/9892522?v=4",
       "rank": 4,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 4,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "EbookFoundation/free-programming-books",
@@ -417,10 +417,10 @@
       "pushedAt": "2026-10-02T19:35:16Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/14127308?v=4",
       "rank": 5,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 5,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "openclaw/openclaw",
@@ -432,7 +432,7 @@
       "languageColor": "",
       "stars": 391283,
       "forks": 82254,
-      "openIssues": 9279,
+      "openIssues": 9277,
       "topics": [
         "ai",
         "assistant",
@@ -443,13 +443,13 @@
       ],
       "homepage": "https://openclaw.ai",
       "createdAt": "2025-11-24T10:16:47Z",
-      "pushedAt": "2026-10-04T13:56:14Z",
+      "pushedAt": "2026-10-04T14:01:41Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/252820863?v=4",
       "rank": 6,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 6,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "donnemartin/system-design-primer",
@@ -475,10 +475,10 @@
       "pushedAt": "2026-09-15T01:10:09Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/5458997?v=4",
       "rank": 7,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 7,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "nilbuild/developer-roadmap",
@@ -504,10 +504,10 @@
       "pushedAt": "2026-10-02T09:00:46Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/4921183?v=4",
       "rank": 8,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 8,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "jwasham/coding-interview-university",
@@ -533,10 +533,10 @@
       "pushedAt": "2025-08-28T14:42:47Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/3771963?v=4",
       "rank": 9,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 9,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "vinta/awesome-python",
@@ -546,7 +546,7 @@
       "description": "The definitive list that answers \"I want to do X in Python, which tool should I use?\"",
       "language": "Python",
       "languageColor": "",
-      "stars": 325081,
+      "stars": 325082,
       "forks": 28864,
       "openIssues": 22,
       "topics": [
@@ -562,10 +562,10 @@
       "pushedAt": "2026-10-02T12:01:28Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/652070?v=4",
       "rank": 10,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 10,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "awesome-selfhosted/awesome-selfhosted",
@@ -575,7 +575,7 @@
       "description": "A list of Free Software network services and web applications which can be hosted on your own servers",
       "language": "",
       "languageColor": "",
-      "stars": 323782,
+      "stars": 323783,
       "forks": 15161,
       "openIssues": 0,
       "topics": [
@@ -591,10 +591,10 @@
       "pushedAt": "2026-10-04T12:18:21Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/24270415?v=4",
       "rank": 11,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 11,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "obra/superpowers",
@@ -605,7 +605,7 @@
       "language": "Shell",
       "languageColor": "",
       "stars": 295136,
-      "forks": 26377,
+      "forks": 26378,
       "openIssues": 306,
       "topics": [
         "ai",
@@ -620,10 +620,10 @@
       "pushedAt": "2026-09-27T02:37:47Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/45416?v=4",
       "rank": 12,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 12,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "practical-tutorials/project-based-learning",
@@ -633,7 +633,7 @@
       "description": "Curated list of project-based tutorials",
       "language": "Python",
       "languageColor": "",
-      "stars": 285791,
+      "stars": 285792,
       "forks": 36521,
       "openIssues": 259,
       "topics": [
@@ -649,10 +649,10 @@
       "pushedAt": "2026-09-28T07:15:21Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/89421154?v=4",
       "rank": 13,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 13,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "996icu/996.ICU",
@@ -671,10 +671,10 @@
       "pushedAt": "2025-08-22T06:01:29Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/48942249?v=4",
       "rank": 14,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 14,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "mattpocock/skills",
@@ -684,8 +684,8 @@
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "language": "Shell",
       "languageColor": "",
-      "stars": 275746,
-      "forks": 23132,
+      "stars": 275750,
+      "forks": 23133,
       "openIssues": 545,
       "topics": [],
       "homepage": "https://aihero.dev/skills",
@@ -693,10 +693,10 @@
       "pushedAt": "2026-10-04T13:44:59Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/28293365?v=4",
       "rank": 15,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 15,
+      "rankChange": 0,
+      "starsGained": 4,
+      "isNew": false
     },
     {
       "fullName": "affaan-m/ECC",
@@ -706,7 +706,7 @@
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "language": "JavaScript",
       "languageColor": "",
-      "stars": 272631,
+      "stars": 272633,
       "forks": 40709,
       "openIssues": 340,
       "topics": [
@@ -722,10 +722,10 @@
       "pushedAt": "2026-10-02T02:01:14Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/124439313?v=4",
       "rank": 16,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 16,
+      "rankChange": 0,
+      "starsGained": 2,
+      "isNew": false
     },
     {
       "fullName": "NousResearch/hermes-agent",
@@ -736,7 +736,7 @@
       "language": "Python",
       "languageColor": "",
       "stars": 251113,
-      "forks": 53876,
+      "forks": 53877,
       "openIssues": 47896,
       "topics": [
         "ai",
@@ -751,10 +751,10 @@
       "pushedAt": "2026-10-04T13:49:42Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/134168893?v=4",
       "rank": 17,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 17,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "torvalds/linux",
@@ -764,7 +764,7 @@
       "description": "Linux kernel source tree",
       "language": "C",
       "languageColor": "",
-      "stars": 251032,
+      "stars": 251035,
       "forks": 66733,
       "openIssues": 3,
       "topics": [],
@@ -773,10 +773,10 @@
       "pushedAt": "2026-10-04T04:20:07Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/1024025?v=4",
       "rank": 18,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 18,
+      "rankChange": 0,
+      "starsGained": 3,
+      "isNew": false
     },
     {
       "fullName": "react/react",
@@ -802,10 +802,10 @@
       "pushedAt": "2026-10-02T21:13:55Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/102812?v=4",
       "rank": 19,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 19,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "trimstray/the-book-of-secret-knowledge",
@@ -815,7 +815,7 @@
       "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.",
       "language": "",
       "languageColor": "",
-      "stars": 247788,
+      "stars": 247789,
       "forks": 14449,
       "openIssues": 171,
       "topics": [
@@ -831,10 +831,10 @@
       "pushedAt": "2024-11-19T14:00:38Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/31127917?v=4",
       "rank": 20,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 20,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "deepseek-ai/deepseek-harness",
@@ -844,7 +844,7 @@
       "description": "DeepSeek Harness: Everything is a Plugin.",
       "language": "TypeScript",
       "languageColor": "",
-      "stars": 243225,
+      "stars": 243227,
       "forks": 29157,
       "openIssues": 0,
       "topics": [
@@ -858,10 +858,10 @@
       "pushedAt": "2026-10-03T06:02:48Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/148330874?v=4",
       "rank": 21,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 21,
+      "rankChange": 0,
+      "starsGained": 2,
+      "isNew": false
     },
     {
       "fullName": "TheAlgorithms/Python",
@@ -887,10 +887,10 @@
       "pushedAt": "2026-10-03T07:24:27Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/20487725?v=4",
       "rank": 22,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 22,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "multica-ai/andrej-karpathy-skills",
@@ -909,10 +909,10 @@
       "pushedAt": "2026-04-20T10:05:04Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/254743058?v=4",
       "rank": 23,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 23,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "vuejs/vue",
@@ -936,10 +936,10 @@
       "pushedAt": "2024-10-10T07:24:15Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/6128107?v=4",
       "rank": 24,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 24,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "anomalyco/opencode",
@@ -949,8 +949,8 @@
       "description": "The open source coding agent.",
       "language": "TypeScript",
       "languageColor": "",
-      "stars": 211695,
-      "forks": 28144,
+      "stars": 211696,
+      "forks": 28146,
       "openIssues": 6280,
       "topics": [],
       "homepage": "https://opencode.ai",
@@ -958,10 +958,10 @@
       "pushedAt": "2026-10-04T13:59:29Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/66570915?v=4",
       "rank": 25,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 25,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "ossu/computer-science",
@@ -985,10 +985,10 @@
       "pushedAt": "2026-07-14T05:38:25Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/14957346?v=4",
       "rank": 26,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 26,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "n8n-io/n8n",
@@ -1000,7 +1000,7 @@
       "languageColor": "",
       "stars": 206631,
       "forks": 60993,
-      "openIssues": 1121,
+      "openIssues": 1122,
       "topics": [
         "ai",
         "apis",
@@ -1011,13 +1011,13 @@
       ],
       "homepage": "https://n8n.io",
       "createdAt": "2019-06-22T09:24:21Z",
-      "pushedAt": "2026-10-04T10:26:13Z",
+      "pushedAt": "2026-10-04T14:00:55Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/45487711?v=4",
       "rank": 27,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 27,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "DigitalPlatDev/FreeDomain",
@@ -1027,7 +1027,7 @@
       "description": "Free domain registration and practical DNS learning resources for everyone.",
       "language": "Markdown",
       "languageColor": "",
-      "stars": 202474,
+      "stars": 202476,
       "forks": 4438,
       "openIssues": 38,
       "topics": [
@@ -1043,10 +1043,10 @@
       "pushedAt": "2026-08-12T10:36:46Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/126394654?v=4",
       "rank": 28,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 28,
+      "rankChange": 0,
+      "starsGained": 2,
+      "isNew": false
     },
     {
       "fullName": "tensorflow/tensorflow",
@@ -1072,10 +1072,10 @@
       "pushedAt": "2026-10-04T08:19:00Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/15658638?v=4",
       "rank": 29,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 29,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "trekhleb/javascript-algorithms",
@@ -1101,10 +1101,10 @@
       "pushedAt": "2026-07-26T02:43:08Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/3000285?v=4",
       "rank": 30,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 30,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "yt-dlp/yt-dlp",
@@ -1130,10 +1130,10 @@
       "pushedAt": "2026-09-27T22:09:13Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/79589310?v=4",
       "rank": 31,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 31,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "ultraworkers/claw-code",
@@ -1152,10 +1152,10 @@
       "pushedAt": "2026-08-16T06:18:45Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/272961631?v=4",
       "rank": 32,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 32,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "microsoft/vscode",
@@ -1165,7 +1165,7 @@
       "description": "Visual Studio Code",
       "language": "TypeScript",
       "languageColor": "",
-      "stars": 193476,
+      "stars": 193478,
       "forks": 44311,
       "openIssues": 21363,
       "topics": [
@@ -1180,10 +1180,10 @@
       "pushedAt": "2026-10-04T10:35:56Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/6154722?v=4",
       "rank": 33,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 33,
+      "rankChange": 0,
+      "starsGained": 2,
+      "isNew": false
     },
     {
       "fullName": "massgravel/Microsoft-Activation-Scripts",
@@ -1209,10 +1209,10 @@
       "pushedAt": "2026-09-10T22:33:44Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/59795046?v=4",
       "rank": 34,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 34,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "ohmyzsh/ohmyzsh",
@@ -1222,7 +1222,7 @@
       "description": "🙃   A delightful community-driven (with 2,500+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.",
       "language": "Shell",
       "languageColor": "",
-      "stars": 190131,
+      "stars": 190132,
       "forks": 28391,
       "openIssues": 305,
       "topics": [
@@ -1238,10 +1238,10 @@
       "pushedAt": "2026-10-04T12:52:46Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/22552083?v=4",
       "rank": 35,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 35,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "firecrawl/firecrawl",
@@ -1267,10 +1267,10 @@
       "pushedAt": "2026-10-03T18:46:17Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/135057108?v=4",
       "rank": 36,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 36,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "microsoft/markitdown",
@@ -1280,7 +1280,7 @@
       "description": "Python tool for converting files and office documents to Markdown.",
       "language": "Python",
       "languageColor": "",
-      "stars": 188323,
+      "stars": 188325,
       "forks": 13940,
       "openIssues": 656,
       "topics": [
@@ -1296,10 +1296,10 @@
       "pushedAt": "2026-10-04T03:59:52Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/6154722?v=4",
       "rank": 37,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 37,
+      "rankChange": 0,
+      "starsGained": 2,
+      "isNew": false
     },
     {
       "fullName": "Significant-Gravitas/AutoGPT",
@@ -1325,10 +1325,10 @@
       "pushedAt": "2026-10-04T01:21:52Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/130738209?v=4",
       "rank": 38,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 38,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "jackfrued/Python-100-Days",
@@ -1347,10 +1347,10 @@
       "pushedAt": "2026-07-29T15:18:29Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/7474657?v=4",
       "rank": 39,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 39,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "avelino/awesome-go",
@@ -1360,7 +1360,7 @@
       "description": "A curated list of awesome Go frameworks, libraries and software",
       "language": "Go",
       "languageColor": "",
-      "stars": 186867,
+      "stars": 186868,
       "forks": 13604,
       "openIssues": 67,
       "topics": [
@@ -1376,10 +1376,10 @@
       "pushedAt": "2026-10-04T13:40:32Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/31996?v=4",
       "rank": 40,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 40,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "CyC2018/CS-Notes",
@@ -1405,10 +1405,10 @@
       "pushedAt": "2024-08-21T09:40:10Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/36260787?v=4",
       "rank": 41,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 41,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "getify/You-Dont-Know-JS",
@@ -1434,10 +1434,10 @@
       "pushedAt": "2026-02-15T04:36:44Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/150330?v=4",
       "rank": 42,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 42,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "ollama/ollama",
@@ -1463,10 +1463,10 @@
       "pushedAt": "2026-10-04T05:57:08Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/151674099?v=4",
       "rank": 43,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 43,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "521xueweihan/HelloGitHub",
@@ -1490,10 +1490,10 @@
       "pushedAt": "2026-09-28T00:11:38Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/8255800?v=4",
       "rank": 44,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 44,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "anthropics/skills",
@@ -1514,10 +1514,10 @@
       "pushedAt": "2026-10-03T20:38:10Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/76263028?v=4",
       "rank": 45,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 45,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "flutter/flutter",
@@ -1543,10 +1543,10 @@
       "pushedAt": "2026-10-03T06:28:42Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/14101776?v=4",
       "rank": 46,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 46,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "github/gitignore",
@@ -1568,10 +1568,10 @@
       "pushedAt": "2026-10-02T20:59:38Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/9919?v=4",
       "rank": 47,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 47,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "twbs/bootstrap",
@@ -1597,10 +1597,10 @@
       "pushedAt": "2026-10-01T11:23:32Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/2918581?v=4",
       "rank": 48,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 48,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "f/prompts.chat",
@@ -1626,10 +1626,10 @@
       "pushedAt": "2026-10-03T08:12:28Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/196477?v=4",
       "rank": 49,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 49,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "huggingface/transformers",
@@ -1655,10 +1655,10 @@
       "pushedAt": "2026-10-04T13:33:29Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/25720743?v=4",
       "rank": 50,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 50,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "AUTOMATIC1111/stable-diffusion-webui",
@@ -1684,10 +1684,10 @@
       "pushedAt": "2026-03-02T07:00:53Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/20920490?v=4",
       "rank": 51,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 51,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "jlevy/the-art-of-command-line",
@@ -1713,10 +1713,10 @@
       "pushedAt": "2024-06-25T18:13:44Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/2058167?v=4",
       "rank": 52,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 52,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "Snailclimb/JavaGuide",
@@ -1742,10 +1742,10 @@
       "pushedAt": "2026-10-03T23:36:32Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/29880145?v=4",
       "rank": 53,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 53,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "langgenius/dify",
@@ -1771,10 +1771,10 @@
       "pushedAt": "2026-10-04T11:47:14Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/127165244?v=4",
       "rank": 54,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 54,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "msitarzewski/agency-agents",
@@ -1784,8 +1784,8 @@
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
       "language": "Shell",
       "languageColor": "",
-      "stars": 156304,
-      "forks": 25214,
+      "stars": 156306,
+      "forks": 25215,
       "openIssues": 209,
       "topics": [],
       "homepage": "",
@@ -1793,10 +1793,10 @@
       "pushedAt": "2026-10-01T19:35:40Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/1972242?v=4",
       "rank": 55,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 55,
+      "rankChange": 0,
+      "starsGained": 2,
+      "isNew": false
     },
     {
       "fullName": "langflow-ai/langflow",
@@ -1822,10 +1822,10 @@
       "pushedAt": "2026-10-04T08:06:46Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/85702467?v=4",
       "rank": 56,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 56,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "DietrichGebert/ponytail",
@@ -1835,7 +1835,7 @@
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "language": "JavaScript",
       "languageColor": "",
-      "stars": 154318,
+      "stars": 154321,
       "forks": 8303,
       "openIssues": 227,
       "topics": [
@@ -1851,10 +1851,10 @@
       "pushedAt": "2026-10-03T05:12:55Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/137048761?v=4",
       "rank": 57,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 57,
+      "rankChange": 0,
+      "starsGained": 3,
+      "isNew": false
     },
     {
       "fullName": "open-webui/open-webui",
@@ -1880,10 +1880,10 @@
       "pushedAt": "2026-10-03T13:06:04Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/158137808?v=4",
       "rank": 58,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 58,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "Genymobile/scrcpy",
@@ -1909,10 +1909,10 @@
       "pushedAt": "2026-10-03T09:40:48Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/3427627?v=4",
       "rank": 59,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 59,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "anthropics/claude-code",
@@ -1931,10 +1931,10 @@
       "pushedAt": "2026-10-03T23:07:17Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/76263028?v=4",
       "rank": 60,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 60,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "clash-verge-rev/clash-verge-rev",
@@ -1944,9 +1944,9 @@
       "description": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
       "language": "Rust",
       "languageColor": "",
-      "stars": 149176,
+      "stars": 149177,
       "forks": 10704,
-      "openIssues": 500,
+      "openIssues": 499,
       "topics": [
         "clash",
         "clash-meta",
@@ -1960,10 +1960,10 @@
       "pushedAt": "2026-10-04T05:48:37Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/152534467?v=4",
       "rank": 61,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 61,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "airbnb/javascript",
@@ -1989,10 +1989,10 @@
       "pushedAt": "2026-04-16T19:24:09Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/698437?v=4",
       "rank": 62,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 62,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "langchain-ai/langchain",
@@ -2003,7 +2003,7 @@
       "language": "Python",
       "languageColor": "",
       "stars": 147431,
-      "forks": 24700,
+      "forks": 24699,
       "openIssues": 617,
       "topics": [
         "agents",
@@ -2018,10 +2018,10 @@
       "pushedAt": "2026-10-04T10:17:02Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/126733545?v=4",
       "rank": 63,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 63,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "x1xhlol/system-prompts-and-models-of-ai-tools",
@@ -2047,10 +2047,10 @@
       "pushedAt": "2026-08-11T13:01:09Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/185671340?v=4",
       "rank": 64,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 64,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "vercel/next.js",
@@ -2060,7 +2060,7 @@
       "description": "The React Framework",
       "language": "JavaScript",
       "languageColor": "",
-      "stars": 143130,
+      "stars": 143132,
       "forks": 33877,
       "openIssues": 3538,
       "topics": [
@@ -2076,10 +2076,10 @@
       "pushedAt": "2026-10-04T13:59:26Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/14985020?v=4",
       "rank": 65,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 65,
+      "rankChange": 0,
+      "starsGained": 2,
+      "isNew": false
     },
     {
       "fullName": "yangshun/tech-interview-handbook",
@@ -2105,10 +2105,10 @@
       "pushedAt": "2026-08-07T12:06:42Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/1315101?v=4",
       "rank": 66,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 66,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "ytdl-org/youtube-dl",
@@ -2127,10 +2127,10 @@
       "pushedAt": "2026-02-19T16:45:25Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/48381040?v=4",
       "rank": 67,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 67,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "Shubhamsaboo/awesome-llm-apps",
@@ -2140,7 +2140,7 @@
       "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
       "language": "Python",
       "languageColor": "",
-      "stars": 140687,
+      "stars": 140688,
       "forks": 20676,
       "openIssues": 26,
       "topics": [
@@ -2154,10 +2154,10 @@
       "pushedAt": "2026-09-30T20:31:22Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/31396011?v=4",
       "rank": 68,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 68,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "iptv-org/iptv",
@@ -2182,10 +2182,10 @@
       "pushedAt": "2026-10-04T01:00:50Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/55937028?v=4",
       "rank": 69,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 69,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "github/spec-kit",
@@ -2211,10 +2211,10 @@
       "pushedAt": "2026-10-03T16:48:20Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/9919?v=4",
       "rank": 70,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 70,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "farion1231/cc-switch",
@@ -2226,7 +2226,7 @@
       "languageColor": "",
       "stars": 139941,
       "forks": 9415,
-      "openIssues": 2955,
+      "openIssues": 2956,
       "topics": [
         "ai-tools",
         "claude-code",
@@ -2240,10 +2240,10 @@
       "pushedAt": "2026-10-04T12:12:51Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/44939412?v=4",
       "rank": 71,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 71,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "microsoft/PowerToys",
@@ -2269,10 +2269,10 @@
       "pushedAt": "2026-10-04T09:51:31Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/6154722?v=4",
       "rank": 72,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 72,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "golang/go",
@@ -2282,7 +2282,7 @@
       "description": "The Go programming language",
       "language": "Go",
       "languageColor": "",
-      "stars": 139207,
+      "stars": 139210,
       "forks": 21269,
       "openIssues": 10301,
       "topics": [
@@ -2296,10 +2296,10 @@
       "pushedAt": "2026-10-02T21:55:53Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/4314092?v=4",
       "rank": 73,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 73,
+      "rankChange": 0,
+      "starsGained": 3,
+      "isNew": false
     },
     {
       "fullName": "ripienaar/free-for-dev",
@@ -2321,10 +2321,10 @@
       "pushedAt": "2026-10-03T15:36:19Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/82342?v=4",
       "rank": 74,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 74,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "labuladong/fucking-algorithm",
@@ -2350,10 +2350,10 @@
       "pushedAt": "2026-02-28T10:07:31Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/37220920?v=4",
       "rank": 75,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 75,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "Comfy-Org/ComfyUI",
@@ -2379,10 +2379,10 @@
       "pushedAt": "2026-10-04T12:13:32Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/166579949?v=4",
       "rank": 76,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 76,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "garrytan/gstack",
@@ -2392,7 +2392,7 @@
       "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
       "language": "TypeScript",
       "languageColor": "",
-      "stars": 135033,
+      "stars": 135034,
       "forks": 20081,
       "openIssues": 537,
       "topics": [],
@@ -2401,10 +2401,10 @@
       "pushedAt": "2026-10-04T11:41:24Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/19957?v=4",
       "rank": 77,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 77,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "excalidraw/excalidraw",
@@ -2414,7 +2414,7 @@
       "description": "Virtual whiteboard for sketching hand-drawn like diagrams",
       "language": "TypeScript",
       "languageColor": "",
-      "stars": 133485,
+      "stars": 133486,
       "forks": 15567,
       "openIssues": 3249,
       "topics": [
@@ -2430,10 +2430,10 @@
       "pushedAt": "2026-10-01T15:08:43Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/59452120?v=4",
       "rank": 78,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 78,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "nextlevelbuilder/ui-ux-pro-max-skill",
@@ -2459,10 +2459,10 @@
       "pushedAt": "2026-10-03T16:05:26Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/246974152?v=4",
       "rank": 79,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 79,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "krahets/hello-algo",
@@ -2488,10 +2488,10 @@
       "pushedAt": "2026-08-17T20:58:58Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/26993056?v=4",
       "rank": 80,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 80,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "ggml-org/llama.cpp",
@@ -2512,10 +2512,10 @@
       "pushedAt": "2026-10-04T13:48:06Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/134263123?v=4",
       "rank": 81,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 81,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "Chalarangelo/30-seconds-of-code",
@@ -2541,10 +2541,10 @@
       "pushedAt": "2026-10-02T01:17:53Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/8281875?v=4",
       "rank": 82,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 82,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "harry0703/MoneyPrinterTurbo",
@@ -2570,10 +2570,10 @@
       "pushedAt": "2026-10-04T06:48:17Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/4928832?v=4",
       "rank": 83,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 83,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "kubernetes/kubernetes",
@@ -2583,8 +2583,8 @@
       "description": "Production-Grade Container Scheduling and Management",
       "language": "Go",
       "languageColor": "",
-      "stars": 128255,
-      "forks": 46020,
+      "stars": 128258,
+      "forks": 46021,
       "openIssues": 3165,
       "topics": [
         "cncf",
@@ -2597,10 +2597,10 @@
       "pushedAt": "2026-10-04T11:42:22Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/13629408?v=4",
       "rank": 84,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 84,
+      "rankChange": 0,
+      "starsGained": 3,
+      "isNew": false
     },
     {
       "fullName": "openai/codex",
@@ -2612,17 +2612,17 @@
       "languageColor": "",
       "stars": 127810,
       "forks": 20010,
-      "openIssues": 20530,
+      "openIssues": 20531,
       "topics": [],
       "homepage": "",
       "createdAt": "2025-04-13T05:37:54Z",
       "pushedAt": "2026-10-04T07:12:21Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/14957082?v=4",
       "rank": 85,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 85,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "react/react-native",
@@ -2648,10 +2648,10 @@
       "pushedAt": "2026-10-04T11:29:00Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/102812?v=4",
       "rank": 86,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 86,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "rustdesk/rustdesk",
@@ -2661,7 +2661,7 @@
       "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
       "language": "Rust",
       "languageColor": "",
-      "stars": 125102,
+      "stars": 125103,
       "forks": 19411,
       "openIssues": 173,
       "topics": [
@@ -2677,10 +2677,10 @@
       "pushedAt": "2026-10-04T11:17:36Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/71636191?v=4",
       "rank": 87,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 87,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "shadcn-ui/ui",
@@ -2691,7 +2691,7 @@
       "language": "TypeScript",
       "languageColor": "",
       "stars": 125079,
-      "forks": 12128,
+      "forks": 12129,
       "openIssues": 1823,
       "topics": [
         "base-ui",
@@ -2706,10 +2706,10 @@
       "pushedAt": "2026-10-02T11:32:02Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/139895814?v=4",
       "rank": 88,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 88,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "Graphify-Labs/graphify",
@@ -2719,7 +2719,7 @@
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "language": "Python",
       "languageColor": "",
-      "stars": 123691,
+      "stars": 123692,
       "forks": 11925,
       "openIssues": 1516,
       "topics": [
@@ -2735,10 +2735,10 @@
       "pushedAt": "2026-10-04T01:26:07Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/297659074?v=4",
       "rank": 89,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 89,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "electron/electron",
@@ -2764,10 +2764,10 @@
       "pushedAt": "2026-10-04T04:32:50Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/13409222?v=4",
       "rank": 90,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 90,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "nodejs/node",
@@ -2777,7 +2777,7 @@
       "description": "Node.js JavaScript runtime ✨🐢🚀✨",
       "language": "JavaScript",
       "languageColor": "",
-      "stars": 122303,
+      "stars": 122304,
       "forks": 38757,
       "openIssues": 1169,
       "topics": [
@@ -2793,10 +2793,10 @@
       "pushedAt": "2026-10-04T13:25:44Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/9950313?v=4",
       "rank": 91,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 91,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "Hack-with-Github/Awesome-Hacking",
@@ -2822,10 +2822,10 @@
       "pushedAt": "2026-07-26T03:29:02Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/18143746?v=4",
       "rank": 92,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 92,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "microsoft/generative-ai-for-beginners",
@@ -2835,7 +2835,7 @@
       "description": "21 Lessons, Get Started Building with Generative AI ",
       "language": "Jupyter Notebook",
       "languageColor": "",
-      "stars": 120992,
+      "stars": 120993,
       "forks": 63658,
       "openIssues": 12,
       "topics": [
@@ -2851,10 +2851,10 @@
       "pushedAt": "2026-10-01T03:45:43Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/6154722?v=4",
       "rank": 93,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 93,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "rust-lang/rust",
@@ -2864,7 +2864,7 @@
       "description": "Empowering everyone to build reliable and efficient software.",
       "language": "Rust",
       "languageColor": "",
-      "stars": 119523,
+      "stars": 119525,
       "forks": 17571,
       "openIssues": 12623,
       "topics": [
@@ -2874,13 +2874,13 @@
       ],
       "homepage": "https://www.rust-lang.org",
       "createdAt": "2010-06-16T20:39:03Z",
-      "pushedAt": "2026-10-04T12:25:12Z",
+      "pushedAt": "2026-10-04T14:01:41Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/5430905?v=4",
       "rank": 94,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 94,
+      "rankChange": 0,
+      "starsGained": 2,
+      "isNew": false
     },
     {
       "fullName": "VoltAgent/awesome-design-md",
@@ -2906,10 +2906,10 @@
       "pushedAt": "2026-09-21T08:23:38Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/201282378?v=4",
       "rank": 95,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 95,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "justjavac/free-programming-books-zh_CN",
@@ -2935,10 +2935,10 @@
       "pushedAt": "2026-07-29T00:39:06Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/359395?v=4",
       "rank": 96,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 96,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "godotengine/godot",
@@ -2964,10 +2964,10 @@
       "pushedAt": "2026-10-02T18:11:24Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/6318500?v=4",
       "rank": 97,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 97,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "2dust/v2rayN",
@@ -2977,7 +2977,7 @@
       "description": "A GUI client for Windows, Linux and macOS, support Xray and sing-box and others",
       "language": "C#",
       "languageColor": "",
-      "stars": 117601,
+      "stars": 117602,
       "forks": 16022,
       "openIssues": 16,
       "topics": [
@@ -2993,10 +2993,10 @@
       "pushedAt": "2026-10-04T03:41:39Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/31833384?v=4",
       "rank": 98,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 98,
+      "rankChange": 0,
+      "starsGained": 1,
+      "isNew": false
     },
     {
       "fullName": "browser-use/browser-use",
@@ -3022,10 +3022,10 @@
       "pushedAt": "2026-10-03T00:06:08Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/192012301?v=4",
       "rank": 99,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 99,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     },
     {
       "fullName": "mrdoob/three.js",
@@ -3051,10 +3051,10 @@
       "pushedAt": "2026-10-04T12:20:10Z",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/97088?v=4",
       "rank": 100,
-      "previousRank": null,
-      "rankChange": null,
-      "starsGained": null,
-      "isNew": true
+      "previousRank": 100,
+      "rankChange": 0,
+      "starsGained": 0,
+      "isNew": false
     }
   ]
 }

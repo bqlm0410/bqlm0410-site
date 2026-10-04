@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "generatedAt": "2026-10-04T21:18:38.751+08:00",
+  "generatedAt": "2026-10-04T22:02:25.744+08:00",
   "source": "news",
   "degraded": [
     "venturebeat"
@@ -43,8 +43,8 @@
       "source": "hackernews",
       "sourceName": "Hacker News",
       "publishedAt": "2026-10-04T12:51:53.000Z",
-      "score": 15,
-      "comments": 4,
+      "score": 83,
+      "comments": 28,
       "tags": [
         "模型"
       ]
@@ -58,8 +58,8 @@
       "source": "hackernews",
       "sourceName": "Hacker News",
       "publishedAt": "2026-10-04T09:24:52.000Z",
-      "score": 17,
-      "comments": 7,
+      "score": 26,
+      "comments": 14,
       "tags": []
     },
     {
@@ -71,7 +71,7 @@
       "source": "hackernews",
       "sourceName": "Hacker News",
       "publishedAt": "2026-10-04T07:53:45.000Z",
-      "score": 5,
+      "score": 8,
       "comments": 0,
       "tags": [
         "研究"
@@ -86,8 +86,8 @@
       "source": "hackernews",
       "sourceName": "Hacker News",
       "publishedAt": "2026-10-04T02:34:22.000Z",
-      "score": 104,
-      "comments": 239,
+      "score": 118,
+      "comments": 252,
       "tags": []
     },
     {
@@ -114,8 +114,8 @@
       "source": "hackernews",
       "sourceName": "Hacker News",
       "publishedAt": "2026-10-03T17:44:29.000Z",
-      "score": 199,
-      "comments": 296,
+      "score": 213,
+      "comments": 318,
       "tags": []
     },
     {
@@ -127,8 +127,8 @@
       "source": "hackernews",
       "sourceName": "Hacker News",
       "publishedAt": "2026-10-03T17:03:37.000Z",
-      "score": 230,
-      "comments": 130,
+      "score": 243,
+      "comments": 132,
       "tags": [
         "Agent"
       ]
@@ -213,8 +213,8 @@
       "source": "hackernews",
       "sourceName": "Hacker News",
       "publishedAt": "2026-10-03T13:46:34.000Z",
-      "score": 297,
-      "comments": 533,
+      "score": 315,
+      "comments": 550,
       "tags": []
     },
     {
@@ -226,8 +226,8 @@
       "source": "hackernews",
       "sourceName": "Hacker News",
       "publishedAt": "2026-10-03T09:36:04.000Z",
-      "score": 625,
-      "comments": 318,
+      "score": 627,
+      "comments": 319,
       "tags": [
         "模型",
         "开源"
@@ -329,7 +329,7 @@
       "source": "hackernews",
       "sourceName": "Hacker News",
       "publishedAt": "2026-10-02T19:10:38.000Z",
-      "score": 105,
+      "score": 107,
       "comments": 39,
       "tags": [
         "Agent"
@@ -456,8 +456,8 @@
       "source": "hackernews",
       "sourceName": "Hacker News",
       "publishedAt": "2026-10-02T16:04:48.000Z",
-      "score": 33,
-      "comments": 4,
+      "score": 42,
+      "comments": 5,
       "tags": [
         "硬件"
       ]
