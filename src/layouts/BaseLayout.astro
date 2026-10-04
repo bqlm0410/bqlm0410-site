@@ -69,7 +69,10 @@ const canonical = new URL(Astro.url.pathname, SITE.url).href;
 
   <body>
     <Header />
-    <main class={wide ? 'container container--wide' : 'container'}>
+    <main
+      class={wide ? 'container container--wide' : 'container'}
+      data-pagefind-body={noIndex ? undefined : 'true'}
+    >
       <slot />
     </main>
     <Footer />

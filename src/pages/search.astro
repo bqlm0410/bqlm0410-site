@@ -24,7 +24,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHeader from '../components/PageHeader.astro';
 ---
 
-<BaseLayout title="站内搜索" description="搜索青苺ちゃん的小窝里的博客文章、项目与工具页。">
+  <!--
+    noIndex 有两个作用：
+      1. 不加 <meta robots=noindex> 之外，还会让 BaseLayout 不给 <main>
+         加 data-pagefind-body —— 于是搜索页自己不会进搜索索引
+         （否则搜什么都能搜到「站内搜索」这个页面）。
+      2. 顺便让搜索引擎也别收录这个页面。
+  -->
+  <BaseLayout
+    title="站内搜索"
+    description="搜索青苺ちゃん的小窝里的博客文章、项目与工具页。"
+    noIndex
+  >
   <!--
     data-pagefind-ignore：整块主要内容都不进索引，
     否则搜索结果里会出现「站内搜索」这个页面自己。

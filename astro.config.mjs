@@ -23,15 +23,11 @@ export default defineConfig({
     },
   },
 
-  vite: {
-    ssr: {
-      /**
-       * picomatch 是 CommonJS 包（main: index.js，没有 type: module）。
-       * astro/loaders 的 glob 加载器依赖它，但 Vite 的模块运行器会把它当 ESM 求值，
-       * 导致 "require is not defined" 而中断内容集合同步。
-       * 把它标记为 external，交给 Node 原生 require 处理即可绕开。
-       */
-      external: ['picomatch'],
-    },
-  },
+  // 说明：这里曾经有过一段 `vite.ssr.external: ['picomatch']`，
+  // 当时的想法是绕过 astro/loaders 的 glob() 因 picomatch 是 CommonJS
+  // 而抛 "require is not defined" 的问题。
+  // 但实测【无效】——加了它 astro sync 照样崩，因为 Astro 给内容集合
+  // 加载器设了自己的 Vite 配置，会覆盖这里的设置。
+  // 真正的解法是换掉加载器（见 src/loaders/markdown.ts），
+  // 所以这段配置已删除，避免留下「以为修好了其实没有」的假象。
 });
