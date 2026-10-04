@@ -1,0 +1,24 @@
+---
+import { SITE, SOCIAL } from '../consts';
+
+const year = new Date().getFullYear();
+const range = year > SITE.since ? `${SITE.since}–${year}` : `${SITE.since}`;
+---
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div>
+      © {range} {SITE.title} · 由 {SITE.author} 维护
+    </div>
+    <div class="site-footer__links">
+      {
+        SOCIAL.map((item) => (
+          <a href={item.href} rel={item.href.startsWith('http') ? 'noopener' : undefined}>
+            {item.text}
+          </a>
+        ))
+      }
+      <a href="https://astro.build" rel="noopener">Astro 驱动</a>
+    </div>
+  </div>
+</footer>

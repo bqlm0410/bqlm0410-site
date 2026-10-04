@@ -1,0 +1,77 @@
+name: 每日数据抓取
+
+# 每天北京时间 6:00 自动跑一次。
+# GitHub Actions 的 cron 用的是 UTC，北京时间 6:00 = UTC 前一天 22:00。
+on:
+  schedule:
+    - cron: '0 22 * * *'
+  # 也允许在 Actions 页面手动点一下立即运行（第一次部署后建议手动跑一次）
+  workflow_dispatch:
+
+# 需要写权限才能把抓到的数据提交回仓库
+permissions:
+  contents: write
+
+# 避免两次任务重叠
+concurrency:
+  group: daily-fetch
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 拉取仓库
+        uses: actions/checkout@v4
+
+      - name: 准备 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # 抓取脚本零第三方依赖，所以不需要 npm install，启动很快
+      - name: 抓取 GitHub 热门榜
+        continue-on-error: true
+        env:
+          # Actions 自动提供的令牌，能把 GitHub API 额度从 60 次/时提到 5000 次/时
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # 没配这个 secret 也能跑，只是不生成中文摘要
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: node scripts/fetch-github.mjs
+
+      - name: 抓取 AI 资讯
+        continue-on-error: true
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: node scripts/fetch-news.mjs
+
+      - name: 检查是否有新数据
+        id: check
+        run: |
+          if [ -z "$(git status --porcelain src/data)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "今天没有产生新数据"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git status --short src/data
+          fi
+
+      - name: 提交并推送
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data
+          git commit -m "chore(data): 每日数据更新 $(TZ=Asia/Shanghai date +%Y-%m-%d)"
+          git push
+
+      - name: 输出结果摘要
+        if: always()
+        run: |
+          echo "### 每日抓取完成 🍓" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "数据目录当前文件：" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          ls -1 src/data/github-trending src/data/ai-news 2>/dev/null | head -40 >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"

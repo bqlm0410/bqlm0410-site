@@ -1,0 +1,295 @@
+---
+/**
+ * 首页
+ *
+ * 结构：Hero 自我介绍 → 功能入口 → 最新博客 → 精选项目 → 今日热门 → AI 资讯
+ * 数据板块（今日热门 / AI 资讯）在还没抓到数据时自动隐藏，不会出现空壳。
+ */
+import { getCollection } from 'astro:content';
+import { existsSync } from 'node:fs';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE, SOCIAL } from '../consts';
+import { getLatestGithub, getLatestNews } from '../lib/snapshots';
+
+/** 头像存在就用真头像，否则用渐变占位，避免出现裂图 */
+const avatarExists = existsSync(new URL('../../public/avatar.png', import.meta.url));
+
+/** 统一日期格式，不依赖构建环境的时区 */
+function fmtDate(value: Date | string) {
+  const d = new Date(value);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+/** 千分位，不依赖 toLocaleString */
+function fmtNum(n: number | null | undefined) {
+  if (n === null || n === undefined) return '—';
+  return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+const posts = (await getCollection('blog'))
+  .filter((p) => !p.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 4);
+
+const projects = (await getCollection('projects'))
+  .filter((p) => p.data.featured)
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 3);
+
+const github = getLatestGithub();
+const news = getLatestNews();
+const trending = github?.trending?.slice(0, 5) ?? [];
+const newsTop = news?.items?.slice(0, 5) ?? [];
+
+/** 功能入口 */
+const FEATURES = [
+  { icon: '📝', title: '博客', desc: '随手记点东西', href: '/blog' },
+  { icon: '🗂️', title: '项目', desc: '做过的一些东西', href: '/projects' },
+  { icon: '📷', title: '相册', desc: '存一些画面', href: '/photos' },
+  { icon: '🧰', title: '小工具', desc: '自己写的在线工具', href: '/tools' },
+  { icon: '🔥', title: '今日热门', desc: 'GitHub 每日榜单', href: '/trending' },
+  { icon: '🤖', title: 'AI 资讯', desc: '每天自动更新', href: '/news' },
+];
+---
+
+<BaseLayout>
+  <!-- ========== Hero ========== -->
+  <section class="hero">
+    {
+      avatarExists ? (
+        <img class="hero__avatar" src={SITE.avatar} alt={`${SITE.author} 的头像`} width="96" height="96" />
+      ) : (
+        <div class="hero__avatar hero__avatar--fallback" aria-hidden="true">苺</div>
+      )
+    }
+    <h1 class="hero__title">{SITE.title}</h1>
+    <p class="hero__tagline">{SITE.tagline}</p>
+    <p class="hero__desc">{SITE.description}</p>
+    <div class="btn-row hero__actions">
+      <a class="btn btn--primary" href="/blog">看看博客</a>
+      <a class="btn" href="/about">关于我</a>
+      {
+        SOCIAL.map((s) => (
+          <a class="btn btn--ghost" href={s.href} rel={s.href.startsWith('http') ? 'noopener' : undefined}>
+            {s.text}
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- ========== 功能入口 ========== -->
+  <section class="section">
+    <div class="grid grid--sm">
+      {
+        FEATURES.map((f) => (
+          <a class="card feature" href={f.href}>
+            <span class="feature__icon" aria-hidden="true">{f.icon}</span>
+            <span class="card__title">{f.title}</span>
+            <span class="card__desc">{f.desc}</span>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- ========== 最新博客 ========== -->
+  {
+    posts.length > 0 && (
+      <section class="section">
+        <h2 class="section-title">
+          <span>最新文章</span>
+          <a href="/blog">全部文章 →</a>
+        </h2>
+        <div class="grid">
+          {posts.map((post) => (
+            <a class="card" href={`/blog/${post.id}/`}>
+              <div class="card__title">{post.data.title}</div>
+              <div class="card__desc">{post.data.description}</div>
+              <div class="card__meta">
+                <span>{fmtDate(post.data.pubDate)}</span>
+                {post.data.tags.slice(0, 3).map((t) => (
+                  <span class="tag">{t}</span>
+                ))}
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <!-- ========== 精选项目 ========== -->
+  {
+    projects.length > 0 && (
+      <section class="section">
+        <h2 class="section-title">
+          <span>精选项目</span>
+          <a href="/projects">全部项目 →</a>
+        </h2>
+        <div class="grid">
+          {projects.map((project) => (
+            <a class="card" href={`/projects/${project.id}/`}>
+              <div class="card__title">{project.data.title}</div>
+              <div class="card__desc">{project.data.description}</div>
+              <div class="card__meta">
+                <span class="tag tag--accent">{project.data.status}</span>
+                {project.data.tags.slice(0, 3).map((t) => (
+                  <span class="tag">{t}</span>
+                ))}
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <!-- ========== 今日 GitHub 热门 ========== -->
+  {
+    trending.length > 0 && (
+      <section class="section">
+        <h2 class="section-title">
+          <span>今日 GitHub 热门</span>
+          <a href="/trending">完整榜单 →</a>
+        </h2>
+        <div class="grid grid--wide">
+          {trending.map((repo) => (
+            <a class="card" href={repo.url} target="_blank" rel="noopener">
+              <div class="card__title mono">
+                <span class="rank">{repo.rank}</span>
+                {repo.fullName}
+              </div>
+              <div class="card__desc">{repo.titleZh || repo.description || '暂无简介'}</div>
+              <div class="card__meta">
+                {repo.language && (
+                  <span class="row" style="gap:.3rem">
+                    <span
+                      class="lang-dot"
+                      style={`background:${repo.languageColor || 'var(--text-mute)'}`}
+                    />
+                    {repo.language}
+                  </span>
+                )}
+                <span>⭐ {fmtNum(repo.stars)}</span>
+                {repo.starsToday ? <span class="tag tag--accent">+{repo.starsToday} today</span> : null}
+                {repo.isNew ? <span class="tag tag--new">NEW</span> : null}
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <!-- ========== AI 资讯 ========== -->
+  {
+    newsTop.length > 0 && (
+      <section class="section">
+        <h2 class="section-title">
+          <span>AI 资讯</span>
+          <a href="/news">全部资讯 →</a>
+        </h2>
+        <div class="stack">
+          {newsTop.map((item) => (
+            <a class="card news-row" href={item.link} target="_blank" rel="noopener">
+              <div class="card__title">{item.titleZh || item.title}</div>
+              {item.summaryZh && <div class="card__desc">{item.summaryZh}</div>}
+              <div class="card__meta">
+                <span class="tag">{item.sourceName}</span>
+                {item.score ? <span>🔥 {fmtNum(item.score)}</span> : null}
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <!-- ========== 数据板块尚未就绪时的说明 ========== -->
+  {
+    trending.length === 0 && newsTop.length === 0 && (
+      <section class="section">
+        <div class="empty-state">
+          <p>📡 每日数据板块正在准备中</p>
+          <p class="small" style="margin-top:.5rem">
+            抓取任务会在每天北京时间 6:00 自动运行，第一次跑完后这里就会出现 GitHub 热门榜单和 AI 资讯。
+          </p>
+        </div>
+      </section>
+    )
+  }
+</BaseLayout>
+
+<style>
+  .hero {
+    text-align: center;
+    padding: 1.5rem 0 2.5rem;
+  }
+
+  .hero__avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin: 0 auto 1.25rem;
+    object-fit: cover;
+    border: 3px solid var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  .hero__avatar--fallback {
+    display: grid;
+    place-items: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, var(--accent), #4ec98d);
+    border: none;
+  }
+
+  .hero__title {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    margin-bottom: 0.4rem;
+  }
+
+  .hero__tagline {
+    color: var(--accent-text);
+    font-weight: 550;
+    margin-bottom: 0.85rem;
+  }
+
+  .hero__desc {
+    max-width: 46ch;
+    margin: 0 auto 1.6rem;
+    color: var(--text-soft);
+    font-size: 0.97rem;
+  }
+
+  .hero__actions {
+    justify-content: center;
+  }
+
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+  }
+
+  .feature__icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0.4rem;
+  }
+
+  .rank {
+    display: inline-block;
+    min-width: 1.6em;
+    color: var(--text-mute);
+    font-weight: 700;
+  }
+
+  .news-row .card__title {
+    font-size: 0.98rem;
+  }
+</style>

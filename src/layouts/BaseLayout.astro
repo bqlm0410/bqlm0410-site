@@ -1,0 +1,77 @@
+---
+/**
+ * 全站基础布局
+ *
+ * Props:
+ *   title       页面标题（会自动拼上站点名）
+ *   description 页面描述，用于 SEO
+ *   wide        是否使用更宽的容器（数据表格类页面用）
+ *   noIndex     是否禁止搜索引擎收录
+ */
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Analytics from '../components/Analytics.astro';
+import { SITE } from '../consts';
+
+interface Props {
+  title?: string;
+  description?: string;
+  wide?: boolean;
+  noIndex?: boolean;
+}
+
+const { title, description = SITE.description, wide = false, noIndex = false } = Astro.props;
+
+const fullTitle = title ? `${title} · ${SITE.title}` : `${SITE.title} · ${SITE.tagline}`;
+const canonical = new URL(Astro.url.pathname, SITE.url).href;
+---
+
+<!doctype html>
+<html lang={SITE.lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noIndex && <meta name="robots" content="noindex" />}
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title={SITE.title} href="/rss.xml" />
+    <meta name="theme-color" content="#2f9e6e" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.title} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script is:inline>
+      // 在样式生效前定好主题，避免刷新时闪白
+      (() => {
+        try {
+          const saved = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
+        } catch {
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
+
+    <!-- 访问统计：没配 PUBLIC_CF_BEACON_TOKEN 时这个组件不输出任何东西 -->
+    <Analytics />
+  </head>
+
+  <body>
+    <Header />
+    <main class={wide ? 'container container--wide' : 'container'}>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

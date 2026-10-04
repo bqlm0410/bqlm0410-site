@@ -1,0 +1,261 @@
+---
+/**
+ * 工具：Unix 时间戳 ↔ 日期时间
+ */
+import ToolPage from '../../components/tools/ToolPage.astro';
+---
+
+<ToolPage slug="timestamp">
+  <div class="stack">
+    <!-- 当前时间 -->
+    <div class="card now">
+      <div class="now__label small dim">当前时间戳（每秒刷新）</div>
+      <div class="now__row">
+        <code class="now__value mono" id="now-ts">—</code>
+        <button class="btn" id="use-now" type="button">用它填充</button>
+      </div>
+      <div class="now__sub small dim">
+        <span id="now-seconds">—</span> · <span id="now-millis">—</span>
+      </div>
+    </div>
+
+    <div class="tool-grid">
+      <!-- 时间戳 → 日期 -->
+      <div class="card">
+        <h2 class="card__title">时间戳 → 日期时间</h2>
+        <div class="field" style="margin-top:.75rem">
+          <label class="field__label" for="ts-input">Unix 时间戳</label>
+          <input class="input mono" id="ts-input" inputmode="numeric" placeholder="1759500000" />
+          <span class="small dim" id="ts-unit">自动识别秒 / 毫秒</span>
+        </div>
+        <div class="stack" style="margin-top:.85rem">
+          <div class="kv"><span class="dim small">本地时间</span><code class="mono" id="out-local">—</code></div>
+          <div class="kv"><span class="dim small">UTC 时间</span><code class="mono" id="out-utc">—</code></div>
+          <div class="kv"><span class="dim small">ISO 8601</span><code class="mono" id="out-iso">—</code></div>
+          <div class="kv"><span class="dim small">距离现在</span><code class="mono" id="out-relative">—</code></div>
+        </div>
+      </div>
+
+      <!-- 日期 → 时间戳 -->
+      <div class="card">
+        <h2 class="card__title">日期时间 → 时间戳</h2>
+        <div class="field" style="margin-top:.75rem">
+          <label class="field__label" for="dt-input">选择一个日期时间（按你的本地时区）</label>
+          <input class="input" id="dt-input" type="datetime-local" step="1" />
+        </div>
+        <div class="stack" style="margin-top:.85rem">
+          <div class="kv"><span class="dim small">秒</span><code class="mono" id="out-sec">—</code></div>
+          <div class="kv"><span class="dim small">毫秒</span><code class="mono" id="out-ms">—</code></div>
+        </div>
+        <div class="row" style="margin-top:.85rem">
+          <button class="btn" id="copy-sec" type="button">复制秒</button>
+          <button class="btn" id="copy-ms" type="button">复制毫秒</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="msg" id="msg" hidden></div>
+  </div>
+</ToolPage>
+
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLElement;
+
+  const msgBox = $('msg');
+  let msgTimer: number | undefined;
+
+  function notify(text: string, kind: 'ok' | 'err') {
+    msgBox.textContent = text;
+    msgBox.className = `msg msg--${kind}`;
+    msgBox.hidden = false;
+    window.clearTimeout(msgTimer);
+    msgTimer = window.setTimeout(() => (msgBox.hidden = true), 3000);
+  }
+
+  const pad = (n: number) => String(n).padStart(2, '0');
+
+  /** 按本地时区格式化：YYYY-MM-DD HH:mm:ss */
+  function formatLocal(date: Date) {
+    return (
+      `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())} ` +
+      `${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`
+    );
+  }
+
+  function formatUtc(date: Date) {
+    return (
+      `${date.getUTCFullYear()}-${pad(date.getUTCMonth() + 1)}-${pad(date.getUTCDate())} ` +
+      `${pad(date.getUTCHours())}:${pad(date.getUTCMinutes())}:${pad(date.getUTCSeconds())} UTC`
+    );
+  }
+
+  /** 相对时间 */
+  function relative(date: Date) {
+    const diff = Date.now() - date.getTime();
+    const future = diff < 0;
+    const abs = Math.abs(diff);
+
+    const units: [number, string][] = [
+      [1000, '秒'],
+      [60 * 1000, '分钟'],
+      [3600 * 1000, '小时'],
+      [86400 * 1000, '天'],
+    ];
+
+    let text = '刚刚';
+    for (let i = units.length - 1; i >= 0; i -= 1) {
+      const [ms, label] = units[i];
+      if (abs >= ms) {
+        text = `${Math.floor(abs / ms)} ${label}`;
+        break;
+      }
+    }
+    if (abs < 1000) return '刚刚';
+    return future ? `${text}后` : `${text}前`;
+  }
+
+  /** 10 位按秒，13 位按毫秒 */
+  function toMillis(raw: string): { ms: number; unit: '秒' | '毫秒' } | null {
+    const trimmed = raw.trim();
+    if (!/^-?\d+$/.test(trimmed)) return null;
+    const value = Number(trimmed);
+    const digits = trimmed.replace('-', '').length;
+    const isMillis = digits >= 12;
+    return { ms: isMillis ? value : value * 1000, unit: isMillis ? '毫秒' : '秒' };
+  }
+
+  // ---------- 当前时间戳 ----------
+  function tickNow() {
+    const now = new Date();
+    $('now-ts').textContent = String(Math.floor(now.getTime() / 1000));
+    $('now-seconds').textContent = `秒：${Math.floor(now.getTime() / 1000)}`;
+    $('now-millis').textContent = `毫秒：${now.getTime()}`;
+  }
+  tickNow();
+  window.setInterval(tickNow, 1000);
+
+  // ---------- 时间戳 → 日期 ----------
+  function convertFromTimestamp() {
+    const input = $('ts-input') as HTMLInputElement;
+    const parsed = toMillis(input.value);
+
+    if (!input.value.trim()) {
+      for (const id of ['out-local', 'out-utc', 'out-iso', 'out-relative']) $(id).textContent = '—';
+      $('ts-unit').textContent = '自动识别秒 / 毫秒';
+      return;
+    }
+
+    if (!parsed) {
+      for (const id of ['out-local', 'out-utc', 'out-iso', 'out-relative']) $(id).textContent = '—';
+      $('ts-unit').textContent = '⚠️ 请输入纯数字的时间戳';
+      return;
+    }
+
+    const date = new Date(parsed.ms);
+    if (Number.isNaN(date.getTime())) {
+      $('ts-unit').textContent = '⚠️ 这个时间戳超出了可表示范围';
+      return;
+    }
+
+    $('ts-unit').textContent = `识别为「${parsed.unit}」`;
+    $('out-local').textContent = formatLocal(date);
+    $('out-utc').textContent = formatUtc(date);
+    $('out-iso').textContent = date.toISOString();
+    $('out-relative').textContent = relative(date);
+  }
+
+  // ---------- 日期 → 时间戳 ----------
+  function convertFromDate() {
+    const input = $('dt-input') as HTMLInputElement;
+    if (!input.value) {
+      $('out-sec').textContent = '—';
+      $('out-ms').textContent = '—';
+      return;
+    }
+    const date = new Date(input.value);
+    if (Number.isNaN(date.getTime())) {
+      $('out-sec').textContent = '—';
+      $('out-ms').textContent = '—';
+      return;
+    }
+    $('out-sec').textContent = String(Math.floor(date.getTime() / 1000));
+    $('out-ms').textContent = String(date.getTime());
+  }
+
+  async function copyText(id: string) {
+    const text = $(id).textContent ?? '';
+    if (!text || text === '—') {
+      notify('还没有可以复制的值', 'err');
+      return;
+    }
+    try {
+      await navigator.clipboard.writeText(text);
+      notify('已复制 ✓', 'ok');
+    } catch {
+      notify('浏览器拦住了自动复制，请手动选中复制', 'err');
+    }
+  }
+
+  $('ts-input').addEventListener('input', convertFromTimestamp);
+  $('dt-input').addEventListener('input', convertFromDate);
+  $('copy-sec').addEventListener('click', () => copyText('out-sec'));
+  $('copy-ms').addEventListener('click', () => copyText('out-ms'));
+
+  $('use-now').addEventListener('click', () => {
+    const input = $('ts-input') as HTMLInputElement;
+    input.value = String(Math.floor(Date.now() / 1000));
+    convertFromTimestamp();
+    notify('已填入当前时间戳', 'ok');
+  });
+
+  // 默认帮用户填上当前时间
+  ($('ts-input') as HTMLInputElement).value = String(Math.floor(Date.now() / 1000));
+  convertFromTimestamp();
+</script>
+
+<style>
+  .now {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .now__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.85rem;
+  }
+
+  .now__value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--accent-text);
+  }
+
+  .now__sub {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .kv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.6rem;
+    padding: 0.35rem 0;
+    border-bottom: 1px dashed var(--border);
+  }
+
+  .kv:last-child {
+    border-bottom: none;
+  }
+
+  .kv code {
+    font-size: 0.86rem;
+    overflow-wrap: anywhere;
+  }
+</style>

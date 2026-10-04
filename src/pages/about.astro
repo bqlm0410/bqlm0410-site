@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import { SITE, SOCIAL } from '../consts';
+
+const STACK = [
+  { name: 'Astro', desc: '静态站点框架，输出纯 HTML，打开就快', href: 'https://astro.build' },
+  { name: 'Cloudflare Pages', desc: '免费托管 + 全球 CDN + 自动 HTTPS', href: 'https://pages.cloudflare.com' },
+  { name: 'GitHub Actions', desc: '每天定时抓取数据，自动提交、自动重新部署', href: 'https://github.com/features/actions' },
+  { name: 'Pagefind', desc: '纯静态全文搜索，不需要任何后端', href: 'https://pagefind.app' },
+];
+
+const FEATURES = [
+  { icon: '📝', title: '博客', desc: '本地写 Markdown，提交后自动发布。' },
+  { icon: '🗂️', title: '项目', desc: '做过的、在做的、想做的。' },
+  { icon: '📷', title: '相册', desc: '存一些画面。' },
+  { icon: '🧰', title: '小工具', desc: '自己写的在线小工具，数据不上传。' },
+  { icon: '🔥', title: '今日热门', desc: 'GitHub 每日榜单，带历史归档。' },
+  { icon: '🤖', title: 'AI 资讯', desc: '每天自动抓取，永久留存。' },
+];
+---
+
+<BaseLayout title="关于" description={`关于 ${SITE.title} 和这个网站本身`}>
+  <PageHeader title="关于" description="这里是一个人的小窝，也是一堆想法的存放处。" />
+
+  <!-- ========== 关于我 ========== -->
+  <section class="section">
+    <h2 class="section-title"><span>关于我</span></h2>
+    <div class="prose">
+      <p>
+        你好，我是 <strong>{SITE.author}</strong>。
+      </p>
+      <p class="dim">
+        （这段自我介绍是占位文字，直接编辑 <code>src/pages/about.astro</code> 就能改掉。）
+      </p>
+      <p>
+        这里是我的个人小窝，用来放一些写下来的东西、做过的东西，以及每天自动收进来的外部信息。
+        没有什么宏大目标，就是觉得想法需要一个地方落下来。
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== 这个网站有什么 ========== -->
+  <section class="section">
+    <h2 class="section-title"><span>这个网站有什么</span></h2>
+    <div class="grid grid--wide">
+      {
+        FEATURES.map((f) => (
+          <div class="card">
+            <div class="card__title">
+              <span aria-hidden="true">{f.icon}</span> {f.title}
+            </div>
+            <div class="card__desc">{f.desc}</div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- ========== 怎么搭的 ========== -->
+  <section class="section">
+    <h2 class="section-title"><span>这个网站是怎么搭的</span></h2>
+    <div class="prose">
+      <p>
+        全站是<strong>纯静态</strong>的：没有服务器、没有数据库、没有月费。
+        「每天自动更新」这件事，用的是把 Git 仓库当数据库的思路 ——
+      </p>
+      <blockquote>
+        每天定时任务抓取数据 → 存成当天日期的 JSON 文件 → 自动提交进仓库 →
+        托管平台检测到更新，自动重新构建部署。
+      </blockquote>
+      <p>
+        因为每天是<strong>新增一个文件</strong>而不是覆盖旧文件，所以历史记录天然不会丢失，
+        可以翻看任意一天的榜单。想深入了解这个设计，可以看博客里的
+        <a href="/blog/daily-pipeline-design/">《用 Git 当数据库》</a>。
+      </p>
+    </div>
+
+    <div class="grid">
+      {
+        STACK.map((item) => (
+          <a class="card" href={item.href} target="_blank" rel="noopener">
+            <div class="card__title">{item.name}</div>
+            <div class="card__desc">{item.desc}</div>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- ========== 联系我 ========== -->
+  <section class="section">
+    <h2 class="section-title"><span>联系我</span></h2>
+    <div class="btn-row">
+      {
+        SOCIAL.map((item) => (
+          <a class="btn" href={item.href} rel={item.href.startsWith('http') ? 'noopener' : undefined}>
+            {item.text}
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

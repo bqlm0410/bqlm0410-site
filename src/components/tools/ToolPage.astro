@@ -1,0 +1,88 @@
+---
+/**
+ * 工具页外壳
+ *
+ * 每个工具页都用它包裹，统一处理：页面头、隐私提示、"其他工具"导航。
+ * 这样单个工具页只需要关心自己的表单和逻辑。
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../PageHeader.astro';
+import { getTool, getOtherTools } from '../../lib/tools';
+
+interface Props {
+  /** 工具 slug，必须和 src/lib/tools.ts 里注册的一致 */
+  slug: string;
+}
+
+const { slug } = Astro.props;
+const tool = getTool(slug);
+
+if (!tool) {
+  throw new Error(`工具 "${slug}" 没有在 src/lib/tools.ts 里注册`);
+}
+
+const others = getOtherTools(slug);
+---
+
+<BaseLayout title={tool.name} description={tool.description}>
+  <PageHeader title={tool.name} description={tool.description}>
+    <div class="tag-list" style="margin-top:.7rem">
+      {tool.tags.map((tag) => <span class="tag">{tag}</span>)}
+    </div>
+  </PageHeader>
+
+  <slot />
+
+  <p class="privacy small">
+    🔒 所有计算都在你的浏览器本地完成，<strong>不会上传任何数据</strong>。
+  </p>
+
+  {
+    others.length > 0 && (
+      <section class="section others">
+        <h2 class="section-title">
+          <span>其他工具</span>
+          <a href="/tools">全部工具 →</a>
+        </h2>
+        <div class="grid grid--sm">
+          {others.map((item) => (
+            <a class="card other" href={`/tools/${item.slug}/`}>
+              <span class="other__icon" aria-hidden="true">
+                {item.icon}
+              </span>
+              <span class="card__title">{item.name}</span>
+              <span class="card__desc">{item.description}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )
+  }
+</BaseLayout>
+
+<style>
+  .privacy {
+    margin-top: 1.5rem;
+    padding: 0.6rem 0.9rem;
+    border: 1px dashed var(--border-strong);
+    border-radius: var(--radius-sm);
+    color: var(--text-mute);
+    background: var(--bg-soft);
+  }
+
+  .others {
+    margin-top: 3rem;
+  }
+
+  .other {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .other__icon {
+    font-size: 1.3rem;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+</style>

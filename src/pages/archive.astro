@@ -1,0 +1,153 @@
+---
+/**
+ * 归档总览
+ *
+ * 把「每日快照」这件事直观地摆出来：哪一天抓了多少条，一目了然。
+ * 这些页面之所以永远存在，是因为每天是新增一个 JSON 文件而不是覆盖旧的。
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import {
+  listAllDates,
+  listGithubDates,
+  listNewsDates,
+  getGithubSnapshot,
+  getNewsSnapshot,
+} from '../lib/snapshots';
+
+interface DayEntry {
+  date: string;
+  githubTotal: number | null;
+  newsTotal: number | null;
+}
+
+const dates = listAllDates();
+
+/** 按月份分组，方便浏览 */
+const groups = new Map<string, DayEntry[]>();
+
+for (const date of dates) {
+  const github = getGithubSnapshot(date);
+  const news = getNewsSnapshot(date);
+
+  const entry: DayEntry = {
+    date,
+    githubTotal: github
+      ? (github.trending?.length ?? 0) + (github.top?.length ?? 0)
+      : null,
+    newsTotal: news ? (news.items?.length ?? 0) : null,
+  };
+
+  const month = date.slice(0, 7);
+  if (!groups.has(month)) groups.set(month, []);
+  groups.get(month)!.push(entry);
+}
+
+const months = [...groups.keys()].sort().reverse();
+---
+
+<BaseLayout
+  title="归档"
+  description="每日抓取数据的完整历史归档，按月份浏览任意一天的 GitHub 榜单与 AI 资讯。"
+>
+  <PageHeader
+    title="历史归档"
+    description="每天的抓取结果都会存成一个独立文件永久保留，所以这里的每一天都可以点进去回看。"
+  >
+    {
+      dates.length > 0 && (
+        <p class="small dim" style="margin-top:.6rem">
+          共收录 <strong>{dates.length}</strong> 天 · GitHub 榜单 <strong>{listGithubDates().length}</strong> 天 ·
+          AI 资讯 <strong>{listNewsDates().length}</strong> 天
+        </p>
+      )
+    }
+  </PageHeader>
+
+  {
+    dates.length === 0 ? (
+      <div class="empty-state">
+        <p>📡 还没有任何归档数据</p>
+        <p class="small" style="margin-top:.5rem">
+          每天的抓取任务跑完后，这里会按月份列出所有可回看的日子。
+        </p>
+      </div>
+    ) : (
+      <div class="stack" style="gap:2rem">
+        {months.map((month) => (
+          <section>
+            <h2 class="month-title">{month.replace('-', ' 年 ')} 月</h2>
+            <div class="days">
+              {groups.get(month)!.map((entry) => (
+                <div class="day">
+                  <span class="day__date mono">{entry.date}</span>
+                  <span class="day__links">
+                    {entry.githubTotal !== null ? (
+                      <a class="tag tag--accent" href={`/trending/${entry.date}/`}>
+                        GitHub {entry.githubTotal} 条
+                      </a>
+                    ) : (
+                      <span class="tag dim">GitHub 无</span>
+                    )}
+                    {entry.newsTotal !== null ? (
+                      <a class="tag tag--accent" href={`/news/${entry.date}/`}>
+                        AI 资讯 {entry.newsTotal} 条
+                      </a>
+                    ) : (
+                      <span class="tag dim">资讯 无</span>
+                    )}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    )
+  }
+</BaseLayout>
+
+<style>
+  .month-title {
+    font-size: 1.05rem;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-soft);
+  }
+
+  .days {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .day {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+  }
+
+  .day__date {
+    font-size: 0.88rem;
+    font-weight: 600;
+    min-width: 7.5em;
+  }
+
+  .day__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  a.tag:hover {
+    text-decoration: none;
+    background: var(--accent);
+    color: #fff;
+  }
+</style>

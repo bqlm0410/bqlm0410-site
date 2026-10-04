@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="晨雾山谷占位图">
+  <title>晨雾山谷（占位图）</title>
+  <defs>
+    <linearGradient id="p1-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b2f33" />
+      <stop offset="45%" stop-color="#1f6f63" />
+      <stop offset="100%" stop-color="#9ad9b6" />
+    </linearGradient>
+    <linearGradient id="p1-far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7cc9a9" />
+      <stop offset="100%" stop-color="#2f7f6a" />
+    </linearGradient>
+    <linearGradient id="p1-mid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a7364" />
+      <stop offset="100%" stop-color="#14453d" />
+    </linearGradient>
+    <linearGradient id="p1-near" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#123c36" />
+      <stop offset="100%" stop-color="#061c1a" />
+    </linearGradient>
+    <filter id="p1-soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="26" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#p1-sky)" />
+  <circle cx="845" cy="245" r="86" fill="#ffeec2" opacity="0.92" />
+  <circle cx="845" cy="245" r="190" fill="#ffe9a8" opacity="0.3" filter="url(#p1-soft)" />
+
+  <path d="M0 566 L215 352 L382 522 L520 404 L706 604 Z" fill="url(#p1-far)" opacity="0.78" />
+  <path d="M400 620 L640 372 L822 566 L986 432 L1200 628 L1200 800 L400 800 Z" fill="url(#p1-mid)" opacity="0.92" />
+  <path d="M0 648 L182 542 L362 664 L522 584 L704 706 L704 800 L0 800 Z" fill="url(#p1-near)" />
+
+  <rect y="556" width="1200" height="74" fill="#d8f2e4" opacity="0.26" filter="url(#p1-soft)" />
+  <rect y="648" width="1200" height="56" fill="#e8f8ef" opacity="0.18" filter="url(#p1-soft)" />
+</svg>

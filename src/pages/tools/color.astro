@@ -1,0 +1,416 @@
+---
+/**
+ * 工具：颜色格式转换（HEX / RGB / HSL）
+ *
+ * 内部统一以 RGB 为「真相」，任何一栏改动 → 更新 RGB → 反推另外两栏。
+ */
+import ToolPage from '../../components/tools/ToolPage.astro';
+---
+
+<ToolPage slug="color">
+  <div class="stack">
+    <!-- 预览 -->
+    <div class="preview">
+      <div class="preview__swatch" id="swatch">
+        <span class="preview__text" id="swatch-text">示例文字</span>
+      </div>
+      <div class="preview__side">
+        <div class="field">
+          <label class="field__label" for="picker">取色器</label>
+          <input class="picker" id="picker" type="color" value="#2f9e6e" />
+        </div>
+        <button class="btn" id="random" type="button">🎲 随机颜色</button>
+      </div>
+    </div>
+
+    <!-- 三种格式 -->
+    <div class="tool-grid">
+      <div class="card">
+        <h2 class="card__title">HEX</h2>
+        <div class="field" style="margin-top:.75rem">
+          <input class="input mono" id="hex" spellcheck="false" placeholder="#2f9e6e" />
+        </div>
+        <button class="btn copy" data-copy="hex" type="button">复制 HEX</button>
+      </div>
+
+      <div class="card">
+        <h2 class="card__title">RGB</h2>
+        <div class="fields" style="margin-top:.75rem">
+          <label class="mini"><span>R</span><input class="input mono" id="r" type="number" min="0" max="255" /></label>
+          <label class="mini"><span>G</span><input class="input mono" id="g" type="number" min="0" max="255" /></label>
+          <label class="mini"><span>B</span><input class="input mono" id="b" type="number" min="0" max="255" /></label>
+        </div>
+        <button class="btn copy" data-copy="rgb" type="button">复制 rgb()</button>
+      </div>
+
+      <div class="card">
+        <h2 class="card__title">HSL</h2>
+        <div class="fields" style="margin-top:.75rem">
+          <label class="mini"><span>H</span><input class="input mono" id="h" type="number" min="0" max="360" /></label>
+          <label class="mini"><span>S</span><input class="input mono" id="s" type="number" min="0" max="100" /></label>
+          <label class="mini"><span>L</span><input class="input mono" id="l" type="number" min="0" max="100" /></label>
+        </div>
+        <button class="btn copy" data-copy="hsl" type="button">复制 hsl()</button>
+      </div>
+    </div>
+
+    <!-- 明暗色阶 -->
+    <div class="card">
+      <h2 class="card__title">明暗色阶</h2>
+      <div class="shades" id="shades"></div>
+    </div>
+
+    <div class="msg" id="msg" hidden></div>
+  </div>
+</ToolPage>
+
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLElement;
+  const num = (id: string) => $(id) as HTMLInputElement;
+
+  const msgBox = $('msg');
+  let msgTimer: number | undefined;
+  /** 防止 updateAll 期间触发 input 事件造成无限递归 */
+  let updating = false;
+
+  function notify(text: string, kind: 'ok' | 'err') {
+    msgBox.textContent = text;
+    msgBox.className = `msg msg--${kind}`;
+    msgBox.hidden = false;
+    window.clearTimeout(msgTimer);
+    msgTimer = window.setTimeout(() => (msgBox.hidden = true), 3000);
+  }
+
+  const clamp = (n: number, min: number, max: number) => Math.min(max, Math.max(min, n));
+
+  interface RGB {
+    r: number;
+    g: number;
+    b: number;
+  }
+
+  function hexToRgb(hex: string): RGB | null {
+    let value = hex.trim().replace(/^#/, '');
+    if (/^[0-9a-f]{3}$/i.test(value)) {
+      value = value
+        .split('')
+        .map((char) => char + char)
+        .join('');
+    }
+    if (!/^[0-9a-f]{6}$/i.test(value)) return null;
+    return {
+      r: parseInt(value.slice(0, 2), 16),
+      g: parseInt(value.slice(2, 4), 16),
+      b: parseInt(value.slice(4, 6), 16),
+    };
+  }
+
+  const to2 = (n: number) => clamp(Math.round(n), 0, 255).toString(16).padStart(2, '0');
+
+  const rgbToHex = ({ r, g, b }: RGB) => `#${to2(r)}${to2(g)}${to2(b)}`;
+
+  function rgbToHsl({ r, g, b }: RGB) {
+    const rn = r / 255;
+    const gn = g / 255;
+    const bn = b / 255;
+    const max = Math.max(rn, gn, bn);
+    const min = Math.min(rn, gn, bn);
+    const l = (max + min) / 2;
+
+    let h = 0;
+    let s = 0;
+
+    if (max !== min) {
+      const d = max - min;
+      s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+      if (max === rn) h = (gn - bn) / d + (gn < bn ? 6 : 0);
+      else if (max === gn) h = (bn - rn) / d + 2;
+      else h = (rn - gn) / d + 4;
+      h *= 60;
+    }
+
+    return { h: Math.round(h), s: Math.round(s * 100), l: Math.round(l * 100) };
+  }
+
+  function hslToRgb(h: number, s: number, l: number): RGB {
+    const hn = (((h % 360) + 360) % 360) / 360;
+    const sn = clamp(s, 0, 100) / 100;
+    const ln = clamp(l, 0, 100) / 100;
+
+    if (sn === 0) {
+      const v = Math.round(ln * 255);
+      return { r: v, g: v, b: v };
+    }
+
+    const q = ln < 0.5 ? ln * (1 + sn) : ln + sn - ln * sn;
+    const p = 2 * ln - q;
+
+    const channel = (t: number) => {
+      let tt = t;
+      if (tt < 0) tt += 1;
+      if (tt > 1) tt -= 1;
+      if (tt < 1 / 6) return p + (q - p) * 6 * tt;
+      if (tt < 1 / 2) return q;
+      if (tt < 2 / 3) return p + (q - p) * (2 / 3 - tt) * 6;
+      return p;
+    };
+
+    return {
+      r: Math.round(channel(hn + 1 / 3) * 255),
+      g: Math.round(channel(hn) * 255),
+      b: Math.round(channel(hn - 1 / 3) * 255),
+    };
+  }
+
+  /** 根据亮度决定用黑字还是白字，保证对比度 */
+  function readableTextColor({ r, g, b }: RGB) {
+    const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+    return luminance > 0.6 ? '#111111' : '#ffffff';
+  }
+
+  /** 以当前色为基准生成明暗色阶 */
+  function renderShades(base: RGB) {
+    const { h, s, l } = rgbToHsl(base);
+    const steps = [90, 75, 60, 45, 30, 15];
+    const container = $('shades');
+    container.innerHTML = '';
+
+    for (const lightness of steps) {
+      const rgb = hslToRgb(h, s, lightness);
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'shade';
+      chip.style.background = rgbToHex(rgb);
+      chip.title = `点击使用 ${rgbToHex(rgb)}`;
+      chip.addEventListener('click', () => applyRgb(rgb, true));
+      container.appendChild(chip);
+    }
+  }
+
+  /** 把 RGB 作为真相，刷新所有输入框和预览 */
+  function applyRgb(rgb: RGB, refreshShades = false) {
+    const safe: RGB = {
+      r: clamp(Math.round(rgb.r), 0, 255),
+      g: clamp(Math.round(rgb.g), 0, 255),
+      b: clamp(Math.round(rgb.b), 0, 255),
+    };
+
+    const hex = rgbToHex(safe);
+    const hsl = rgbToHsl(safe);
+
+    updating = true;
+    ($('hex') as HTMLInputElement).value = hex;
+    num('r').value = String(safe.r);
+    num('g').value = String(safe.g);
+    num('b').value = String(safe.b);
+    num('h').value = String(hsl.h);
+    num('s').value = String(hsl.s);
+    num('l').value = String(hsl.l);
+    updating = false;
+
+    const swatch = $('swatch');
+    swatch.style.background = hex;
+    const textColor = readableTextColor(safe);
+    const label = $('swatch-text');
+    label.style.color = textColor;
+    label.textContent = `${hex} · ${textColor === '#ffffff' ? '建议白字' : '建议黑字'}`;
+
+    ($('picker') as HTMLInputElement).value = hex;
+
+    if (refreshShades) renderShades(safe);
+  }
+
+  function currentRgb(): RGB {
+    return {
+      r: Number(num('r').value) || 0,
+      g: Number(num('g').value) || 0,
+      b: Number(num('b').value) || 0,
+    };
+  }
+
+  // ---------- 事件绑定 ----------
+  $('hex').addEventListener('input', () => {
+    if (updating) return;
+    const rgb = hexToRgb(($('hex') as HTMLInputElement).value);
+    if (rgb) {
+      applyRgb(rgb, true);
+      msgBox.hidden = true;
+    }
+  });
+
+  ['r', 'g', 'b'].forEach((id) => {
+    num(id).addEventListener('input', () => {
+      if (updating) return;
+      applyRgb(currentRgb(), true);
+      msgBox.hidden = true;
+    });
+  });
+
+  ['h', 's', 'l'].forEach((id) => {
+    num(id).addEventListener('input', () => {
+      if (updating) return;
+      const rgb = hslToRgb(Number(num('h').value) || 0, Number(num('s').value) || 0, Number(num('l').value) || 0);
+      // HSL → RGB 要重新生成色阶，但要把 HSL 输入框的值保留住（避免取整抖动）
+      const keepH = num('h').value;
+      const keepS = num('s').value;
+      const keepL = num('l').value;
+      applyRgb(rgb, true);
+      updating = true;
+      num('h').value = keepH;
+      num('s').value = keepS;
+      num('l').value = keepL;
+      updating = false;
+    });
+  });
+
+  ($('picker') as HTMLInputElement).addEventListener('input', (event) => {
+    const rgb = hexToRgb((event.target as HTMLInputElement).value);
+    if (rgb) applyRgb(rgb, true);
+  });
+
+  $('random').addEventListener('click', () => {
+    applyRgb(
+      {
+        r: Math.floor(Math.random() * 256),
+        g: Math.floor(Math.random() * 256),
+        b: Math.floor(Math.random() * 256),
+      },
+      true,
+    );
+    notify('换了个随机颜色', 'ok');
+  });
+
+  document.querySelectorAll('.copy').forEach((button) => {
+    button.addEventListener('click', async () => {
+      const kind = (button as HTMLElement).dataset.copy;
+      const rgb = currentRgb();
+      const hsl = rgbToHsl(rgb);
+
+      const text =
+        kind === 'hex'
+          ? rgbToHex(rgb)
+          : kind === 'rgb'
+            ? `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`
+            : `hsl(${hsl.h}, ${hsl.s}%, ${hsl.l}%)`;
+
+      try {
+        await navigator.clipboard.writeText(text);
+        notify(`已复制 ${text} ✓`, 'ok');
+      } catch {
+        notify('浏览器拦住了自动复制，请手动选中复制', 'err');
+      }
+    });
+  });
+
+  // 初始化
+  applyRgb({ r: 47, g: 158, b: 110 }, true);
+</script>
+
+<style>
+  .preview {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .preview__swatch {
+    display: grid;
+    place-items: center;
+    min-height: 150px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--accent);
+    transition: background 0.2s ease;
+  }
+
+  .preview__text {
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: var(--radius-pill);
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(4px);
+  }
+
+  .preview__side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+
+  .picker {
+    width: 100%;
+    height: 46px;
+    padding: 3px;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    cursor: pointer;
+  }
+
+  .fields {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .mini {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .mini span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-mute);
+    text-align: center;
+  }
+
+  .mini input {
+    text-align: center;
+  }
+
+  .copy {
+    margin-top: 0.85rem;
+    width: 100%;
+    justify-content: center;
+    font-size: 0.84rem;
+  }
+
+  .shades {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.4rem;
+    margin-top: 0.85rem;
+  }
+
+  .shade {
+    height: 44px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: transform 0.12s ease;
+  }
+
+  .shade:hover {
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 640px) {
+    .preview {
+      grid-template-columns: 1fr;
+    }
+
+    .shades {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

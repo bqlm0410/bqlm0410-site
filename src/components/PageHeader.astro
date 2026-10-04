@@ -1,0 +1,21 @@
+---
+/**
+ * 统一的页面标题区，各页面都用它保证观感一致
+ *
+ * Props:
+ *   title       页面主标题
+ *   description 副标题 / 说明文字
+ */
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<div class="page-head">
+  <h1 class="page-title">{title}</h1>
+  {description && <p class="page-desc">{description}</p>}
+  <slot />
+</div>

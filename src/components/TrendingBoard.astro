@@ -1,0 +1,152 @@
+---
+/**
+ * GitHub 榜单展示板
+ *
+ * 用 Tab 在「今日 Trending」和「Star 总榜 Top 100」之间切换。
+ * 首页和历史归档页共用这个组件，只是传入的 snapshot 不同。
+ */
+import type { GithubSnapshot } from '../lib/snapshots';
+import RepoCard from './RepoCard.astro';
+
+interface Props {
+  snapshot: GithubSnapshot;
+}
+
+const { snapshot } = Astro.props;
+
+const trending = Array.isArray(snapshot.trending) ? snapshot.trending : [];
+const top = Array.isArray(snapshot.top) ? snapshot.top : [];
+
+const degraded = Array.isArray(snapshot.degraded) ? snapshot.degraded : [];
+const degradedLabels = degraded.map((key) =>
+  key === 'trending' ? '今日 Trending' : key === 'top' ? 'Star 总榜' : key,
+);
+---
+
+{
+  degradedLabels.length > 0 && (
+    <div class="notice">
+      ⚠️ 本次抓取中「{degradedLabels.join('、')}」暂时失败，已沿用上一次的数据顶上。
+    </div>
+  )
+}
+
+<div class="board">
+  <div class="tabs" role="tablist">
+    <button class="tab is-active" data-tab="trending" type="button" role="tab">
+      今日 Trending <span class="tab__count">{trending.length}</span>
+    </button>
+    <button class="tab" data-tab="top" type="button" role="tab">
+      Star 总榜 Top 100 <span class="tab__count">{top.length}</span>
+    </button>
+  </div>
+
+  <section class="panel is-active" data-panel="trending">
+    {
+      trending.length > 0 ? (
+        <div class="grid grid--wide">
+          {trending.map((repo) => (
+            <RepoCard repo={repo} />
+          ))}
+        </div>
+      ) : (
+        <div class="empty-state">今天的 Trending 榜单暂时没有数据。</div>
+      )
+    }
+  </section>
+
+  <section class="panel" data-panel="top">
+    {
+      top.length > 0 ? (
+        <div class="grid grid--wide">
+          {top.map((repo) => (
+            <RepoCard repo={repo} />
+          ))}
+        </div>
+      ) : (
+        <div class="empty-state">Star 总榜暂时没有数据。</div>
+      )
+    }
+  </section>
+</div>
+
+<script>
+  // 每个展示板独立工作，支持一页里放多个
+  document.querySelectorAll('.board').forEach((board) => {
+    const tabs = board.querySelectorAll('[data-tab]');
+    const panels = board.querySelectorAll('[data-panel]');
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const target = (tab as HTMLElement).dataset.tab;
+        tabs.forEach((t) => t.classList.toggle('is-active', t === tab));
+        panels.forEach((p) =>
+          p.classList.toggle('is-active', (p as HTMLElement).dataset.panel === target),
+        );
+      });
+    });
+  });
+</script>
+
+<style>
+  .notice {
+    padding: 0.7rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid color-mix(in srgb, var(--danger) 35%, var(--border));
+    background: color-mix(in srgb, var(--danger) 8%, transparent);
+    color: var(--text-soft);
+    font-size: 0.86rem;
+  }
+
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.85rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.42rem 0.95rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    background: var(--surface);
+    color: var(--text-soft);
+    font-size: 0.88rem;
+    font-weight: 550;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .tab:hover {
+    border-color: var(--border-strong);
+    color: var(--text);
+  }
+
+  .tab.is-active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+
+  .tab__count {
+    padding: 0 0.4em;
+    border-radius: var(--radius-pill);
+    background: color-mix(in srgb, currentColor 15%, transparent);
+    font-size: 0.76rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .panel {
+    display: none;
+  }
+
+  .panel.is-active {
+    display: block;
+  }
+</style>

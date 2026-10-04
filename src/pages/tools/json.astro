@@ -1,0 +1,140 @@
+---
+/**
+ * 工具：JSON 格式化 / 压缩 / 校验
+ */
+import ToolPage from '../../components/tools/ToolPage.astro';
+---
+
+<ToolPage slug="json">
+  <div class="stack">
+    <div class="row">
+      <select class="select toolbar__select" id="indent">
+        <option value="2">缩进 2 空格</option>
+        <option value="4">缩进 4 空格</option>
+        <option value="0">压缩成一行</option>
+      </select>
+      <button class="btn btn--primary" id="run" type="button">处理</button>
+      <button class="btn" id="copy" type="button">复制结果</button>
+      <button class="btn btn--ghost" id="clear" type="button">清空</button>
+    </div>
+
+    <div class="tool-grid">
+      <div class="field">
+        <label class="field__label" for="input">输入 JSON</label>
+        <textarea class="textarea" id="input" spellcheck="false" placeholder='{"name": "青苺ちゃん", "tags": ["blog", "astro"]}'></textarea>
+        <span class="small dim" id="input-stat">　</span>
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="output">处理结果</label>
+        <textarea class="textarea" id="output" spellcheck="false" readonly placeholder="结果会出现在这里"></textarea>
+        <span class="small dim" id="output-stat">　</span>
+      </div>
+    </div>
+
+    <div class="msg" id="msg" hidden></div>
+  </div>
+</ToolPage>
+
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLTextAreaElement | HTMLSelectElement | HTMLElement;
+
+  const input = $('input') as HTMLTextAreaElement;
+  const output = $('output') as HTMLTextAreaElement;
+  const indentSelect = $('indent') as HTMLSelectElement;
+  const msgBox = $('msg') as HTMLElement;
+  const inputStat = $('input-stat') as HTMLElement;
+  const outputStat = $('output-stat') as HTMLElement;
+
+  let msgTimer: number | undefined;
+
+  function showMessage(text: string, kind: 'ok' | 'err') {
+    msgBox.textContent = text;
+    msgBox.className = `msg msg--${kind}`;
+    msgBox.hidden = false;
+    window.clearTimeout(msgTimer);
+    if (kind === 'ok') {
+      msgTimer = window.setTimeout(() => {
+        msgBox.hidden = true;
+      }, 4000);
+    }
+  }
+
+  /** 统计行数与字符数 */
+  function stat(text: string) {
+    if (!text) return '　';
+    const lines = text.split('\n').length;
+    return `${lines} 行 · ${text.length} 字符`;
+  }
+
+  function run() {
+    const raw = input.value.trim();
+    if (!raw) {
+      output.value = '';
+      showMessage('请先粘贴一段 JSON', 'err');
+      return;
+    }
+
+    try {
+      const parsed = JSON.parse(raw);
+      const indent = Number(indentSelect.value);
+      output.value = indent === 0 ? JSON.stringify(parsed) : JSON.stringify(parsed, null, indent);
+      const saved = raw.length - output.value.length;
+      showMessage(
+        indent === 0
+          ? `✓ JSON 合法，压缩后省下 ${saved} 个字符`
+          : '✓ JSON 合法，已格式化',
+        'ok',
+      );
+    } catch (error) {
+      output.value = '';
+      showMessage(`✗ ${(error as Error).message}`, 'err');
+    }
+
+    inputStat.textContent = stat(input.value);
+    outputStat.textContent = stat(output.value);
+  }
+
+  async function copyResult() {
+    if (!output.value) {
+      showMessage('还没有可以复制的结果', 'err');
+      return;
+    }
+    try {
+      await navigator.clipboard.writeText(output.value);
+      showMessage('已复制 ✓', 'ok');
+    } catch {
+      output.select();
+      showMessage('自动复制被浏览器拦住了，已帮你全选，按 Ctrl+C 复制', 'err');
+    }
+  }
+
+  input.addEventListener('input', () => {
+    inputStat.textContent = stat(input.value);
+  });
+
+  $('run').addEventListener('click', run);
+  $('copy').addEventListener('click', copyResult);
+  $('clear').addEventListener('click', () => {
+    input.value = '';
+    output.value = '';
+    msgBox.hidden = true;
+    inputStat.textContent = stat('');
+    outputStat.textContent = stat('');
+    input.focus();
+  });
+
+  // Ctrl/Cmd + Enter 快捷处理
+  input.addEventListener('keydown', (event) => {
+    if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') {
+      event.preventDefault();
+      run();
+    }
+  });
+</script>
+
+<style>
+  .toolbar__select {
+    max-width: 11rem;
+  }
+</style>

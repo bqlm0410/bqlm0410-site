@@ -1,0 +1,275 @@
+---
+/**
+ * 站内搜索页（Pagefind 全文搜索）
+ * ============================================================================
+ * 为什么是 Pagefind？
+ * 它在【构建之后】扫描 dist/ 静态 HTML 建立索引，输出到 dist/pagefind/，
+ * 浏览器直接下载分片索引做检索——纯静态、零后端、零费用，也不需要 API Key。
+ *
+ * ⚠️ 重要限制：索引和 UI 文件（/pagefind/pagefind-ui.js）只有构建 + 建立索引之后才有。
+ *    所以：
+ *      - `npm run dev` 开发模式下搜索【不可用】（页面会显示友好提示，不会报错刷屏）；
+ *      - 要在本地试搜索，得先 `npm run build`，再 `npm run preview`。
+ *
+ * ⚠️ 还需要在 package.json 的 build 脚本里补上 Pagefind 这一步，否则永远不会生成索引：
+ *      "build": "astro build && pagefind --site dist"
+ *    （reason：astro build 先把页面产出到 dist/，pagefind 才能扫 dist/ 建索引；
+ *      `--site dist` 告诉它去哪儿扫，索引会自动写回 dist/pagefind/，
+ *      部署时和页面一起发布即可。）
+ *
+ * 参考：https://pagefind.app
+ * ============================================================================
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+---
+
+<BaseLayout title="站内搜索" description="搜索青苺ちゃん的小窝里的博客文章、项目与工具页。">
+  <!--
+    data-pagefind-ignore：整块主要内容都不进索引，
+    否则搜索结果里会出现「站内搜索」这个页面自己。
+  -->
+  <div data-pagefind-ignore>
+    <PageHeader title="站内搜索" description="搜索博客文章、项目、工具页">
+      <p class="muted small search-note">
+        全文搜索由 <a href="https://pagefind.app" target="_blank" rel="noopener">Pagefind</a>
+        提供，索引在构建时生成：纯静态、无后端、不做任何追踪。
+      </p>
+    </PageHeader>
+
+    <section class="section">
+      <!-- Pagefind 官方 UI（构建后才存在的两个文件；缺失时下面的脚本会走降级） -->
+      <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+      <script src="/pagefind/pagefind-ui.js" is:inline></script>
+
+      <!-- Pagefind UI 会把搜索框和结果都渲染进这个容器 -->
+      <div id="search" class="search-box"></div>
+
+      <!-- 索引还没生成时的友好提示（默认隐藏，脚本检测到加载失败才显示） -->
+      <div id="search-empty" class="empty-state search-empty" hidden>
+        <p class="search-empty__title">搜索索引尚未生成</p>
+        <p class="small search-empty__desc">
+          索引要在构建时生成。请先在项目根目录运行 <code class="mono">npm run build</code>，
+          再用 <code class="mono">npm run preview</code> 打开站点，搜索就能用了。
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="row">
+        <a class="btn" href="/">返回首页</a>
+        <a class="btn btn--ghost" href="/blog">先去逛逛博客 →</a>
+      </div>
+    </section>
+  </div>
+
+  <script is:inline>
+    (function () {
+      var holder = document.getElementById('search');
+      var empty = document.getElementById('search-empty');
+
+      // 安静降级：清掉可能残留的半截 UI，显示提示，不抛异常
+      function showFallback() {
+        if (holder) {
+          holder.innerHTML = '';
+          holder.hidden = true;
+        }
+        if (empty) {
+          empty.hidden = false;
+        }
+      }
+
+      // /pagefind/pagefind-ui.js 只在构建后存在。
+      // 它是同步脚本，加载失败（开发模式 404）时 window.PagefindUI 就是 undefined。
+      if (typeof window.PagefindUI !== 'function') {
+        showFallback();
+        return;
+      }
+
+      try {
+        new window.PagefindUI({
+          element: '#search',
+          showSubResults: true,
+          showImages: false,
+          translations: {
+            placeholder: '搜索文章…',
+            clear_search: '清除',
+            load_more: '加载更多结果',
+            search_label: '搜索本站内容',
+            filters_label: '筛选',
+            zero_results: '没有找到与「[SEARCH_TERM]」相关的内容',
+            many_results: '找到 [COUNT] 条与「[SEARCH_TERM]」相关的结果',
+            one_result: '找到 [COUNT] 条与「[SEARCH_TERM]」相关的结果',
+            total_zero_results: '没有结果',
+            total_one_result: '[COUNT] 条结果',
+            total_many_results: '[COUNT] 条结果',
+            alt_search: '没有「[SEARCH_TERM]」的结果，改为显示「[DIFFERENT_TERM]」的结果',
+            search_suggestion: '没有「[SEARCH_TERM]」的结果，试试下面这些关键词：',
+            searching: '正在搜索「[SEARCH_TERM]」…',
+            results_label: '搜索结果',
+            keyboard_navigate: '切换',
+            keyboard_select: '选择',
+            keyboard_clear: '清除',
+            keyboard_close: '关闭',
+            keyboard_search: '搜索',
+            error_search: '搜索失败，请稍后重试',
+            filter_selected_one: '已选 [COUNT] 项',
+            filter_selected_many: '已选 [COUNT] 项',
+            input_hint: '输入关键词后会立刻显示结果',
+            loading: '加载中'
+          }
+        });
+      } catch (err) {
+        // 比如 UI 文件在但索引缺失，兜住异常，页面不至于白屏
+        showFallback();
+      }
+    })();
+  </script>
+</BaseLayout>
+
+<style>
+  .search-note {
+    margin-top: 0.6rem;
+  }
+
+  /* 搜索框铺满整行，并把 Pagefind UI 的配色接到全站设计变量上 → 自动适配深色模式 */
+  .search-box {
+    width: 100%;
+    /* Pagefind UI 的官方 CSS 变量 */
+    --pagefind-ui-primary: var(--accent);
+    --pagefind-ui-text: var(--text);
+    --pagefind-ui-background: var(--surface);
+    --pagefind-ui-border: var(--border);
+    --pagefind-ui-tag: var(--bg-soft);
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: var(--radius);
+    --pagefind-ui-image-border-radius: var(--radius-sm);
+    --pagefind-ui-font: var(--font-sans);
+  }
+
+  /* ---------- 输入框 ---------- */
+  .search-box :global(.pagefind-ui__search-input) {
+    width: 100%;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    background: var(--surface);
+    color: var(--text);
+  }
+
+  .search-box :global(.pagefind-ui__search-input::placeholder) {
+    color: var(--text-mute);
+  }
+
+  .search-box :global(.pagefind-ui__search-clear) {
+    font-size: 0.85rem;
+    background: var(--bg-soft);
+    color: var(--accent-text);
+  }
+
+  /* ---------- 结果：沿用 .card 的观感 ---------- */
+  .search-box :global(.pagefind-ui__results) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin-top: 1.25rem;
+  }
+
+  .search-box :global(.pagefind-ui__result) {
+    padding: 1.15rem 1.25rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .search-box :global(.pagefind-ui__result:hover) {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    border-color: var(--border-strong);
+  }
+
+  .search-box :global(.pagefind-ui__result-inner) {
+    margin-top: 0;
+  }
+
+  .search-box :global(.pagefind-ui__result-title) {
+    font-size: 1.02rem;
+    font-weight: 620;
+  }
+
+  .search-box :global(.pagefind-ui__result-link) {
+    color: var(--text);
+  }
+
+  .search-box :global(.pagefind-ui__result-link:hover) {
+    color: var(--accent-text);
+  }
+
+  .search-box :global(.pagefind-ui__result-excerpt) {
+    margin-top: 0.35rem;
+    color: var(--text-soft);
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  .search-box :global(.pagefind-ui__result mark) {
+    padding: 0.05em 0.2em;
+    border-radius: 4px;
+    background: var(--accent-soft);
+    color: var(--accent-text);
+  }
+
+  .search-box :global(.pagefind-ui__result-nested) {
+    padding-left: 0.75rem;
+    border-left: 2px solid var(--border);
+  }
+
+  /* ---------- 统计文字 / 按钮 / 提示 ---------- */
+  .search-box :global(.pagefind-ui__message) {
+    padding: 0.5rem 0;
+    color: var(--text-soft);
+    font-size: 0.9rem;
+  }
+
+  .search-box :global(.pagefind-ui__button) {
+    margin-top: 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 550;
+    background: var(--surface);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-pill);
+    color: var(--text);
+  }
+
+  .search-box :global(.pagefind-ui__button:hover) {
+    border-color: var(--accent);
+    color: var(--accent-text);
+  }
+
+  /* ---------- 降级提示 ---------- */
+  .search-empty__title {
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    font-weight: 620;
+    color: var(--text);
+  }
+
+  .search-empty__desc {
+    max-width: 52ch;
+    margin-inline: auto;
+    color: var(--text-mute);
+  }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width: 720px) {
+    /* 16px 以上可以避免 iOS 聚焦输入框时自动放大页面 */
+    .search-box :global(.pagefind-ui__search-input) {
+      font-size: 16px;
+    }
+
+    .search-box :global(.pagefind-ui__result) {
+      padding: 1rem;
+    }
+  }
+</style>

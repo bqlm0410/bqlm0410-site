@@ -1,0 +1,205 @@
+---
+/**
+ * 工具：Base64 编解码（正确处理中文 / emoji）
+ *
+ * 关键点：btoa() 只接受 Latin-1 字符，直接 btoa('中文') 会抛
+ * InvalidCharacterError。必须先经 TextEncoder 转成 UTF-8 字节，
+ * 再逐字节转成字符串喂给 btoa。解码是逆过程。
+ */
+import ToolPage from '../../components/tools/ToolPage.astro';
+---
+
+<ToolPage slug="base64">
+  <div class="stack">
+    <div class="row">
+      <button class="btn btn--primary" id="encode" type="button">编码 →</button>
+      <button class="btn btn--primary" id="decode" type="button">← 解码</button>
+      <label class="switch">
+        <input type="checkbox" id="urlsafe" />
+        <span>使用 URL 安全变体（<code>+</code>→<code>-</code>，<code>/</code>→<code>_</code>，去掉 <code>=</code>）</span>
+      </label>
+      <button class="btn" id="swap" type="button">↑↓ 对调</button>
+      <button class="btn btn--ghost" id="clear" type="button">清空</button>
+    </div>
+
+    <div class="tool-grid">
+      <div class="field">
+        <label class="field__label" for="plain">原文</label>
+        <textarea class="textarea" id="plain" spellcheck="false" placeholder="在这里输入要编码的文字，中文、emoji 都支持 🍓"></textarea>
+        <span class="small dim" id="plain-stat">　</span>
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="encoded">Base64</label>
+        <textarea class="textarea" id="encoded" spellcheck="false" placeholder="在这里粘贴 Base64 再点「解码」"></textarea>
+        <span class="small dim" id="encoded-stat">　</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <button class="btn" id="copy-result" type="button">复制结果</button>
+    </div>
+
+    <div class="msg" id="msg" hidden></div>
+  </div>
+</ToolPage>
+
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLElement;
+  const plain = $('plain') as HTMLTextAreaElement;
+  const encoded = $('encoded') as HTMLTextAreaElement;
+  const urlSafeBox = $('urlsafe') as HTMLInputElement;
+  const msgBox = $('msg');
+
+  let msgTimer: number | undefined;
+  /** 记录最近一次操作的方向，供「复制结果」使用 */
+  let lastResult: 'encoded' | 'plain' | null = null;
+
+  function notify(text: string, kind: 'ok' | 'err') {
+    msgBox.textContent = text;
+    msgBox.className = `msg msg--${kind}`;
+    msgBox.hidden = false;
+    window.clearTimeout(msgTimer);
+    msgTimer = window.setTimeout(() => (msgBox.hidden = true), 4000);
+  }
+
+  const stat = (text: string) => (text ? `${text.length} 字符` : '　');
+
+  /** 文本 → Base64（UTF-8 安全） */
+  function encodeBase64(text: string, urlSafe: boolean) {
+    const bytes = new TextEncoder().encode(text);
+    let binary = '';
+    bytes.forEach((byte) => {
+      binary += String.fromCharCode(byte);
+    });
+    let result = btoa(binary);
+    if (urlSafe) {
+      result = result.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+    }
+    return result;
+  }
+
+  /** Base64 → 文本（UTF-8 安全，容忍 URL 安全变体和缺失的 padding） */
+  function decodeBase64(text: string) {
+    let normalized = text.trim().replace(/\s+/g, '').replace(/-/g, '+').replace(/_/g, '/');
+    const remainder = normalized.length % 4;
+    if (remainder === 2) normalized += '==';
+    else if (remainder === 3) normalized += '=';
+    else if (remainder === 1) throw new Error('Base64 长度不合法，可能少了一部分字符');
+
+    const binary = atob(normalized);
+    const bytes = Uint8Array.from(binary, (char) => char.charCodeAt(0));
+    // fatal: true 让非法 UTF-8 直接报错，而不是悄悄替换成乱码
+    return new TextDecoder('utf-8', { fatal: true }).decode(bytes);
+  }
+
+  function doEncode() {
+    if (!plain.value) {
+      notify('请先在左边输入要编码的文字', 'err');
+      return;
+    }
+    try {
+      encoded.value = encodeBase64(plain.value, urlSafeBox.checked);
+      lastResult = 'encoded';
+      notify('编码完成 ✓', 'ok');
+    } catch (error) {
+      notify(`✗ 编码失败：${(error as Error).message}`, 'err');
+    }
+    updateStats();
+  }
+
+  function doDecode() {
+    if (!encoded.value.trim()) {
+      notify('请先在右边粘贴 Base64 内容', 'err');
+      return;
+    }
+    try {
+      plain.value = decodeBase64(encoded.value);
+      lastResult = 'plain';
+      notify('解码完成 ✓', 'ok');
+    } catch (error) {
+      plain.value = '';
+      notify(`✗ 解码失败：${(error as Error).message}`, 'err');
+    }
+    updateStats();
+  }
+
+  function updateStats() {
+    $('plain-stat').textContent = stat(plain.value);
+    $('encoded-stat').textContent = stat(encoded.value);
+  }
+
+  async function copyResult() {
+    const target = lastResult === 'plain' ? plain : lastResult === 'encoded' ? encoded : null;
+    if (!target || !target.value) {
+      notify('还没有可以复制的结果，先点一次编码或解码', 'err');
+      return;
+    }
+    try {
+      await navigator.clipboard.writeText(target.value);
+      notify('已复制 ✓', 'ok');
+    } catch {
+      target.select();
+      notify('自动复制被拦住了，已帮你全选，按 Ctrl+C 复制', 'err');
+    }
+  }
+
+  $('encode').addEventListener('click', doEncode);
+  $('decode').addEventListener('click', doDecode);
+  $('copy-result').addEventListener('click', copyResult);
+
+  $('swap').addEventListener('click', () => {
+    const temp = plain.value;
+    plain.value = encoded.value;
+    encoded.value = temp;
+    lastResult = null;
+    updateStats();
+    notify('已对调上下两栏内容', 'ok');
+  });
+
+  $('clear').addEventListener('click', () => {
+    plain.value = '';
+    encoded.value = '';
+    lastResult = null;
+    msgBox.hidden = true;
+    updateStats();
+    plain.focus();
+  });
+
+  plain.addEventListener('input', updateStats);
+  encoded.addEventListener('input', updateStats);
+
+  // 勾选 URL 安全变体时，如果已经编码过就立刻重算
+  urlSafeBox.addEventListener('change', () => {
+    if (lastResult === 'encoded' && plain.value) doEncode();
+  });
+
+  updateStats();
+</script>
+
+<style>
+  .switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.83rem;
+    color: var(--text-soft);
+    cursor: pointer;
+  }
+
+  .switch input {
+    accent-color: var(--accent);
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  .switch code {
+    font-family: var(--font-mono);
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0 0.25em;
+    font-size: 0.9em;
+  }
+</style>

@@ -1,0 +1,98 @@
+---
+/**
+ * 博客文章卡片
+ *
+ * Props:
+ *   post —— blog 集合里的一条 entry（CollectionEntry<'blog'>）
+ *
+ * 整张卡片就是一个链接，点哪儿都能进文章。
+ * 样式全部复用 global.css 里的 .card / .card__title / .card__desc / .card__meta / .tag，
+ * 这里只补了几行排版细节。
+ */
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+const { title, description, pubDate, tags, cover } = post.data;
+
+/**
+ * 统一日期格式：输出 2026-10-04 这种写法。
+ * 故意用 UTC 取值，不用 toLocaleDateString()——构建机时区不稳定，
+ * 而 frontmatter 里的日期会被解析成 UTC 零点，用 UTC 读才不会差一天。
+ */
+function formatDate(value: Date): string {
+  const y = value.getUTCFullYear();
+  const m = String(value.getUTCMonth() + 1).padStart(2, '0');
+  const d = String(value.getUTCDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+}
+
+/** 预计阅读时长：中文按 350 字/分钟，英文按 200 词/分钟，代码块不算字数 */
+function readingMinutes(body: string): number {
+  const text = body.replace(/```[\s\S]*?```/g, ' ').replace(/`[^`]*`/g, ' ');
+  const cjk = (text.match(/[\u4e00-\u9fa5]/g) ?? []).length;
+  const words = (text.replace(/[\u4e00-\u9fa5]/g, ' ').match(/[A-Za-z0-9]+/g) ?? []).length;
+  return Math.max(1, Math.round(cjk / 350 + words / 200));
+}
+
+const dateText = formatDate(pubDate);
+const minutes = readingMinutes(post.body ?? '');
+const url = `/blog/${post.id}/`;
+---
+
+<a class="card post-card" href={url}>
+  <!-- 封面是可选项：frontmatter 里给了 cover 才渲染，绝不用外部占位图服务 -->
+  {
+    cover && <img class="post-card__cover" src={cover} alt="" loading="lazy" decoding="async" />
+  }
+  <h3 class="card__title post-card__title">{title}</h3>
+  {description && <p class="card__desc">{description}</p>}
+  <div class="card__meta">
+    <time class="mono" datetime={dateText}>{dateText}</time>
+    <span class="dim">约 {minutes} 分钟</span>
+    {
+      tags.length > 0 && (
+        <span class="tag-list post-card__tags">
+          {tags.map((tag) => (
+            <span class="tag">{tag}</span>
+          ))}
+        </span>
+      )
+    }
+  </div>
+</a>
+
+<style>
+  .post-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-card__cover {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    margin-bottom: 0.8rem;
+    background: linear-gradient(135deg, var(--accent-soft), var(--bg-soft));
+  }
+
+  .post-card__title {
+    /* 长标题 / 长英文单词在手机上不许撑破卡片 */
+    overflow-wrap: anywhere;
+  }
+
+  .post-card__tags {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  .post-card .card__meta {
+    margin-top: auto;
+    padding-top: 0.7rem;
+  }
+</style>

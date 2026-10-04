@@ -1,0 +1,194 @@
+---
+/**
+ * GitHub 项目卡片
+ *
+ * 中文标题 / 摘要优先，没有就回退显示英文原文。
+ * 注意：卡片刻意**不整体包 <a>**，因为内部有多个链接（项目页、作者页），
+ * 整体包 <a> 会产生嵌套链接的非法 HTML。
+ */
+import type { RepoSnapshot } from '../lib/snapshots';
+
+interface Props {
+  repo: RepoSnapshot;
+}
+
+const { repo } = Astro.props;
+
+/** 千分位（不用 toLocaleString，避免构建环境差异） */
+function fmtNum(n: number | null | undefined) {
+  if (n === null || n === undefined) return '—';
+  return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+const rankChange = repo.rankChange;
+const medal = repo.rank === 1 ? 'gold' : repo.rank === 2 ? 'silver' : repo.rank === 3 ? 'bronze' : '';
+---
+
+<article class="card repo">
+  <div class="repo__head">
+    <span class:list={['repo__rank', medal && `repo__rank--${medal}`]}>{repo.rank}</span>
+    <a class="repo__name mono" href={repo.url} target="_blank" rel="noopener">{repo.fullName}</a>
+
+    {repo.isNew && <span class="tag tag--new">NEW</span>}
+
+    {
+      !repo.isNew && rankChange !== null && rankChange !== 0 && (
+        <span class:list={['tag', rankChange > 0 ? 'repo__up' : 'repo__down']}>
+          {rankChange > 0 ? `▲${rankChange}` : `▼${Math.abs(rankChange)}`}
+        </span>
+      )
+    }
+  </div>
+
+  <p class="repo__desc">{repo.titleZh || repo.description || '暂无简介'}</p>
+  {repo.summaryZh && <p class="repo__summary">{repo.summaryZh}</p>}
+
+  <div class="repo__meta">
+    {
+      repo.language && (
+        <span class="repo__lang">
+          <span class="lang-dot" style={`background:${repo.languageColor || 'var(--text-mute)'}`} />
+          {repo.language}
+        </span>
+      )
+    }
+    <span title="Star 总数">⭐ {fmtNum(repo.stars)}</span>
+    {repo.forks !== null && <span title="Fork 数">🍴 {fmtNum(repo.forks)}</span>}
+
+    {repo.starsToday ? <span class="tag tag--accent">+{fmtNum(repo.starsToday)} today</span> : null}
+    {
+      !repo.starsToday && repo.starsGained !== null && repo.starsGained > 0 ? (
+        <span class="tag tag--accent">+{fmtNum(repo.starsGained)}</span>
+      ) : null
+    }
+  </div>
+
+  {
+    repo.topics && repo.topics.length > 0 && (
+      <div class="tag-list repo__topics">
+        {repo.topics.slice(0, 4).map((t) => (
+          <span class="tag">{t}</span>
+        ))}
+      </div>
+    )
+  }
+</article>
+
+<style>
+  .repo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .repo__head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+  }
+
+  .repo__rank {
+    display: inline-grid;
+    place-items: center;
+    min-width: 1.7em;
+    height: 1.7em;
+    padding: 0 0.35em;
+    border-radius: var(--radius-sm);
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    color: var(--text-mute);
+    font-size: 0.78rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .repo__rank--gold {
+    background: #fdf3d3;
+    border-color: #e8c85c;
+    color: #8a6d13;
+  }
+
+  .repo__rank--silver {
+    background: #eef1f3;
+    border-color: #c3ccd2;
+    color: #5c6a73;
+  }
+
+  .repo__rank--bronze {
+    background: #f8ece1;
+    border-color: #d9a97c;
+    color: #8a5a2b;
+  }
+
+  :root[data-theme='dark'] .repo__rank--gold {
+    background: #3a3113;
+    border-color: #7d6a1f;
+    color: #f0d98a;
+  }
+
+  :root[data-theme='dark'] .repo__rank--silver {
+    background: #2a2f33;
+    border-color: #58636b;
+    color: #c7d0d6;
+  }
+
+  :root[data-theme='dark'] .repo__rank--bronze {
+    background: #35271a;
+    border-color: #7a5533;
+    color: #e0b183;
+  }
+
+  .repo__name {
+    font-size: 0.94rem;
+    font-weight: 620;
+    word-break: break-all;
+  }
+
+  .repo__up {
+    background: var(--accent-soft);
+    border-color: transparent;
+    color: var(--accent-text);
+  }
+
+  .repo__down {
+    background: color-mix(in srgb, var(--danger) 12%, transparent);
+    border-color: transparent;
+    color: var(--danger);
+  }
+
+  .repo__desc {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text);
+  }
+
+  .repo__summary {
+    margin: 0;
+    font-size: 0.84rem;
+    line-height: 1.6;
+    color: var(--text-soft);
+  }
+
+  .repo__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.55rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    font-size: 0.79rem;
+    color: var(--text-mute);
+  }
+
+  .repo__lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .repo__topics {
+    margin-top: 0.2rem;
+  }
+</style>

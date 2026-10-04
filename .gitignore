@@ -1,0 +1,27 @@
+# 依赖
+node_modules/
+
+# 构建产物
+dist/
+.astro/
+
+# npm 缓存（本项目把缓存放在工作目录里，避免写入受限的系统目录）
+.npm-cache/
+
+# 临时验证目录
+.verify*/
+
+# 环境变量（API Key 等，绝对不要提交）
+.env
+.env.local
+.env.*.local
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
+npm-debug.log*

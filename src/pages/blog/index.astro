@@ -1,0 +1,238 @@
+---
+/**
+ * 博客列表页
+ *
+ * - 只取非草稿文章，按 pubDate 倒序
+ * - 按年份分组展示
+ * - 顶部标签云：链接指向 /blog?tag=xxx，由页面底部一小段内联脚本就地筛选
+ *   （站点是纯静态的，没有服务端，筛选只能在浏览器里做；
+ *    没开 JS 时会退化成「显示全部文章」，功能不会坏）
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import PostCard from '../../components/PostCard.astro';
+import { SITE } from '../../consts';
+
+const posts = (await getCollection('blog'))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+/** 统一日期格式：2026-10-04（按 UTC 取值，避免构建机时区不同导致差一天） */
+function formatDate(value: Date): string {
+  const y = value.getUTCFullYear();
+  const m = String(value.getUTCMonth() + 1).padStart(2, '0');
+  const d = String(value.getUTCDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+}
+
+/** 按年份分组，因为上面已经倒序排过，年份天然是从新到旧 */
+const groups: { year: number; posts: typeof posts }[] = [];
+for (const post of posts) {
+  const year = post.data.pubDate.getUTCFullYear();
+  const last = groups[groups.length - 1];
+  if (last && last.year === year) last.posts.push(post);
+  else groups.push({ year, posts: [post] });
+}
+
+/** 标签云：顺手统计每个标签下的文章数 */
+const tagCount = new Map<string, number>();
+for (const post of posts) {
+  for (const tag of post.data.tags) {
+    tagCount.set(tag, (tagCount.get(tag) ?? 0) + 1);
+  }
+}
+const tags = [...tagCount.entries()]
+  .map(([name, count]) => ({ name, count }))
+  .sort((a, b) => b.count - a.count || (a.name < b.name ? -1 : 1));
+
+const span =
+  posts.length > 0
+    ? `${formatDate(posts[posts.length - 1].data.pubDate)} ~ ${formatDate(posts[0].data.pubDate)}`
+    : '';
+---
+
+<BaseLayout
+  title="博客"
+  description={`${SITE.title}的博客：技术笔记、踩坑记录和一些随笔，目前共 ${posts.length} 篇文章。`}
+>
+  <PageHeader title="博客" description="技术笔记、踩坑记录，还有一些没什么用的感想。想到什么写什么，不追更新频率。">
+    <div class="row blog-toolbar">
+      <span class="small dim">
+        {posts.length > 0 ? `共 ${posts.length} 篇文章 · ${tags.length} 个标签 · ${span}` : '还没有文章'}
+      </span>
+      <span class="row blog-toolbar__actions">
+        <a class="btn" href="/archive">按时间归档</a>
+        <a class="btn" href="/rss.xml">RSS 订阅</a>
+      </span>
+    </div>
+  </PageHeader>
+
+  {
+    posts.length === 0 ? (
+      <div class="empty-state">
+        <p>这里还空空的，一篇文章都还没有。</p>
+        <p class="small" style="margin-top:.5rem">
+          <code>src/content/blog/</code> 下丢一个 .md 文件，标题和日期写进 frontmatter，它就会出现在这里。
+        </p>
+      </div>
+    ) : (
+      <>
+        <!-- ========== 标签云 ========== -->
+        <section class="section tag-cloud" aria-label="按标签筛选">
+          <h2 class="section-title">
+            <span>按标签挑选</span>
+            <span class="small dim">点一下就能筛</span>
+          </h2>
+          <div class="tag-list">
+            <a class="tag tag--accent" href="/blog" data-tag-link="">
+              全部<span class="tag__count mono">{posts.length}</span>
+            </a>
+            {tags.map((tag) => (
+              <a
+                class="tag"
+                href={`/blog?tag=${encodeURIComponent(tag.name)}`}
+                data-tag-link={tag.name}
+                aria-current="false"
+              >
+                {tag.name}
+                <span class="tag__count mono">{tag.count}</span>
+              </a>
+            ))}
+          </div>
+          <p class="small dim blog-filter-hint" data-filter-hint hidden>
+            正在筛选标签：<strong data-active-tag /> ·{' '}
+            <a href="/blog">清除筛选</a>
+          </p>
+        </section>
+
+        <!-- ========== 按年份分组的文章列表 ========== -->
+        {groups.map((group) => (
+          <section class="section blog-year" data-year-group={group.year}>
+            <h2 class="section-title">
+              <span>{group.year} 年</span>
+              <span class="small dim mono">{group.posts.length} 篇</span>
+            </h2>
+            <div class="grid">
+              {group.posts.map((post) => (
+                <div class="blog-item" data-post data-tags={JSON.stringify(post.data.tags)}>
+                  <PostCard post={post} />
+                </div>
+              ))}
+            </div>
+          </section>
+        ))}
+
+        <!-- 筛选之后一篇都不剩时的兜底（默认隐藏，脚本会打开） -->
+        <div class="empty-state blog-tag-empty" data-tag-empty hidden>
+          <p>
+            标签「<strong data-active-tag />」下暂时没有文章。
+          </p>
+          <p class="small" style="margin-top:.5rem">
+            <a href="/blog">看全部文章</a>
+          </p>
+        </div>
+      </>
+    )
+  }
+</BaseLayout>
+
+<script is:inline>
+  // 标签筛选：读取地址栏里的 ?tag=xxx，在前端就地显示 / 隐藏卡片。
+  // 静态站构建时不知道访问者想看哪个标签，所以这一步只能放在浏览器里做。
+  (() => {
+    const items = Array.from(document.querySelectorAll('[data-post]'));
+    if (items.length === 0) return;
+
+    const active = (new URLSearchParams(location.search).get('tag') || '').trim();
+    const lower = (s) => s.toLowerCase();
+    const want = lower(active);
+
+    let shown = 0;
+    for (const item of items) {
+      let tags = [];
+      try {
+        tags = JSON.parse(item.getAttribute('data-tags') || '[]');
+      } catch {
+        tags = [];
+      }
+      const hit = !active || tags.some((tag) => lower(tag) === want);
+      item.hidden = !hit;
+      if (hit) shown += 1;
+    }
+
+    // 一整年都被筛掉的话，连年份小标题一起收起来
+    for (const group of document.querySelectorAll('[data-year-group]')) {
+      group.hidden = group.querySelectorAll('[data-post]:not([hidden])').length === 0;
+    }
+
+    // 高亮当前标签，「全部」在没带参数时是默认选中项
+    for (const link of document.querySelectorAll('[data-tag-link]')) {
+      const isActive = (link.getAttribute('data-tag-link') || '') === active;
+      link.classList.toggle('tag--accent', isActive);
+      link.setAttribute('aria-current', isActive ? 'true' : 'false');
+    }
+
+    for (const el of document.querySelectorAll('[data-active-tag]')) el.textContent = active;
+
+    const hint = document.querySelector('[data-filter-hint]');
+    if (hint) hint.hidden = !active;
+
+    const emptyBox = document.querySelector('[data-tag-empty]');
+    if (emptyBox) emptyBox.hidden = shown > 0;
+  })();
+</script>
+
+<style>
+  .blog-toolbar {
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+  .blog-toolbar__actions {
+    gap: 0.5rem;
+  }
+
+  .tag-cloud .tag {
+    cursor: pointer;
+  }
+
+  .tag__count {
+    font-size: 0.82em;
+    opacity: 0.65;
+    margin-left: 0.15rem;
+  }
+
+  .blog-filter-hint {
+    margin-top: 0.75rem;
+  }
+
+  .blog-year {
+    margin-bottom: 2.5rem;
+  }
+
+  .blog-item {
+    display: grid;
+  }
+
+  /* 脚本用 hidden 属性切换显隐；这里的 display 是作者样式，会盖掉浏览器默认的 [hidden]，
+     所以必须补一条显式规则，否则筛选会失效 */
+  .blog-item[hidden],
+  .blog-year[hidden],
+  .blog-filter-hint[hidden],
+  .blog-tag-empty[hidden] {
+    display: none;
+  }
+
+  .blog-tag-empty {
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 720px) {
+    .blog-toolbar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.6rem;
+    }
+  }
+</style>

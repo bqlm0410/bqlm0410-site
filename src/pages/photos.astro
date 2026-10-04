@@ -1,0 +1,188 @@
+---
+/**
+ * 相册 / 照片墙 —— /photos
+ *
+ * 结构：页头 → 标签筛选 → 照片网格（PhotoGrid，自带 <dialog> 灯箱）
+ *
+ * 加照片的方式：
+ *   1. 把图片丢进 public/photos/（建议宽度 1600px 以内，压缩过）
+ *   2. 在 src/content/photos/ 下新建一个 .md，frontmatter 写 title / src / alt / caption / date / location / tags
+ *   现在仓库里放的是 6 张 SVG 占位图，替换成同名文件即可无痛换成真照片。
+ *
+ * 排序：按拍摄日期倒序，同一天再按标题排，保证每次构建顺序一致。
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import PhotoGrid from '../components/PhotoGrid.astro';
+
+const photos = (await getCollection('photos')).sort(
+  (a, b) =>
+    b.data.date.valueOf() - a.data.date.valueOf() ||
+    (a.data.title || '').localeCompare(b.data.title || '', 'zh-Hans-CN')
+);
+
+/** 统计标签出场次数：出现得多的排前面 */
+const tagCount = new Map<string, number>();
+for (const photo of photos) {
+  for (const t of photo.data.tags) tagCount.set(t, (tagCount.get(t) ?? 0) + 1);
+}
+const tags = [...tagCount.entries()]
+  .map(([tag, count]) => ({ tag, count }))
+  .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag, 'zh-Hans-CN'));
+---
+
+<BaseLayout
+  title="相册"
+  description="青苺ちゃん的照片墙：风景、城市、花与星空，点开可放大浏览，支持键盘方向键切换。"
+>
+  <PageHeader title="相册" description="随手拍下来的画面，按时间倒序排。点任意一张可以放大看。">
+    <p class="small dim">共 {photos.length} 张 · 支持 ← → 键翻页，Esc 关闭</p>
+  </PageHeader>
+
+  <!-- ========== 标签筛选 ========== -->
+  {
+    tags.length > 0 && (
+      <div class="filters" id="photo-filters" role="group" aria-label="按标签筛选照片">
+        <button class="btn filters__btn" type="button" data-tag="" aria-pressed="true">
+          全部 <span class="filters__count">{photos.length}</span>
+        </button>
+        {tags.map(({ tag, count }) => (
+          <button class="btn filters__btn" type="button" data-tag={tag} aria-pressed="false">
+            {tag} <span class="filters__count">{count}</span>
+          </button>
+        ))}
+        <span class="filters__stat small dim" id="photo-stat" aria-live="polite">
+          显示全部 {photos.length} 张
+        </span>
+      </div>
+    )
+  }
+
+  {
+    photos.length > 0 ? (
+      <PhotoGrid photos={photos} />
+    ) : (
+      <div class="empty-state">
+        <p>相册还空着 📷</p>
+        <p class="small" style="margin-top:.4rem">
+          在 src/content/photos/ 里加一条记录，照片放进 public/photos/ 就能看到了。
+        </p>
+      </div>
+    )
+  }
+
+  <!-- 筛选后一张都不剩时显示 -->
+  <div class="empty-state" id="photo-empty" hidden>
+    <p>这个标签下暂时没有照片 🙈</p>
+    <p class="small" style="margin-top:.4rem">换个标签，或者点「全部」看所有照片。</p>
+  </div>
+</BaseLayout>
+
+<script>
+  /** 相册页的纯前端标签筛选：隐藏不匹配的照片，并同步 ?tag= 到地址栏 */
+  const filterBar = document.getElementById('photo-filters');
+  const figures = Array.from(document.querySelectorAll<HTMLElement>('[data-photo-item]'));
+  const emptyState = document.getElementById('photo-empty');
+  const stat = document.getElementById('photo-stat');
+  const buttons = filterBar
+    ? Array.from(filterBar.querySelectorAll<HTMLButtonElement>('[data-tag]'))
+    : [];
+
+  function applyFilter(tag: string, syncUrl = true) {
+    let visible = 0;
+
+    for (const figure of figures) {
+      const figureTags = (figure.dataset.tags || '')
+        .split(',')
+        .map((t) => t.trim())
+        .filter(Boolean);
+      const matched = tag === '' || figureTags.includes(tag);
+      figure.hidden = !matched;
+      if (matched) visible += 1;
+    }
+
+    if (emptyState) emptyState.hidden = visible > 0;
+    if (stat) {
+      stat.textContent =
+        tag === '' ? `显示全部 ${figures.length} 张` : `「${tag}」下 ${visible} 张`;
+    }
+
+    for (const btn of buttons) {
+      const active = (btn.dataset.tag || '') === tag;
+      btn.classList.toggle('btn--primary', active);
+      btn.setAttribute('aria-pressed', String(active));
+    }
+
+    if (syncUrl) {
+      const url = new URL(window.location.href);
+      if (tag) url.searchParams.set('tag', tag);
+      else url.searchParams.delete('tag');
+      window.history.replaceState(null, '', url);
+    }
+  }
+
+  for (const btn of buttons) {
+    btn.addEventListener('click', () => applyFilter(btn.dataset.tag || ''));
+  }
+
+  // 支持用 ?tag=xxx 直接进来
+  const known = buttons.map((btn) => btn.dataset.tag || '');
+  const wanted = new URL(window.location.href).searchParams.get('tag') || '';
+  const initial = known.includes(wanted) ? wanted : '';
+  if (figures.length > 0) applyFilter(initial, false);
+
+  // 浏览器前进 / 后退时跟着 URL 还原
+  window.addEventListener('popstate', () => {
+    const tag = new URL(window.location.href).searchParams.get('tag') || '';
+    applyFilter(known.includes(tag) ? tag : '', false);
+  });
+</script>
+
+<style>
+  /* 用 hidden 属性做筛选隐藏，!important 才能压过 PhotoGrid 里 .photo-item 的 display */
+  :global([hidden]) {
+    display: none !important;
+  }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .filters__btn {
+    padding: 0.32rem 0.85rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .filters__count {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .filters__stat {
+    margin-left: auto;
+  }
+
+  @media (max-width: 720px) {
+    .filters {
+      gap: 0.4rem;
+      margin-bottom: 1.15rem;
+    }
+
+    .filters__btn {
+      padding: 0.28rem 0.7rem;
+      font-size: 0.8rem;
+    }
+
+    .filters__stat {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+</style>

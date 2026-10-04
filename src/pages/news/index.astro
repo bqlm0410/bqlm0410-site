@@ -1,0 +1,49 @@
+---
+/**
+ * AI 资讯（最新一期）
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import NewsBoard from '../../components/NewsBoard.astro';
+import DateNav from '../../components/DateNav.astro';
+import { getLatestNews, listNewsDates, getAdjacentNewsDates } from '../../lib/snapshots';
+
+const dates = listNewsDates();
+const latest = dates[0] ?? null;
+const snapshot = getLatestNews();
+const nav = latest ? getAdjacentNewsDates(latest) : { prev: null, next: null };
+---
+
+<BaseLayout
+  title="AI 资讯"
+  description="每天自动抓取 Hacker News、arXiv、OpenAI、TechCrunch、The Verge 等来源的 AI 领域资讯，历史记录永久保留。"
+>
+  <PageHeader
+    title="AI 资讯"
+    description="每天北京时间 6:00 自动抓取 Hacker News、arXiv 与多家科技媒体的 AI 相关内容。"
+  >
+    {
+      latest && (
+        <p class="small dim" style="margin-top:.6rem">
+          数据日期：<span class="mono">{latest}</span> · 已收录 <strong>{dates.length}</strong> 天
+        </p>
+      )
+    }
+  </PageHeader>
+
+  {
+    snapshot ? (
+      <>
+        <DateNav date={snapshot.date} prev={nav.prev} next={nav.next} latest={latest} base="/news" />
+        <NewsBoard snapshot={snapshot} />
+      </>
+    ) : (
+      <div class="empty-state">
+        <p>📡 资讯数据正在准备中</p>
+        <p class="small" style="margin-top:.5rem">
+          抓取任务会在每天北京时间 6:00 自动运行。第一次跑完后，这里就会出现资讯流。
+        </p>
+      </div>
+    )
+  }
+</BaseLayout>

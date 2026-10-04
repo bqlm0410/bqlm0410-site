@@ -1,0 +1,12 @@
+# 统一用 LF 换行，避免 Windows 上的 CRLF 跑到 Linux 构建机
+* text=auto eol=lf
+
+# 二进制文件不要做换行转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary

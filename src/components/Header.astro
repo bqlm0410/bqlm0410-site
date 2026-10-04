@@ -1,0 +1,52 @@
+---
+import { NAV, SITE } from '../consts';
+
+const current = Astro.url.pathname;
+
+/** 判断当前导航项是否高亮 */
+function isActive(href: string) {
+  if (href === '/') return current === '/';
+  return current === href || current.startsWith(`${href}/`);
+}
+---
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="site-logo" href="/">{SITE.title}</a>
+
+    <nav class="site-nav" aria-label="主导航">
+      {
+        NAV.map((item) => (
+          <a
+            href={item.href}
+            class:list={['site-nav__link', { 'is-active': isActive(item.href) }]}
+            aria-current={isActive(item.href) ? 'page' : undefined}
+          >
+            {item.text}
+          </a>
+        ))
+      }
+    </nav>
+
+    <div class="site-header__actions">
+      <a class="icon-btn" href="/search" title="站内搜索" aria-label="站内搜索">🔍</a>
+      <button class="icon-btn" id="theme-toggle" type="button" title="切换深色 / 浅色模式" aria-label="切换深色 / 浅色模式">
+        <span class="theme-icon theme-icon--moon">🌙</span>
+        <span class="theme-icon theme-icon--sun">☀️</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<script is:inline>
+  document.getElementById('theme-toggle')?.addEventListener('click', () => {
+    const root = document.documentElement;
+    const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    root.dataset.theme = next;
+    try {
+      localStorage.setItem('theme', next);
+    } catch {
+      /* 隐私模式下 localStorage 可能不可用，忽略即可 */
+    }
+  });
+</script>

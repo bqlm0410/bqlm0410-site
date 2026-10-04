@@ -1,0 +1,494 @@
+---
+/**
+ * 照片墙网格 + 原生 <dialog> 灯箱
+ *
+ * Props:
+ *   photos  photos 集合条目数组（排序由页面决定）
+ *
+ * 灯箱是纯原生实现，没有引入任何库：
+ *   - <dialog>.showModal()：自带焦点陷阱、Esc 关闭、遮罩层
+ *   - 点遮罩关闭：判断 click 的 target 是不是 dialog 本身
+ *   - ← / → 切换上一张 / 下一张，循环；手机上还支持左右滑动
+ *   - 只把「当前可见」的照片算进切换序列，所以标签筛选后翻页不会翻到被隐藏的图
+ *
+ * 注意：本组件的 id（photo-wall / photo-lightbox）按「一个页面只放一个照片墙」设计。
+ */
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  photos: CollectionEntry<'photos'>[];
+}
+
+const { photos } = Astro.props;
+
+/** 日期格式化：按 UTC 取值，避免构建机时区把日期算偏一天 */
+function formatDate(value: Date | string) {
+  const d = new Date(value);
+  const p = (n: number) => String(n).padStart(2, '0');
+  return `${d.getUTCFullYear()}-${p(d.getUTCMonth() + 1)}-${p(d.getUTCDate())}`;
+}
+---
+
+<div class="photo-wall" id="photo-wall">
+  <div class="grid photo-grid">
+    {
+      photos.map((photo) => {
+        const { title, src, alt, caption, date, location, tags } = photo.data;
+        const dateText = formatDate(date);
+        return (
+          <figure class="photo-item" data-photo-item data-tags={tags.join(',')}>
+            <button
+              class="photo"
+              type="button"
+              data-src={src}
+              data-title={title}
+              data-caption={caption}
+              data-location={location}
+              data-date={dateText}
+              aria-label={`放大查看照片：${title || alt || '未命名'}`}
+            >
+              <img
+                src={src}
+                alt={alt || title}
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="photo__hint" aria-hidden="true">🔍 点击放大</span>
+            </button>
+
+            <figcaption class="photo-caption">
+              {title && <span class="photo-caption__title">{title}</span>}
+              {caption && <span class="photo-caption__text small muted">{caption}</span>}
+              <span class="photo-caption__meta small dim">
+                {location && <span>📍 {location}</span>}
+                <span class="mono">{dateText}</span>
+              </span>
+            </figcaption>
+          </figure>
+        );
+      })
+    }
+  </div>
+</div>
+
+<!-- ========== 灯箱 ========== -->
+<dialog id="photo-lightbox" class="lightbox" aria-label="照片预览">
+  <div class="lightbox__inner">
+    <div class="lightbox__stage">
+      <img class="lightbox__img" data-lb-img alt="" decoding="async" />
+      <button class="lightbox__close" type="button" data-lb-close aria-label="关闭预览（Esc）">✕</button>
+      <button class="lightbox__nav lightbox__nav--prev" type="button" data-lb-prev aria-label="上一张（左方向键）">
+        ‹
+      </button>
+      <button class="lightbox__nav lightbox__nav--next" type="button" data-lb-next aria-label="下一张（右方向键）">
+        ›
+      </button>
+    </div>
+
+    <div class="lightbox__bar">
+      <div class="lightbox__text">
+        <strong class="lightbox__title" data-lb-title></strong>
+        <span class="lightbox__caption" data-lb-caption></span>
+        <span class="lightbox__meta" data-lb-meta></span>
+      </div>
+      <span class="lightbox__counter mono" data-lb-counter></span>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const dialog = document.getElementById('photo-lightbox') as HTMLDialogElement | null;
+  const wall = document.getElementById('photo-wall');
+
+  // 浏览器太老不支持 showModal 时，页面依然是一堵正常的照片墙，只是点不开大图
+  if (dialog && wall && typeof dialog.showModal === 'function') {
+    const img = dialog.querySelector<HTMLImageElement>('[data-lb-img]');
+    const titleEl = dialog.querySelector<HTMLElement>('[data-lb-title]');
+    const captionEl = dialog.querySelector<HTMLElement>('[data-lb-caption]');
+    const metaEl = dialog.querySelector<HTMLElement>('[data-lb-meta]');
+    const counterEl = dialog.querySelector<HTMLElement>('[data-lb-counter]');
+    const prevBtn = dialog.querySelector<HTMLElement>('[data-lb-prev]');
+    const nextBtn = dialog.querySelector<HTMLElement>('[data-lb-next]');
+    const closeBtn = dialog.querySelector<HTMLElement>('[data-lb-close]');
+
+    /** 当前参与切换的照片按钮，只包含没有被标签筛选隐藏的那些 */
+    let items: HTMLButtonElement[] = [];
+    let cursor = 0;
+
+    function visibleButtons(): HTMLButtonElement[] {
+      return Array.from(wall!.querySelectorAll<HTMLElement>('[data-photo-item]'))
+        .filter((figure) => !figure.hidden)
+        .map((figure) => figure.querySelector<HTMLButtonElement>('.photo'))
+        .filter((btn): btn is HTMLButtonElement => btn !== null);
+    }
+
+    function render() {
+      const btn = items[cursor];
+      if (!btn || !img) return;
+
+      const data = btn.dataset;
+      img.src = data.src || '';
+      img.alt = btn.querySelector('img')?.alt || data.title || '照片预览';
+
+      if (titleEl) titleEl.textContent = data.title || '';
+      if (captionEl) captionEl.textContent = data.caption || '';
+      if (metaEl) {
+        metaEl.textContent = [data.location ? `📍 ${data.location}` : '', data.date || '']
+          .filter(Boolean)
+          .join(' · ');
+      }
+      if (counterEl) counterEl.textContent = `${cursor + 1} / ${items.length}`;
+    }
+
+    function step(delta: number) {
+      if (items.length === 0) return;
+      cursor = (cursor + delta + items.length) % items.length;
+      render();
+    }
+
+    // 点击任意照片：收集当前可见序列 → 定位 → 打开灯箱
+    wall.addEventListener('click', (event) => {
+      const hit = event.target instanceof Element ? event.target.closest('.photo') : null;
+      if (!(hit instanceof HTMLButtonElement)) return;
+
+      items = visibleButtons();
+      cursor = Math.max(0, items.indexOf(hit));
+      render();
+      dialog.showModal();
+    });
+
+    // 方向键切换
+    dialog.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowRight') {
+        event.preventDefault();
+        step(1);
+      } else if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        step(-1);
+      }
+    });
+
+    // 点遮罩关闭（点在这层半透明背景上时，target 就是 dialog 本身）
+    dialog.addEventListener('click', (event) => {
+      if (event.target === dialog) dialog.close();
+    });
+
+    closeBtn?.addEventListener('click', () => dialog.close());
+    prevBtn?.addEventListener('click', () => step(-1));
+    nextBtn?.addEventListener('click', () => step(1));
+
+    // 手机上左右滑动切换
+    let touchStartX = 0;
+    dialog.addEventListener(
+      'touchstart',
+      (event) => {
+        touchStartX = event.changedTouches[0]?.clientX ?? 0;
+      },
+      { passive: true }
+    );
+    dialog.addEventListener(
+      'touchend',
+      (event) => {
+        const endX = event.changedTouches[0]?.clientX ?? touchStartX;
+        const dx = endX - touchStartX;
+        if (Math.abs(dx) > 48) step(dx < 0 ? 1 : -1);
+      },
+      { passive: true }
+    );
+
+    // 关闭时清掉大图地址，避免下次打开先闪一下上一张
+    dialog.addEventListener('close', () => {
+      img?.removeAttribute('src');
+    });
+  }
+</script>
+
+<style>
+  .photo-grid {
+    gap: 1.15rem;
+    align-items: start;
+  }
+
+  .photo-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  .photo {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-soft);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    cursor: zoom-in;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .photo:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    border-color: var(--border-strong);
+  }
+
+  .photo:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .photo img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+  }
+
+  .photo:hover img {
+    transform: scale(1.05);
+  }
+
+  .photo__hint {
+    position: absolute;
+    right: 0.6rem;
+    bottom: 0.6rem;
+    padding: 0.15rem 0.55rem;
+    border-radius: var(--radius-pill);
+    background: rgba(10, 14, 12, 0.55);
+    color: #fff;
+    font-size: 0.74rem;
+    line-height: 1.7;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+  }
+
+  .photo:hover .photo__hint,
+  .photo:focus-visible .photo__hint {
+    opacity: 1;
+  }
+
+  .photo-caption {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    padding: 0.6rem 0.15rem 0;
+  }
+
+  .photo-caption__title {
+    font-size: 0.94rem;
+    font-weight: 620;
+  }
+
+  .photo-caption__text {
+    line-height: 1.55;
+  }
+
+  .photo-caption__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 0.15rem;
+  }
+
+  /* ---------- 灯箱 ---------- */
+  .lightbox {
+    width: min(1080px, 94vw);
+    max-width: none;
+    max-height: 92vh;
+    padding: 0;
+    border: none;
+    background: transparent;
+    overflow: hidden;
+    border-radius: var(--radius);
+    color: var(--text);
+  }
+
+  .lightbox::backdrop {
+    background: rgba(6, 10, 8, 0.82);
+    backdrop-filter: blur(3px);
+  }
+
+  .lightbox__inner {
+    display: flex;
+    flex-direction: column;
+    max-height: 92vh;
+    background: var(--surface);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    animation: lightbox-in 0.18s ease;
+  }
+
+  @keyframes lightbox-in {
+    from {
+      opacity: 0;
+      transform: translateY(6px) scale(0.99);
+    }
+  }
+
+  .lightbox__stage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    background: #070b09;
+  }
+
+  .lightbox__img {
+    max-width: 100%;
+    max-height: 72vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .lightbox__nav,
+  .lightbox__close {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    border: none;
+    border-radius: 50%;
+    background: rgba(10, 14, 12, 0.5);
+    color: #fff;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition: background 0.15s ease;
+  }
+
+  .lightbox__nav:hover,
+  .lightbox__close:hover {
+    background: rgba(10, 14, 12, 0.75);
+  }
+
+  .lightbox__nav:focus-visible,
+  .lightbox__close:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+
+  .lightbox__nav {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    font-size: 1.7rem;
+    line-height: 1;
+    padding-bottom: 0.15rem;
+  }
+
+  .lightbox__nav--prev {
+    left: 0.75rem;
+  }
+
+  .lightbox__nav--next {
+    right: 0.75rem;
+  }
+
+  .lightbox__close {
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1.05rem;
+  }
+
+  .lightbox__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+  }
+
+  .lightbox__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    min-width: 0;
+  }
+
+  .lightbox__title {
+    font-size: 0.98rem;
+    font-weight: 620;
+  }
+
+  .lightbox__caption {
+    color: var(--text-soft);
+    font-size: 0.86rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+
+  .lightbox__meta {
+    color: var(--text-mute);
+    font-size: 0.8rem;
+  }
+
+  .lightbox__counter {
+    flex-shrink: 0;
+    color: var(--text-mute);
+    font-size: 0.82rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---------- 小屏适配：按钮不挡住画面、信息栏不挤 ---------- */
+  @media (max-width: 720px) {
+    .lightbox {
+      width: 96vw;
+    }
+
+    .lightbox__img {
+      max-height: 58vh;
+    }
+
+    .lightbox__nav {
+      width: 38px;
+      height: 38px;
+      font-size: 1.4rem;
+      background: rgba(10, 14, 12, 0.58);
+    }
+
+    .lightbox__nav--prev {
+      left: 0.4rem;
+    }
+
+    .lightbox__nav--next {
+      right: 0.4rem;
+    }
+
+    .lightbox__close {
+      top: 0.5rem;
+      right: 0.5rem;
+      width: 36px;
+      height: 36px;
+    }
+
+    .lightbox__bar {
+      padding: 0.7rem 0.85rem;
+      gap: 0.6rem;
+    }
+
+    .lightbox__caption {
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+    }
+
+    .photo__hint {
+      display: none;
+    }
+  }
+</style>

@@ -1,0 +1,232 @@
+---
+/**
+ * 文章详情页
+ *
+ * Content Layer API 写法：getStaticPaths 里只放非草稿文章，
+ * 正文用 render(entry) 拿到 <Content /> 组件再渲染。
+ * draft: true 的文章不会出现在这里，也就不会被生成页面。
+ */
+import { getCollection, render } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import Comments from '../../components/Comments.astro';
+import { SITE } from '../../consts';
+
+export async function getStaticPaths() {
+  const posts = (await getCollection('blog'))
+    .filter((post) => !post.data.draft)
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+  return posts.map((post, index) => ({
+    params: { slug: post.id },
+    props: {
+      post,
+      // 数组是按时间倒序的：往后一位更旧（上一篇），往前一位更新（下一篇）
+      prevPost: posts[index + 1] ?? null,
+      nextPost: posts[index - 1] ?? null,
+    },
+  }));
+}
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+  prevPost: CollectionEntry<'blog'> | null;
+  nextPost: CollectionEntry<'blog'> | null;
+}
+
+const { post, prevPost, nextPost } = Astro.props;
+const { Content } = await render(post);
+const { title, description, pubDate, updatedDate, tags } = post.data;
+
+/** 统一日期格式：2026-10-04（用 UTC 取值，不依赖构建机时区） */
+function formatDate(value: Date): string {
+  const y = value.getUTCFullYear();
+  const m = String(value.getUTCMonth() + 1).padStart(2, '0');
+  const d = String(value.getUTCDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+}
+
+/** 预计阅读时长：中文按 350 字/分钟，英文按 200 词/分钟，代码块不计入 */
+function readingMinutes(body: string): number {
+  const text = body.replace(/```[\s\S]*?```/g, ' ').replace(/`[^`]*`/g, ' ');
+  const cjk = (text.match(/[\u4e00-\u9fa5]/g) ?? []).length;
+  const words = (text.replace(/[\u4e00-\u9fa5]/g, ' ').match(/[A-Za-z0-9]+/g) ?? []).length;
+  return Math.max(1, Math.round(cjk / 350 + words / 200));
+}
+
+const pubText = formatDate(pubDate);
+const updatedText = updatedDate ? formatDate(updatedDate) : null;
+const minutes = readingMinutes(post.body ?? '');
+const permalink = new URL(Astro.url.pathname, SITE.url).href;
+---
+
+<BaseLayout
+  title={title}
+  description={description || `${title} —— ${SITE.title}的一篇文章。`}
+>
+  <article class="prose post">
+    <PageHeader title={title} description={description}>
+      <div class="row post__meta small dim">
+        <time class="mono" datetime={pubText}>发布于 {pubText}</time>
+        {updatedText && <time class="mono" datetime={updatedText}>更新于 {updatedText}</time>}
+        <span>约 {minutes} 分钟</span>
+      </div>
+
+      {
+        tags.length > 0 && (
+          <div class="tag-list post__tags">
+            {tags.map((tag) => (
+              <a class="tag" href={`/blog?tag=${encodeURIComponent(tag)}`}>
+                #{tag}
+              </a>
+            ))}
+          </div>
+        )
+      }
+    </PageHeader>
+
+    <Content />
+
+    <footer class="post__foot">
+      {/* ===== 版权声明 ===== */}
+      <div class="post__notice">
+        <p class="small muted">
+          本文由 <strong>{SITE.author}</strong> 写于「{SITE.title}」，采用
+          <a
+            href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
+            target="_blank"
+            rel="license noopener"
+          >
+            CC BY-NC-SA 4.0
+          </a>
+          许可协议。转载请注明出处，商业用途请先联系我。
+        </p>
+        <p class="small dim">
+          原文链接：<a class="mono" href={permalink}>{permalink}</a>
+        </p>
+      </div>
+
+      {/* ===== 上下篇导航 ===== */}
+      <nav class="post__nav" aria-label="文章导航">
+        <div class="post__nav-cell">
+          {
+            prevPost ? (
+              <a class="card post__nav-card" href={`/blog/${prevPost.id}/`}>
+                <span class="small dim">← 上一篇</span>
+                <span class="card__title">{prevPost.data.title}</span>
+              </a>
+            ) : (
+              <p class="small dim">已经是最早的一篇了</p>
+            )
+          }
+        </div>
+        <div class="post__nav-cell post__nav-cell--next">
+          {
+            nextPost ? (
+              <a class="card post__nav-card" href={`/blog/${nextPost.id}/`}>
+                <span class="small dim">下一篇 →</span>
+                <span class="card__title">{nextPost.data.title}</span>
+              </a>
+            ) : (
+              <p class="small dim">已经是最新的一篇了</p>
+            )
+          }
+        </div>
+      </nav>
+
+      <div class="row post__actions">
+        <a class="btn" href="/blog">← 返回文章列表</a>
+        <a class="btn btn--ghost" href="/rss.xml">RSS 订阅</a>
+      </div>
+
+      {/* 评论区：在 src/consts.ts 里填好 GISCUS 配置并打开 enabled 才会显示 */}
+      <Comments />
+    </footer>
+  </article>
+</BaseLayout>
+
+<style>
+  .post {
+    max-width: 44rem;
+    margin: 0 auto;
+  }
+
+  .post__meta {
+    margin-top: 0.85rem;
+    gap: 0.9rem;
+  }
+
+  .post__tags {
+    margin-top: 0.85rem;
+  }
+
+  .post__foot {
+    margin-top: 3rem;
+  }
+
+  .post__notice {
+    padding: 1rem 1.15rem;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-sm);
+    background: var(--bg-soft);
+  }
+
+  .post__notice p + p {
+    margin-top: 0.5rem;
+  }
+
+  .post__notice a {
+    overflow-wrap: anywhere;
+  }
+
+  .post__nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .post__nav-cell {
+    min-width: 0;
+  }
+
+  .post__nav-cell--next {
+    text-align: right;
+  }
+
+  .post__nav-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    height: 100%;
+  }
+
+  .post__nav-card .card__title {
+    overflow-wrap: anywhere;
+    font-size: 0.96rem;
+  }
+
+  .post__actions {
+    margin-top: 1.5rem;
+  }
+
+  .post__comments {
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 720px) {
+    .post__nav {
+      grid-template-columns: 1fr;
+    }
+
+    .post__nav-cell--next {
+      text-align: left;
+    }
+
+    .post__meta {
+      gap: 0.5rem;
+    }
+  }
+</style>

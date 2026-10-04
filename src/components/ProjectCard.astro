@@ -1,0 +1,220 @@
+---
+/**
+ * 项目卡片
+ *
+ * Props:
+ *   project   projects 集合里的一个条目（CollectionEntry<'projects'>）
+ *   featured  是否为重点展示的大卡片（项目页顶部精选区用）
+ *
+ * 注意：卡片内同时存在「详情 / 源码 / 演示」多个链接，
+ * 所以整张卡不能包一层 <a>（会产生嵌套 a 的非法 HTML），
+ * 这里改成「标题链接 + 底部独立按钮」的写法。
+ */
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  project: CollectionEntry<'projects'>;
+  featured?: boolean;
+}
+
+const { project, featured = false } = Astro.props;
+const { title, description, pubDate, tags, repo, demo, cover, status } = project.data;
+
+/** 详情页地址（静态输出，用目录 + 结尾斜杠更稳） */
+const href = `/projects/${project.id}/`;
+
+/** 状态 → 修饰类名，四种状态的配色写在下面的 <style> 里 */
+const STATUS_KEY: Record<string, string> = {
+  进行中: 'doing',
+  已完成: 'done',
+  维护中: 'maintaining',
+  已归档: 'archived',
+};
+
+/** 日期格式化：统一按 UTC 取值，避免构建机时区把日期算偏一天 */
+function formatDate(value: Date | string) {
+  const d = new Date(value);
+  const p = (n: number) => String(n).padStart(2, '0');
+  return `${d.getUTCFullYear()}-${p(d.getUTCMonth() + 1)}-${p(d.getUTCDate())}`;
+}
+---
+
+<article
+  class:list={['card', 'project-card', featured && 'project-card--featured']}
+  data-project-card
+  data-tags={tags.join(',')}
+>
+  {
+    cover && (
+      <a class="project-card__cover" href={href} tabindex="-1" aria-hidden="true">
+        <img src={cover} alt="" loading="lazy" decoding="async" width="1200" height="800" />
+      </a>
+    )
+  }
+
+  <div class="project-card__body">
+    <div class="project-card__head">
+      <h3 class="card__title">
+        <a href={href}>{title}</a>
+      </h3>
+      <span class:list={['tag', 'status', `status--${STATUS_KEY[status] ?? 'done'}`]}>{status}</span>
+    </div>
+
+    {description && <p class="card__desc">{description}</p>}
+
+    <div class="card__meta">
+      <span class="mono">{formatDate(pubDate)}</span>
+      {
+        tags.length > 0 && (
+          <span class="tag-list">
+            {tags.map((t) => (
+              <span class="tag">{t}</span>
+            ))}
+          </span>
+        )
+      }
+    </div>
+
+    <div class="btn-row project-card__actions">
+      <a class="btn btn--primary" href={href}>项目详情</a>
+      {
+        repo && (
+          <a class="btn" href={repo} target="_blank" rel="noopener" aria-label={`查看 ${title} 的源码（GitHub）`}>
+            源码
+          </a>
+        )
+      }
+      {
+        demo && (
+          <a class="btn btn--ghost" href={demo} target="_blank" rel="noopener" aria-label={`打开 ${title} 的在线演示`}>
+            演示 ↗
+          </a>
+        )
+      }
+    </div>
+  </div>
+</article>
+
+<style>
+  /* 卡片带封面图，所以整体不留内边距，改为内部 body 留白。
+     这里用 .card.project-card 双类名提高优先级，确保压过 global.css 里的 .card */
+  .card.project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .card.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    border-color: var(--border-strong);
+  }
+
+  .project-card__cover {
+    display: block;
+    aspect-ratio: 3 / 1.15;
+    overflow: hidden;
+    background: var(--bg-soft);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .project-card--featured .project-card__cover {
+    aspect-ratio: 3 / 1.35;
+  }
+
+  .project-card__cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+  }
+
+  .card.project-card:hover .project-card__cover img {
+    transform: scale(1.04);
+  }
+
+  .project-card__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.1rem 1.25rem 1.25rem;
+  }
+
+  .project-card__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-card__head .card__title {
+    margin-bottom: 0;
+  }
+
+  .project-card--featured .project-card__head .card__title {
+    font-size: 1.22rem;
+  }
+
+  /* 标题用文字色，悬停才变强调色，避免整卡到处都是绿色链接 */
+  .card__title a {
+    color: inherit;
+  }
+
+  .card__title a:hover {
+    color: var(--accent-text);
+    text-decoration: none;
+  }
+
+  .project-card__body .card__meta {
+    margin-top: 0.75rem;
+  }
+
+  .project-card__actions {
+    margin-top: auto;
+    padding-top: 1rem;
+  }
+
+  .project-card__actions .btn {
+    padding: 0.36rem 0.85rem;
+    font-size: 0.84rem;
+  }
+
+  /* ---------- 状态标签配色 ----------
+     用 color-mix 与设计令牌混色，深色模式下会自动跟着变，不用另写一套 */
+  .tag.status--doing {
+    background: color-mix(in srgb, #3b82f6 14%, var(--surface));
+    border-color: color-mix(in srgb, #3b82f6 28%, transparent);
+    color: color-mix(in srgb, #3b82f6 72%, var(--text));
+  }
+
+  .tag.status--done {
+    background: color-mix(in srgb, #16a34a 15%, var(--surface));
+    border-color: color-mix(in srgb, #16a34a 28%, transparent);
+    color: color-mix(in srgb, #16a34a 70%, var(--text));
+  }
+
+  .tag.status--maintaining {
+    background: color-mix(in srgb, #d97706 16%, var(--surface));
+    border-color: color-mix(in srgb, #d97706 30%, transparent);
+    color: color-mix(in srgb, #d97706 72%, var(--text));
+  }
+
+  .tag.status--archived {
+    background: color-mix(in srgb, #6b7280 14%, var(--surface));
+    border-color: color-mix(in srgb, #6b7280 26%, transparent);
+    color: color-mix(in srgb, #6b7280 72%, var(--text));
+  }
+
+  @media (max-width: 720px) {
+    .project-card--featured .project-card__head .card__title {
+      font-size: 1.1rem;
+    }
+
+    .project-card__actions .btn {
+      flex: 1;
+      justify-content: center;
+    }
+  }
+</style>

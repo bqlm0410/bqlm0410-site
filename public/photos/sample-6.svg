@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="雪原极光占位图">
+  <title>雪原极光（占位图）</title>
+  <defs>
+    <linearGradient id="p6-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050b23" />
+      <stop offset="46%" stop-color="#123054" />
+      <stop offset="100%" stop-color="#2a5c78" />
+    </linearGradient>
+    <linearGradient id="p6-aurora1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4ee6b8" stop-opacity="0" />
+      <stop offset="35%" stop-color="#4ee6b8" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#7c6bff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="p6-aurora2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8f7bff" stop-opacity="0" />
+      <stop offset="55%" stop-color="#9d7bff" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#4ee6b8" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="p6-snow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff0ff" />
+      <stop offset="100%" stop-color="#8fb4d8" />
+    </linearGradient>
+    <linearGradient id="p6-snow2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#a9c9e6" />
+    </linearGradient>
+    <filter id="p6-soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="26" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#p6-sky)" />
+
+  <g fill="#ffffff">
+    <circle cx="140" cy="120" r="2.6" opacity="0.9" />
+    <circle cx="268" cy="212" r="2" opacity="0.6" />
+    <circle cx="356" cy="96" r="2.2" opacity="0.8" />
+    <circle cx="470" cy="176" r="1.8" opacity="0.55" />
+    <circle cx="588" cy="90" r="2.4" opacity="0.85" />
+    <circle cx="700" cy="196" r="1.8" opacity="0.5" />
+    <circle cx="812" cy="118" r="2.2" opacity="0.75" />
+    <circle cx="930" cy="206" r="2" opacity="0.6" />
+    <circle cx="1058" cy="132" r="2.6" opacity="0.85" />
+    <circle cx="1146" cy="248" r="1.8" opacity="0.5" />
+  </g>
+
+  <g fill="none" stroke-linecap="round" filter="url(#p6-soft)">
+    <path d="M-40 300 C 240 130, 460 330, 720 190 S 1100 120, 1260 240" stroke="url(#p6-aurora1)" stroke-width="58" />
+    <path d="M-40 380 C 260 250, 520 420, 780 290 S 1120 250, 1260 330" stroke="url(#p6-aurora2)" stroke-width="42" opacity="0.85" />
+  </g>
+
+  <path d="M0 620 C 220 540, 380 596, 560 560 S 880 500, 1200 588 L1200 800 L0 800 Z" fill="url(#p6-snow)" opacity="0.55" />
+  <path d="M0 700 C 260 640, 460 706, 700 664 S 1000 640, 1200 690 L1200 800 L0 800 Z" fill="url(#p6-snow2)" opacity="0.9" />
+
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="300" cy="360" r="2.4" />
+    <circle cx="420" cy="470" r="2" />
+    <circle cx="620" cy="400" r="2.2" />
+    <circle cx="760" cy="500" r="2" />
+    <circle cx="900" cy="430" r="2.2" />
+    <circle cx="1040" cy="520" r="2" />
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+---
+/**
+ * 今日 GitHub 热门（最新一期）
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import TrendingBoard from '../../components/TrendingBoard.astro';
+import DateNav from '../../components/DateNav.astro';
+import { getLatestGithub, listGithubDates, getAdjacentGithubDates } from '../../lib/snapshots';
+
+const dates = listGithubDates();
+const latest = dates[0] ?? null;
+const snapshot = getLatestGithub();
+const nav = latest ? getAdjacentGithubDates(latest) : { prev: null, next: null };
+---
+
+<BaseLayout
+  title="今日热门"
+  description="GitHub 每日 Trending 榜与 Star 总榜 Top 100，每天北京时间 6:00 自动更新，历史记录永久保留。"
+>
+  <PageHeader
+    title="今日 GitHub 热门"
+    description="每天北京时间 6:00 自动抓取。历史记录永久保存，可以翻看任意一天。"
+  >
+    {
+      latest && (
+        <p class="small dim" style="margin-top:.6rem">
+          数据日期：<span class="mono">{latest}</span> · 已收录 <strong>{dates.length}</strong> 天
+        </p>
+      )
+    }
+  </PageHeader>
+
+  {
+    snapshot ? (
+      <>
+        <DateNav
+          date={snapshot.date}
+          prev={nav.prev}
+          next={nav.next}
+          latest={latest}
+          base="/trending"
+        />
+        <TrendingBoard snapshot={snapshot} />
+      </>
+    ) : (
+      <div class="empty-state">
+        <p>📡 榜单数据正在准备中</p>
+        <p class="small" style="margin-top:.5rem">
+          抓取任务会在每天北京时间 6:00 自动运行。第一次跑完后，这里就会出现榜单。
+        </p>
+      </div>
+    )
+  }
+</BaseLayout>

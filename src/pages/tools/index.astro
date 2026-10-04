@@ -1,0 +1,129 @@
+---
+/**
+ * 在线小工具列表页
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { TOOLS, getAllTags } from '../../lib/tools';
+
+const tags = getAllTags();
+---
+
+<BaseLayout
+  title="在线小工具"
+  description="自己写的一些在线小工具：JSON 格式化、时间戳转换、Base64 编解码、颜色格式转换。全部在浏览器本地运行，不上传数据。"
+>
+  <PageHeader
+    title="在线小工具"
+    description="自己写的一些小工具，打开就能用。全部在浏览器本地运行，不上传任何数据。"
+  >
+    {
+      tags.length > 1 && (
+        <div class="filters">
+          <button class="chip is-active" data-tag="all" type="button">
+            全部 <span class="chip__count">{TOOLS.length}</span>
+          </button>
+          {tags.map((tag) => (
+            <button class="chip" data-tag={tag} type="button">
+              {tag}
+            </button>
+          ))}
+        </div>
+      )
+    }
+  </PageHeader>
+
+  <div class="grid grid--wide" id="tool-grid">
+    {
+      TOOLS.map((tool) => (
+        <a class="card tool" href={`/tools/${tool.slug}/`} data-tags={tool.tags.join(',')}>
+          <span class="tool__icon" aria-hidden="true">
+            {tool.icon}
+          </span>
+          <span class="card__title">{tool.name}</span>
+          <span class="card__desc">{tool.description}</span>
+          <span class="tag-list tool__tags">
+            {tool.tags.map((tag) => (
+              <span class="tag">{tag}</span>
+            ))}
+          </span>
+        </a>
+      ))
+    }
+  </div>
+</BaseLayout>
+
+<script>
+  const chips = document.querySelectorAll('.filters [data-tag]');
+  const cards = document.querySelectorAll('#tool-grid [data-tags]');
+
+  chips.forEach((chip) => {
+    chip.addEventListener('click', () => {
+      const target = (chip as HTMLElement).dataset.tag ?? 'all';
+
+      chips.forEach((c) => c.classList.toggle('is-active', c === chip));
+
+      cards.forEach((card) => {
+        const list = ((card as HTMLElement).dataset.tags ?? '').split(',');
+        const visible = target === 'all' || list.includes(target);
+        (card as HTMLElement).style.display = visible ? '' : 'none';
+      });
+    });
+  });
+</script>
+
+<style>
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 1rem;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.32rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    background: var(--surface);
+    color: var(--text-soft);
+    font-size: 0.83rem;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .chip:hover {
+    border-color: var(--border-strong);
+    color: var(--text);
+  }
+
+  .chip.is-active {
+    background: var(--accent-soft);
+    border-color: transparent;
+    color: var(--accent-text);
+    font-weight: 600;
+  }
+
+  .chip__count {
+    font-size: 0.74rem;
+    opacity: 0.75;
+  }
+
+  .tool {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .tool__icon {
+    font-size: 1.6rem;
+    line-height: 1;
+    margin-bottom: 0.35rem;
+  }
+
+  .tool__tags {
+    margin-top: 0.6rem;
+  }
+</style>

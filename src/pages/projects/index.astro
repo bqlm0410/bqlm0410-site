@@ -1,0 +1,207 @@
+---
+/**
+ * 项目 / 作品列表页 —— /projects
+ *
+ * 结构：页头 → 标签筛选 → 精选项目（大卡片）→ 其余项目（普通网格）
+ * 排序：先按 order 升序，order 相同再按发布时间倒序
+ * 筛选：纯前端。点击标签按钮时用 JS 隐藏不匹配的卡片，并把 ?tag= 写回地址栏，
+ *       这样刷新页面或把链接发给别人，筛选状态都能还原。
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+
+const projects = (await getCollection('projects')).sort(
+  (a, b) =>
+    a.data.order - b.data.order || b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const featured = projects.filter((p) => p.data.featured);
+const others = projects.filter((p) => !p.data.featured);
+
+/** 统计全部标签的出场次数，出现得多的排前面，方便一眼看到主要技术方向 */
+const tagCount = new Map<string, number>();
+for (const p of projects) {
+  for (const t of p.data.tags) tagCount.set(t, (tagCount.get(t) ?? 0) + 1);
+}
+const tags = [...tagCount.entries()]
+  .map(([tag, count]) => ({ tag, count }))
+  .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag, 'zh-Hans-CN'));
+---
+
+<BaseLayout
+  title="项目"
+  description="青苺ちゃん做过的一些东西：个人网站、每日抓取管道、在线小工具集，附源码与在线演示。"
+>
+  <PageHeader title="项目" description="做过的一些东西，大多在持续维护中。点标签可以只看某一类。">
+    <p class="small dim">
+      共 {projects.length} 个项目 · 精选 {featured.length} 个 · 标签 {tags.length} 个
+    </p>
+  </PageHeader>
+
+  <!-- ========== 标签筛选 ========== -->
+  {
+    tags.length > 0 && (
+      <div class="filters" id="project-filters" role="group" aria-label="按标签筛选项目">
+        <button class="btn filters__btn" type="button" data-tag="" aria-pressed="true">
+          全部 <span class="filters__count">{projects.length}</span>
+        </button>
+        {tags.map(({ tag, count }) => (
+          <button class="btn filters__btn" type="button" data-tag={tag} aria-pressed="false">
+            {tag} <span class="filters__count">{count}</span>
+          </button>
+        ))}
+      </div>
+    )
+  }
+
+  <!-- ========== 精选项目 ========== -->
+  {
+    featured.length > 0 && (
+      <section class="section" data-project-section>
+        <h2 class="section-title">
+          <span>精选项目</span>
+          <span class="dim small">重点展示</span>
+        </h2>
+        <div class="grid grid--wide">
+          {featured.map((project) => (
+            <ProjectCard project={project} featured />
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <!-- ========== 其余项目 ========== -->
+  <section class="section" data-project-section id="all">
+    <h2 class="section-title">
+      <span>全部项目</span>
+      <span class="dim small">{others.length} 个</span>
+    </h2>
+    {
+      others.length > 0 ? (
+        <div class="grid">
+          {others.map((project) => (
+            <ProjectCard project={project} />
+          ))}
+        </div>
+      ) : (
+        <div class="empty-state">还没有更多项目，之后会慢慢补上。</div>
+      )
+    }
+  </section>
+
+  <!-- 筛选后一个都不剩时显示 -->
+  <div class="empty-state" id="filter-empty" hidden>
+    <p>这个标签下暂时没有项目 🙈</p>
+    <p class="small" style="margin-top:.4rem">换个标签，或者点「全部」看看所有内容。</p>
+  </div>
+
+  <p class="small dim" style="margin-top:1.5rem">
+    想聊某个项目？去 <a href="/about">关于页</a> 找联系方式，或者在对应仓库里提 issue。
+  </p>
+</BaseLayout>
+
+<script>
+  /** 项目列表页的纯前端标签筛选 */
+  const filterBar = document.getElementById('project-filters');
+  const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-project-card]'));
+  const sections = Array.from(document.querySelectorAll<HTMLElement>('[data-project-section]'));
+  const emptyState = document.getElementById('filter-empty');
+  const buttons = filterBar
+    ? Array.from(filterBar.querySelectorAll<HTMLButtonElement>('[data-tag]'))
+    : [];
+
+  /** 当前筛选的标签，空字符串表示「全部」 */
+  function applyFilter(tag: string, syncUrl = true) {
+    let visible = 0;
+
+    for (const card of cards) {
+      const cardTags = (card.dataset.tags || '')
+        .split(',')
+        .map((t) => t.trim())
+        .filter(Boolean);
+      const matched = tag === '' || cardTags.includes(tag);
+      card.hidden = !matched;
+      if (matched) visible += 1;
+    }
+
+    // 某个区块里一张卡都不剩时，整块收起，避免留下空标题
+    for (const section of sections) {
+      const hasVisible = Array.from(
+        section.querySelectorAll<HTMLElement>('[data-project-card]')
+      ).some((card) => !card.hidden);
+      section.hidden = !hasVisible;
+    }
+
+    if (emptyState) emptyState.hidden = visible > 0;
+
+    for (const btn of buttons) {
+      const active = (btn.dataset.tag || '') === tag;
+      btn.classList.toggle('btn--primary', active);
+      btn.setAttribute('aria-pressed', String(active));
+    }
+
+    if (syncUrl) {
+      const url = new URL(window.location.href);
+      if (tag) url.searchParams.set('tag', tag);
+      else url.searchParams.delete('tag');
+      window.history.replaceState(null, '', url);
+    }
+  }
+
+  for (const btn of buttons) {
+    btn.addEventListener('click', () => applyFilter(btn.dataset.tag || ''));
+  }
+
+  // 支持用 ?tag=xxx 直接进来（例如从别处链接过来）
+  const wanted = new URL(window.location.href).searchParams.get('tag') || '';
+  const known = buttons.map((btn) => btn.dataset.tag || '');
+  const initial = known.includes(wanted) ? wanted : '';
+  if (cards.length > 0) applyFilter(initial, false);
+
+  // 浏览器前进 / 后退时跟着 URL 还原
+  window.addEventListener('popstate', () => {
+    const tag = new URL(window.location.href).searchParams.get('tag') || '';
+    applyFilter(known.includes(tag) ? tag : '', false);
+  });
+</script>
+
+<style>
+  /* 用 hidden 属性做筛选隐藏，需要 !important 才能压过 .card / .section 的 display */
+  :global([hidden]) {
+    display: none !important;
+  }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .filters__btn {
+    padding: 0.32rem 0.85rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .filters__count {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    font-variant-numeric: tabular-nums;
+  }
+
+  @media (max-width: 720px) {
+    .filters {
+      gap: 0.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .filters__btn {
+      padding: 0.28rem 0.7rem;
+      font-size: 0.8rem;
+    }
+  }
+</style>

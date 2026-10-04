@@ -1,0 +1,121 @@
+---
+/**
+ * 历史归档的日期导航条
+ *
+ * dates 是倒序数组，所以 prev 是「更早一天」，next 是「更晚一天」。
+ */
+interface Props {
+  date: string;
+  prev: string | null;
+  next: string | null;
+  /** 该板块的最新一天，用于「回到最新」按钮 */
+  latest: string | null;
+  /** 板块根路径，如 '/trending' 或 '/news' */
+  base: string;
+}
+
+const { date, prev, next, latest, base } = Astro.props;
+---
+
+<nav class="datenav" aria-label="日期导航">
+  <div class="datenav__side">
+    {
+      prev ? (
+        <a class="btn" href={`${base}/${prev}/`} title={`查看 ${prev}`}>
+          ← <span class="mono">{prev}</span>
+        </a>
+      ) : (
+        <span class="btn datenav__disabled">← 没有更早的了</span>
+      )
+    }
+  </div>
+
+  <div class="datenav__center">
+    <span class="datenav__date mono">{date}</span>
+    {latest && latest !== date ? (
+      <a class="datenav__latest" href={`${base}/`}>回到最新 →</a>
+    ) : (
+      <span class="datenav__latest dim">{latest === date ? '这是最新一期' : ''}</span>
+    )}
+  </div>
+
+  <div class="datenav__side datenav__side--right">
+    {
+      next ? (
+        <a class="btn" href={`${base}/${next}/`} title={`查看 ${next}`}>
+          <span class="mono">{next}</span> →
+        </a>
+      ) : (
+        <span class="btn datenav__disabled">已经是最近一天 →</span>
+      )
+    }
+  </div>
+</nav>
+
+<style>
+  .datenav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.85rem 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .datenav__side {
+    flex: 1 1 auto;
+    display: flex;
+    min-width: 0;
+  }
+
+  .datenav__side--right {
+    justify-content: flex-end;
+  }
+
+  .datenav__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+    text-align: center;
+  }
+
+  .datenav__date {
+    font-size: 0.95rem;
+    font-weight: 650;
+  }
+
+  .datenav__latest {
+    font-size: 0.78rem;
+  }
+
+  .datenav__disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    font-size: 0.84rem;
+  }
+
+  .datenav__disabled:hover {
+    border-color: var(--border-strong);
+    color: var(--text);
+  }
+
+  @media (max-width: 640px) {
+    .datenav {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .datenav__center {
+      order: -1;
+      margin-bottom: 0.35rem;
+    }
+
+    .datenav__side,
+    .datenav__side--right {
+      justify-content: center;
+    }
+  }
+</style>

@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="页面走丢了" description="404 —— 你要找的页面不存在" noIndex>
+  <div class="notfound">
+    <div class="notfound__code">404</div>
+    <h1 class="notfound__title">这个页面走丢了</h1>
+    <p class="muted">
+      你要找的东西可能被移走了、改名了，或者从来就没存在过。
+    </p>
+    <div class="btn-row notfound__actions">
+      <a class="btn btn--primary" href="/">回首页</a>
+      <a class="btn" href="/blog">看看博客</a>
+      <a class="btn" href="/search">搜索一下</a>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .notfound {
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+
+  .notfound__code {
+    font-size: clamp(4rem, 16vw, 7rem);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    background: linear-gradient(135deg, var(--accent), #4ec98d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+  }
+
+  .notfound__title {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .notfound__actions {
+    justify-content: center;
+    margin-top: 1.75rem;
+  }
+</style>

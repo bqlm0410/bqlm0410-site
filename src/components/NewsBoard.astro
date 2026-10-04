@@ -1,0 +1,157 @@
+---
+/**
+ * AI 资讯流
+ *
+ * 支持按来源筛选（纯前端）。首页和历史归档页共用。
+ */
+import type { NewsSnapshot } from '../lib/snapshots';
+import NewsItem from './NewsItem.astro';
+
+interface Props {
+  snapshot: NewsSnapshot;
+}
+
+const { snapshot } = Astro.props;
+
+const items = Array.isArray(snapshot.items) ? snapshot.items : [];
+const sourceStats = Array.isArray(snapshot.sources) ? snapshot.sources : [];
+const degraded = Array.isArray(snapshot.degraded) ? snapshot.degraded : [];
+
+const degradedNames = degraded.map(
+  (id) => sourceStats.find((s) => s.id === id)?.name ?? id,
+);
+---
+
+<div class="summary">
+  <span>共 <strong>{items.length}</strong> 条</span>
+  <span class="dim">·</span>
+  <span>来自 <strong>{sourceStats.length}</strong> 个源</span>
+  <span class="dim">·</span>
+  <span class="dim small">抓取时间 {snapshot.generatedAt?.replace('T', ' ').slice(0, 16) ?? '—'}</span>
+</div>
+
+{
+  degraded.length > 0 && (
+    <div class="notice">
+      ⚠️ 本次有 {degraded.length} 个源抓取失败：{degradedNames.join('、')}
+    </div>
+  )
+}
+
+{
+  sourceStats.length > 0 && (
+    <div class="filters">
+      <button class="chip is-active" data-source="all" type="button">
+        全部 <span class="chip__count">{items.length}</span>
+      </button>
+      {sourceStats
+        .filter((s) => s.count > 0)
+        .map((s) => (
+          <button class="chip" data-source={s.id} type="button">
+            {s.name} <span class="chip__count">{s.count}</span>
+          </button>
+        ))}
+    </div>
+  )
+}
+
+{
+  items.length > 0 ? (
+    <div class="stream">
+      {items.map((item) => (
+        <div class="stream__item" data-source={item.source}>
+          <NewsItem item={item} generatedAt={snapshot.generatedAt} />
+        </div>
+      ))}
+    </div>
+  ) : (
+    <div class="empty-state">这一天还没有抓到资讯。</div>
+  )
+}
+
+<script>
+  document.querySelectorAll('.filters').forEach((filters) => {
+    const chips = filters.querySelectorAll('[data-source]');
+    const stream = filters.parentElement?.querySelector('.stream');
+    if (!stream) return;
+
+    chips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        const target = (chip as HTMLElement).dataset.source;
+        chips.forEach((c) => c.classList.toggle('is-active', c === chip));
+        stream.querySelectorAll('.stream__item').forEach((node) => {
+          const source = (node as HTMLElement).dataset.source;
+          const show = target === 'all' || source === target;
+          (node as HTMLElement).style.display = show ? '' : 'none';
+        });
+      });
+    });
+  });
+</script>
+
+<style>
+  .summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.9rem;
+    font-size: 0.88rem;
+    color: var(--text-soft);
+  }
+
+  .notice {
+    padding: 0.7rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid color-mix(in srgb, var(--danger) 35%, var(--border));
+    background: color-mix(in srgb, var(--danger) 8%, transparent);
+    color: var(--text-soft);
+    font-size: 0.86rem;
+  }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.32rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    background: var(--surface);
+    color: var(--text-soft);
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .chip:hover {
+    border-color: var(--border-strong);
+    color: var(--text);
+  }
+
+  .chip.is-active {
+    background: var(--accent-soft);
+    border-color: transparent;
+    color: var(--accent-text);
+    font-weight: 600;
+  }
+
+  .chip__count {
+    font-size: 0.74rem;
+    opacity: 0.75;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .stream {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+</style>

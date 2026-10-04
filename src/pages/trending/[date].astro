@@ -1,0 +1,46 @@
+---
+/**
+ * 历史某天的 GitHub 榜单
+ *
+ * 每一天的抓取结果都单独存成一个 JSON 文件、单独生成一个静态页面，
+ * 所以这一天的内容永远不会被后来的数据覆盖掉。
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import TrendingBoard from '../../components/TrendingBoard.astro';
+import DateNav from '../../components/DateNav.astro';
+import {
+  listGithubDates,
+  getGithubSnapshot,
+  getAdjacentGithubDates,
+} from '../../lib/snapshots';
+
+export async function getStaticPaths() {
+  return listGithubDates().map((date) => ({ params: { date } }));
+}
+
+const date = Astro.params.date ?? '';
+const snapshot = getGithubSnapshot(date);
+const nav = getAdjacentGithubDates(date);
+const latest = listGithubDates()[0] ?? null;
+---
+
+<BaseLayout
+  title={`${date} 的 GitHub 热门`}
+  description={`${date} 当天的 GitHub Trending 榜与 Star 总榜 Top 100 存档。`}
+>
+  <PageHeader
+    title={`${date} 的 GitHub 热门`}
+    description="这是当天抓取结果的存档快照，不会被后来的数据覆盖。"
+  />
+
+  <DateNav date={date} prev={nav.prev} next={nav.next} latest={latest} base="/trending" />
+
+  {
+    snapshot ? (
+      <TrendingBoard snapshot={snapshot} />
+    ) : (
+      <div class="empty-state">这一天没有榜单数据。</div>
+    )
+  }
+</BaseLayout>

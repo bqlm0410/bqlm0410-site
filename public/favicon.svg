@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4ec98d" />
+      <stop offset="100%" stop-color="#2f9e6e" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#g)" />
+  <!-- 叶子 -->
+  <path d="M32 20c0-5 3-9 8-10-1 6-4 9-8 10z" fill="#e9f6f0" />
+  <path d="M32 20c-1-5-5-8-10-8 2 5 5 8 10 8z" fill="#c9ebda" />
+  <!-- 果实 -->
+  <path d="M32 56c-9 0-16-6-16-15 0-7 5-13 12-16h8c7 3 12 9 12 16 0 9-7 15-16 15z" fill="#ffffff" />
+  <!-- 籽 -->
+  <circle cx="25" cy="35" r="1.8" fill="#2f9e6e" />
+  <circle cx="32" cy="31" r="1.8" fill="#2f9e6e" />
+  <circle cx="39" cy="35" r="1.8" fill="#2f9e6e" />
+  <circle cx="28" cy="43" r="1.8" fill="#2f9e6e" />
+  <circle cx="36" cy="43" r="1.8" fill="#2f9e6e" />
+</svg>

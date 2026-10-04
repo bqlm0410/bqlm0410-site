@@ -1,0 +1,101 @@
+---
+/**
+ * 评论区（Giscus，基于 GitHub Discussions 的免费评论系统）
+ * ============================================================================
+ * 怎么让它生效？（三步，做完评论区才会出现）
+ *
+ * 1. 仓库必须是【公开（public）】仓库！
+ *    Giscus 靠 GitHub Discussions 存评论，私有仓库里前端读不到 Discussion，
+ *    评论区会一直空白。这一点最容易踩坑。
+ *
+ * 2. 在仓库里打开 Discussions：
+ *    GitHub 仓库 → Settings → General → Features → 勾选 Discussions。
+ *    再安装 Giscus App：https://github.com/apps/giscus ，授权给这个仓库。
+ *
+ * 3. 去 https://giscus.app 填写仓库名，页面会生成两段 ID：
+ *      - data-repo-id    → 填到 src/consts.ts 的 GISCUS.repoId
+ *      - data-category-id → 填到 src/consts.ts 的 GISCUS.categoryId
+ *    然后把 src/consts.ts 里的 GISCUS.enabled 改成 true。
+ *
+ * repoId / categoryId 只能从 https://giscus.app 拿到（形如 R_kgDOxxxxxx / DIC_kwDOxxxxxx），
+ * 不能自己编，编的会加载失败。
+ *
+ * 未配置时（enabled 为 false，或 repoId / categoryId 还空着）：
+ * 本组件【不输出任何 HTML】，连占位 div 都没有，也绝不会报错。
+ * ============================================================================
+ */
+import { GISCUS } from '../consts';
+
+// 显式标注成 boolean / string：consts 里是 as const，直接和字面量比较会被 TS 判成“永远不相等”
+const giscusEnabled: boolean = GISCUS.enabled;
+const repoId: string = GISCUS.repoId;
+const categoryId: string = GISCUS.categoryId;
+
+/** 三项都齐了才渲染，缺任何一项都静默 */
+const configured = giscusEnabled && repoId.trim() !== '' && categoryId.trim() !== '';
+---
+
+{
+  configured && (
+    <section class="section comments" data-pagefind-ignore>
+      <h2 class="section-title">评论</h2>
+      <div class="card comments__box">
+        <p class="muted small comments__tip">
+          评论由 GitHub Discussions 驱动，用 GitHub 账号登录后即可发言。
+        </p>
+        <script
+          src="https://giscus.app/client.js"
+          data-repo={GISCUS.repo}
+          data-repo-id={GISCUS.repoId}
+          data-category={GISCUS.category}
+          data-category-id={GISCUS.categoryId}
+          data-mapping={GISCUS.mapping}
+          data-lang={GISCUS.lang}
+          data-loading="lazy"
+          data-input-position="top"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-strict="0"
+          crossorigin="anonymous"
+          async
+          is:inline></script>
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .comments {
+    /* 评论通常在正文最后，和上面的内容留点距离 */
+    margin-top: 3rem;
+  }
+
+  .comments__box {
+    padding: 1.25rem;
+  }
+
+  .comments__tip {
+    margin-bottom: 1rem;
+  }
+
+  /* giscus 运行时注入的 iframe：撑满卡片宽度，去掉默认边框 */
+  .comments__box :global(.giscus),
+  .comments__box :global(.giscus-frame) {
+    width: 100%;
+  }
+
+  .comments__box :global(.giscus-frame) {
+    border: none;
+    color-scheme: normal;
+  }
+
+  @media (max-width: 720px) {
+    .comments {
+      margin-top: 2.25rem;
+    }
+
+    .comments__box {
+      padding: 1rem;
+    }
+  }
+</style>

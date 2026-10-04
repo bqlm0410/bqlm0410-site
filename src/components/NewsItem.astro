@@ -1,0 +1,120 @@
+---
+/**
+ * AI 资讯条目
+ *
+ * 中文标题 / 摘要优先。相对时间的基准用快照的 generatedAt，
+ * 而不是页面构建时间 —— 否则看历史归档页时时间会算错。
+ */
+import type { NewsItem as NewsItemType } from '../lib/snapshots';
+
+interface Props {
+  item: NewsItemType;
+  /** 快照生成时间，用于计算相对时间 */
+  generatedAt?: string;
+}
+
+const { item, generatedAt } = Astro.props;
+
+function fmtNum(n: number | null | undefined) {
+  if (n === null || n === undefined) return '—';
+  return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+/** 相对时间：以快照生成时间为基准 */
+function relativeTime(publishedAt: string, base?: string) {
+  if (!publishedAt) return '';
+  const published = new Date(publishedAt).getTime();
+  const baseTime = base ? new Date(base).getTime() : Date.now();
+  if (Number.isNaN(published) || Number.isNaN(baseTime)) return '';
+
+  const diffMinutes = Math.round((baseTime - published) / 60000);
+  if (diffMinutes < 1) return '刚刚';
+  if (diffMinutes < 60) return `${diffMinutes} 分钟前`;
+  const hours = Math.round(diffMinutes / 60);
+  if (hours < 24) return `${hours} 小时前`;
+  const days = Math.round(hours / 24);
+  if (days < 30) return `${days} 天前`;
+  const months = Math.round(days / 30);
+  if (months < 12) return `${months} 个月前`;
+  return `${Math.round(months / 12)} 年前`;
+}
+
+/** 绝对日期，兜底显示 */
+function fmtDate(value: string) {
+  if (!value) return '';
+  const d = new Date(value);
+  if (Number.isNaN(d.getTime())) return '';
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+const rel = relativeTime(item.publishedAt, generatedAt);
+const abs = fmtDate(item.publishedAt);
+const isPaper = item.source === 'arxiv';
+---
+
+<article class="card news">
+  <a class="news__title" href={item.link} target="_blank" rel="noopener">
+    {item.titleZh || item.title}
+  </a>
+
+  {item.summaryZh && <p class="news__summary">{item.summaryZh}</p>}
+
+  {
+    !item.titleZh && item.summaryZh === '' && (
+      <p class="news__summary dim small">（暂无中文摘要）</p>
+    )
+  }
+
+  <div class="news__meta">
+    <span class="tag">{item.sourceName}</span>
+    {isPaper && <span class="tag">论文</span>}
+    {
+      item.score !== null && item.score !== undefined && (
+        <span title="Hacker News 分数">🔥 {fmtNum(item.score)}</span>
+      )
+    }
+    {
+      item.comments !== null && item.comments !== undefined && item.comments > 0 && (
+        <span title="评论数">💬 {fmtNum(item.comments)}</span>
+      )
+    }
+    {rel && <span title={abs}>{rel}</span>}
+    {!rel && abs && <span>{abs}</span>}
+  </div>
+</article>
+
+<style>
+  .news {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .news__title {
+    font-size: 0.98rem;
+    font-weight: 620;
+    line-height: 1.5;
+    color: var(--text);
+  }
+
+  .news__title:hover {
+    color: var(--accent-text);
+  }
+
+  .news__summary {
+    margin: 0;
+    font-size: 0.87rem;
+    line-height: 1.65;
+    color: var(--text-soft);
+  }
+
+  .news__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.55rem;
+    margin-top: 0.35rem;
+    font-size: 0.79rem;
+    color: var(--text-mute);
+  }
+</style>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="森林晨光占位图">
+  <title>森林晨光（占位图）</title>
+  <defs>
+    <linearGradient id="p5-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9fd6a0" />
+      <stop offset="38%" stop-color="#4e9a63" />
+      <stop offset="100%" stop-color="#10321f" />
+    </linearGradient>
+    <linearGradient id="p5-ray" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3bd" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#fff3bd" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="p5-far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3e8055" />
+      <stop offset="100%" stop-color="#1d4a31" />
+    </linearGradient>
+    <linearGradient id="p5-near" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#153c27" />
+      <stop offset="100%" stop-color="#07190f" />
+    </linearGradient>
+    <filter id="p5-soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#p5-bg)" />
+  <circle cx="300" cy="96" r="120" fill="#fff6cf" opacity="0.5" filter="url(#p5-soft)" />
+
+  <g fill="url(#p5-ray)">
+    <polygon points="240,-40 400,-40 720,800 520,800" />
+    <polygon points="420,-40 520,-40 880,800 740,800" opacity="0.75" />
+    <polygon points="600,-40 680,-40 1040,800 920,800" opacity="0.55" />
+  </g>
+
+  <g fill="url(#p5-far)" opacity="0.85">
+    <polygon points="120,420 190,240 260,420" />
+    <polygon points="240,440 320,220 400,440" />
+    <polygon points="380,430 450,260 520,430" />
+    <polygon points="700,440 780,230 860,440" />
+    <polygon points="840,450 910,280 980,450" />
+    <polygon points="960,430 1040,240 1120,430" />
+  </g>
+
+  <rect y="470" width="1200" height="60" fill="#dff3d8" opacity="0.22" filter="url(#p5-soft)" />
+
+  <g fill="url(#p5-near)">
+    <polygon points="-20,520 110,180 240,520" />
+    <polygon points="180,560 300,150 420,560" />
+    <polygon points="360,540 470,210 580,540" />
+    <polygon points="620,560 740,170 860,560" />
+    <polygon points="820,540 950,200 1080,540" />
+    <polygon points="1000,560 1120,230 1240,560" />
+  </g>
+  <rect y="520" width="1200" height="280" fill="url(#p5-near)" opacity="0.9" />
+
+  <rect y="640" width="1200" height="52" fill="#e8f6e2" opacity="0.16" filter="url(#p5-soft)" />
+</svg>

@@ -1,0 +1,39 @@
+---
+/**
+ * 访问统计（Cloudflare Web Analytics）
+ * ============================================================================
+ * 为什么用环境变量而不是写死 token？
+ * 因为写死在代码里，一旦用户忘了改，全站就会一直往 Cloudflare 发无效请求、
+ * 甚至把访问数据统计到别人账号里。所以这里只认环境变量：
+ * 没配 → 什么都不输出（本地开发也干净），配了 → 才注入统计脚本。
+ *
+ * 怎么开通？
+ * 1. 打开 https://dash.cloudflare.com → 左侧 Analytics & Logs → Web Analytics
+ * 2. Add a site → 填你的域名（例如 bqlm0410.top，不用改 DNS，纯前端 JS 统计）
+ * 3. 创建后会给你一段带 token 的 beacon 脚本，把其中 token 的值抄下来
+ *    （形如 data-cf-beacon='{"token": "abcd1234..."}'）
+ *
+ * 怎么配置？
+ * 在项目根目录新建 .env 文件（已被 .gitignore 忽略，不会提交），写入：
+ *   PUBLIC_CF_BEACON_TOKEN=你的token
+ * 变量名必须以 PUBLIC_ 开头，Astro 才会把它暴露给客户端。
+ *
+ * 如果部署在 Cloudflare Pages：
+ * 到 Pages 项目 → Settings → Environment variables，也加一份同名变量
+ * （Production 和 Preview 都加上），否则线上构建出来的页面里没有统计脚本。
+ *
+ * 参考：https://developers.cloudflare.com/web-analytics/
+ * ============================================================================
+ */
+// 只有 PUBLIC_ 开头的变量才会被 Astro 打包进客户端
+const rawToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
+const token = typeof rawToken === 'string' ? rawToken.trim() : '';
+
+/** token 为空 → 不渲染任何东西：不产生无效请求，也不污染统计数据 */
+const enabled = token !== '';
+
+// Cloudflare 要求 data-cf-beacon 是一个 JSON 字符串，形如 {"token":"xxxx"}
+const beaconConfig = JSON.stringify({ token });
+---
+
+{enabled && <script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={beaconConfig}></script>}

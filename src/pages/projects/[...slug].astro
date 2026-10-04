@@ -1,0 +1,201 @@
+---
+/**
+ * 项目详情页 —— /projects/<slug>
+ *
+ * 用 Content Layer API：getStaticPaths 生成静态路径，render(entry) 拿到正文组件。
+ */
+import { getCollection, render } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Comments from '../../components/Comments.astro';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map((project) => ({
+    params: { slug: project.id },
+    props: { project },
+  }));
+}
+
+interface Props {
+  project: CollectionEntry<'projects'>;
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+
+const { title, description, pubDate, tags, repo, demo, cover, status } = project.data;
+
+/** 状态 → 修饰类名，配色见下方 <style>（与 ProjectCard 保持一致） */
+const STATUS_KEY: Record<string, string> = {
+  进行中: 'doing',
+  已完成: 'done',
+  维护中: 'maintaining',
+  已归档: 'archived',
+};
+
+/** 日期格式化：按 UTC 取值，不受构建机时区影响 */
+function formatDate(value: Date | string) {
+  const d = new Date(value);
+  const p = (n: number) => String(n).padStart(2, '0');
+  return `${d.getUTCFullYear()}-${p(d.getUTCMonth() + 1)}-${p(d.getUTCDate())}`;
+}
+---
+
+<BaseLayout title={title} description={description || `${title} —— 项目详情`}>
+  <nav class="crumbs small" aria-label="面包屑">
+    <a href="/projects">项目</a>
+    <span class="dim" aria-hidden="true">/</span>
+    <span class="dim">{title}</span>
+  </nav>
+
+  <header class="project-header">
+    {cover && <img class="project-header__cover" src={cover} alt="" width="1200" height="800" />}
+
+    <h1 class="page-title">{title}</h1>
+    {description && <p class="page-desc">{description}</p>}
+
+    <div class="row project-header__meta">
+      <span class:list={['tag', 'status', `status--${STATUS_KEY[status] ?? 'done'}`]}>{status}</span>
+      <span class="mono small dim">立项 {formatDate(pubDate)}</span>
+      {
+        tags.length > 0 && (
+          <span class="tag-list">
+            {tags.map((t) => (
+              <span class="tag">{t}</span>
+            ))}
+          </span>
+        )
+      }
+    </div>
+
+    {
+      (repo || demo) && (
+        <div class="btn-row project-header__actions">
+          {repo && (
+            <a class="btn btn--primary" href={repo} target="_blank" rel="noopener">
+              源码 GitHub
+            </a>
+          )}
+          {demo && (
+            <a class="btn" href={demo} target="_blank" rel="noopener">
+              在线演示 ↗
+            </a>
+          )}
+        </div>
+      )
+    }
+  </header>
+
+  <article class="prose project-body">
+    <Content />
+  </article>
+
+  {/* 评论区：在 src/consts.ts 里填好 GISCUS 配置并打开 enabled 才会显示 */}
+  <Comments />
+
+  <footer class="project-footer">
+    <a class="btn" href="/projects">← 返回项目列表</a>
+    {
+      repo && (
+        <a class="btn btn--ghost" href={repo} target="_blank" rel="noopener">
+          去 GitHub 看看
+        </a>
+      )
+    }
+  </footer>
+</BaseLayout>
+
+<style>
+  .crumbs {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 1rem;
+    color: var(--text-mute);
+  }
+
+  .project-header {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .project-header__cover {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 1.2;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 1.5rem;
+    background: var(--bg-soft);
+  }
+
+  .project-header .page-title {
+    margin-bottom: 0.5rem;
+  }
+
+  .project-header__meta {
+    margin-top: 1rem;
+    gap: 0.6rem;
+  }
+
+  .project-header__actions {
+    margin-top: 1.25rem;
+  }
+
+  .project-body {
+    margin-bottom: 2.5rem;
+    overflow-wrap: break-word;
+  }
+
+  .comments-slot {
+    margin-bottom: 2rem;
+  }
+
+  .project-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+
+  /* ---------- 状态标签配色（与 ProjectCard 一致，靠 color-mix 自动适配深色模式） ---------- */
+  .tag.status--doing {
+    background: color-mix(in srgb, #3b82f6 14%, var(--surface));
+    border-color: color-mix(in srgb, #3b82f6 28%, transparent);
+    color: color-mix(in srgb, #3b82f6 72%, var(--text));
+  }
+
+  .tag.status--done {
+    background: color-mix(in srgb, #16a34a 15%, var(--surface));
+    border-color: color-mix(in srgb, #16a34a 28%, transparent);
+    color: color-mix(in srgb, #16a34a 70%, var(--text));
+  }
+
+  .tag.status--maintaining {
+    background: color-mix(in srgb, #d97706 16%, var(--surface));
+    border-color: color-mix(in srgb, #d97706 30%, transparent);
+    color: color-mix(in srgb, #d97706 72%, var(--text));
+  }
+
+  .tag.status--archived {
+    background: color-mix(in srgb, #6b7280 14%, var(--surface));
+    border-color: color-mix(in srgb, #6b7280 26%, transparent);
+    color: color-mix(in srgb, #6b7280 72%, var(--text));
+  }
+
+  @media (max-width: 720px) {
+    .project-header__cover {
+      aspect-ratio: 3 / 1.6;
+      margin-bottom: 1.15rem;
+    }
+
+    .project-footer .btn {
+      flex: 1;
+      justify-content: center;
+    }
+  }
+</style>
