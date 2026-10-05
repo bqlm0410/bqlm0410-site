@@ -1,0 +1,937 @@
+{
+  "date": "2026-10-05",
+  "generatedAt": "2026-10-05T08:27:31.506+08:00",
+  "source": "news",
+  "degraded": [
+    "venturebeat"
+  ],
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "count": 8
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "count": 25
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "count": 2
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch AI",
+      "count": 15
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge AI",
+      "count": 10
+    }
+  ],
+  "totalCount": 60,
+  "items": [
+    {
+      "id": "techcrunch-google-froze-its-open-source-bug-bounty-program-due-to-a-sig",
+      "title": "Google froze its open source bug bounty program due to a ‘significant rise’ in AI submissions",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-04T20:31:07.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "开源"
+      ]
+    },
+    {
+      "id": "techcrunch-can-super-intelligence-and-a-non-binding-safety-pact-solve-a",
+      "title": "Can ‘super intelligence’ and a non-binding safety pact solve AI’s image problem?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/04/can-super-intelligence-and-a-non-binding-safety-pact-solve-ais-image-problem/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-04T20:08:34.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "安全"
+      ]
+    },
+    {
+      "id": "hn-49957117",
+      "title": "Homa: The end of TCP for AI clusters [video]",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.youtube.com/watch?v=eZ8WWZzoaR0",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-04T19:42:25.000Z",
+      "score": 47,
+      "comments": 14,
+      "tags": []
+    },
+    {
+      "id": "hn-49956148",
+      "title": "Building a RAG pipeline for semantic code search",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://blog.jetbrains.com/ai/2026/09/building-a-rag-pipeline-for-semantic-code-search-a-developer-diary-and-field-notes/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-04T17:51:48.000Z",
+      "score": 33,
+      "comments": 7,
+      "tags": []
+    },
+    {
+      "id": "theverge-well-if-ai-said-it-it-must-be-true",
+      "title": "NJ’s former Lt Gov is using AI to say he’s innocent of sexual harassment",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004549/well-if-ai-said-it-it-must-be-true",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-04T16:16:04.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-openai-gpt-cheat-starcraft",
+      "title": "An AI couldn’t beat humans at StarCraft, so it decided to cheat",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-04T15:21:59.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-trump-unveils-his-new-super-intelligence-force",
+      "title": "Trump unveils his new Super Intelligence Force",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-04T15:15:10.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "hn-49953495",
+      "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/Niko1221/Strata",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-04T12:51:53.000Z",
+      "score": 574,
+      "comments": 276,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-49952111",
+      "title": "Show HN: AI search for every photo and every frame of video on macOS",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/allenv0/SCM",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-04T09:24:52.000Z",
+      "score": 135,
+      "comments": 64,
+      "tags": []
+    },
+    {
+      "id": "hn-49951891",
+      "title": "How to scale intent, quality, and artistry with AI [video]",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.youtube.com/watch?v=GLvFTMtw4Jk",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-04T08:41:58.000Z",
+      "score": 44,
+      "comments": 13,
+      "tags": []
+    },
+    {
+      "id": "hn-49951641",
+      "title": "What's the future for pure math research in the age of AI?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://writings.stephenwolfram.com/2026/09/whats-the-future-for-pure-math-research-in-the-age-of-ai/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-04T07:53:45.000Z",
+      "score": 55,
+      "comments": 44,
+      "tags": [
+        "研究"
+      ]
+    },
+    {
+      "id": "techcrunch-amazon-responds-to-data-center-backlash-says-it-no-longer-us",
+      "title": "Amazon responds to data center backlash, says it no longer uses NDAs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-03T18:43:57.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "hn-49946228",
+      "title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-03T17:44:29.000Z",
+      "score": 383,
+      "comments": 707,
+      "tags": []
+    },
+    {
+      "id": "hn-49945933",
+      "title": "Agents don't need memory, they need documentation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://liao.gg/blog/agents-dont-need-memory",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-03T17:03:37.000Z",
+      "score": 346,
+      "comments": 210,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "theverge-capcom-ai-game-development",
+      "title": "Capcom is preparing for a ‘future where we create games together with AI’",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/games/1004418/capcom-ai-game-development",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-03T16:49:10.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-openai-safety-employee-resigns-claiming-the-companys-culture",
+      "title": "OpenAI safety employee resigns, claiming the company’s ‘culture is broken’",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-03T16:30:01.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "安全"
+      ]
+    },
+    {
+      "id": "theverge-splice-ceo-kakul-srivastava-ai-interview",
+      "title": "Splice CEO Kakul Srivastava thinks AI emails are killing conversations",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/entertainment/1004162/splice-ceo-kakul-srivastava-ai-interview",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-03T15:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-openai-safety-quits-sounding-the-alarm",
+      "title": "An OpenAI safety employee has quit and is sounding the alarm",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-03T14:31:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "安全"
+      ]
+    },
+    {
+      "id": "techcrunch-all-the-ai-agents-that-can-live-in-your-text-messages",
+      "title": "All the AI agents that can live in your text messages",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-03T14:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-meta-wants-you-to-build-your-own-muse-gadget",
+      "title": "Meta wants your next gadget to be Muse-infused",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-03T00:45:39.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-sean-parker-is-rebuilding-stability-ai-around-music",
+      "title": "Sean Parker is rebuilding Stability AI around music",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-02T21:09:14.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-meta-muse-ai-gadgets-home-link",
+      "title": "Meta open sources code to let you make Muse AI gadgets",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-02T21:08:37.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "开源"
+      ]
+    },
+    {
+      "id": "theverge-apple-limit-mac-disk-access-ai-agents",
+      "title": "Apple will limit Mac disk access as AI agents ‘substantially’ increase risk",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-02T20:08:40.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent",
+        "安全"
+      ]
+    },
+    {
+      "id": "techcrunch-disrupt-2026-layoff-expo-plus-passes-available-for-75-dollar",
+      "title": "Affected by layoffs? Don’t miss this $75 deal for your TechCrunch Disrupt 2026 Expo+ Pass",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/02/disrupt-2026-layoff-expo-plus-passes-available-for-75-dollars/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-02T19:15:51.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "商业"
+      ]
+    },
+    {
+      "id": "techcrunch-apple-says-its-tightening-macos-full-disk-access-controls-du",
+      "title": "Apple says it’s tightening macOS ‘Full Disk Access’ controls due to new risks from AI agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-02T18:11:27.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent",
+        "安全"
+      ]
+    },
+    {
+      "id": "theverge-openai-chatgpt-dots-hands-on-agent",
+      "title": "OpenAI’s Dot agent is enterprise software that can also order your dinner",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-02T18:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent",
+        "商业"
+      ]
+    },
+    {
+      "id": "techcrunch-call-it-ai-call-it-super-intelligence-only-2-of-consumers-ar",
+      "title": "Call it AI, call it Super Intelligence, only 2% of consumers are buying it",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/podcast/call-it-ai-call-it-super-intelligence-only-2-of-consumers-are-buying-it/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-02T17:56:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-its-not-ai-anymore-its-super-intelligence-according-to-the-w",
+      "title": "It’s not AI anymore, it’s ‘super intelligence’ (according to the White House)",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/video/its-not-ai-anymore-its-super-intelligence-according-to-the-white-house/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-02T17:48:16.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-elon-musk-unfollows-shivon-zilis",
+      "title": "Breaking up (with Elon Musk) is hard to do",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1004177/elon-musk-unfollows-shivon-zilis",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-02T17:37:36.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-techcrunch-disrupt-2026-blackstones-jas-khaira-on-building-t",
+      "title": "TechCrunch Disrupt 2026: Blackstone’s Jas Khaira on building the next generation of AI giants",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-blackstones-jas-khaira-on-building-the-next-generation-of-ai-giants/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-02T17:32:05.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-circuit-breaker-labs-hopes-to-make-ai-safer-for-your-kids-an",
+      "title": "Circuit Breaker Labs hopes to make AI safer for your kids (and you)",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/02/circuit-breaker-labs-hopes-to-make-ai-safer-for-your-kids-and-you/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-02T17:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "openai-practical-guide-building-gpt-6",
+      "title": "A model guide for the GPT-6 family",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/practical-guide-building-gpt-6",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-02T16:15:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-pope-leo-xiv-is-not-a-fan-of-ai-generated-art",
+      "title": "Pope Leo XIV is not a fan of AI-generated art",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/02/pope-leo-xiv-is-not-a-fan-of-ai-generated-art/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-02T15:39:41.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-ai-hallucinations-customer-service-jobs-agents",
+      "title": "AI hallucinations are making entitled customers even worse",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/report/1002963/ai-hallucinations-customer-service-jobs-agents",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-02T12:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "商业"
+      ]
+    },
+    {
+      "id": "openai-chatham-financial",
+      "title": "Chatham scales its capital markets expertise with OpenAI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/chatham-financial",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "arxiv-2610.02207",
+      "title": "One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02207v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:59:58.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02206",
+      "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02206v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:59:55.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "Agent",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02204",
+      "title": "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02204v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:59:50.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02203",
+      "title": "Embedding Prediction Helps Image Generation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02203v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:59:49.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02202",
+      "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02202v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:59:47.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "NLP",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02201",
+      "title": "SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02201v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:59:46.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02200",
+      "title": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02200v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:59:45.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "计算机视觉"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02199",
+      "title": "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02199v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:59:42.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "math.OC",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02198",
+      "title": "FERPO: Forward Entropy-Regularized Policy Optimization",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02198v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:59:41.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02195",
+      "title": "Cost-augmented Schrödinger bridges on graphs are exactly solvable: a Feynman-Kac tilt replaces learned control",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02195v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:59:39.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02193",
+      "title": "Hierarchical Continuous Diffusion Language Models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02193v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:59:39.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02191",
+      "title": "The Missing Primitive: Diagnosing and Repairing Mathematical Reasoning in Large Language Models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02191v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:59:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02190",
+      "title": "Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02190v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:59:28.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "math.OC",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02189",
+      "title": "Generative modeling of intrinsically disordered protein regions by reinforcing sparse autoencoder features",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02189v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:59:20.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02188",
+      "title": "DMAD: Distribution Matching as Adversarial Distillation for Fast Visual Generation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02188v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:59:01.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02186",
+      "title": "Higher-Order Molecular Grammars for Generative and Foundation Models in Chemistry",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02186v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:58:45.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02185",
+      "title": "Decoding Looped Transformers Better for (Almost) Free",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02185v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:58:38.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02182",
+      "title": "SoftServe: A Scalable Quasi-Newton Method for Deep Learning",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02182v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:58:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02180",
+      "title": "Generative Cinematographer: Composing Camera and Object Motion in 3D",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02180v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:58:09.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02179",
+      "title": "From Gradients to Capabilities: Understanding Multi-Teacher On-Policy Distillation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02179v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:57:44.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02175",
+      "title": "Effective Resistance and Graph Neural Network Reliability in Tissue-Specific Interactomes",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02175v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:57:10.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "q-bio.MN"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02173",
+      "title": "Every Ablation Is a Dose: Counterweights and the Semblance of Self-Repair",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02173v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:57:04.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "NLP"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02170",
+      "title": "Watch, Infer, Coordinate: Inferring Robot Partner Constraints for Zero-Shot Coordination",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02170v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:56:04.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "商业"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02163",
+      "title": "AutoCompact: Learning When to Compact Context in Long-Horizon Coding Agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02163v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:54:34.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.02161",
+      "title": "DuoMind: Enabling Distributed Multi-Robot Coordination with Semantic Communication",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.02161v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-01T17:53:09.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI"
+      ]
+    }
+  ]
+}
