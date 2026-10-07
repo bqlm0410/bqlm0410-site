@@ -1,0 +1,944 @@
+{
+  "date": "2026-10-07",
+  "generatedAt": "2026-10-07T09:13:38.675+08:00",
+  "source": "news",
+  "degraded": [
+    "venturebeat"
+  ],
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "count": 17
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "count": 15
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "count": 3
+    },
+    {
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "count": 1
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch AI",
+      "count": 15
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge AI",
+      "count": 9
+    }
+  ],
+  "totalCount": 60,
+  "items": [
+    {
+      "id": "hn-49985861",
+      "title": "South Korea says AI agents appear to have been used to hack the country's banks",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.reuters.com/world/south-koreas-lee-says-ai-appears-have-been-used-bank-hacks-2026-10-06/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-06T23:50:33.000Z",
+      "score": 19,
+      "comments": 2,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "theverge-openai-math-release-github",
+      "title": "OpenAI drops another batch of mathematical breakthroughs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-06T23:26:38.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-49985292",
+      "title": "UniEvo-VL: Self-Distillation Training for Multimodal Model Self-Improvement",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2609.38721",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-06T22:51:35.000Z",
+      "score": 10,
+      "comments": 1,
+      "tags": [
+        "模型",
+        "研究"
+      ]
+    },
+    {
+      "id": "techcrunch-ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapp",
+      "title": "Ex-Ramp engineers raise $20M for platform Melius after scrapping their first product",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-06T22:34:03.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "hn-49984923",
+      "title": "Sharing AI progress in mathematics",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-06T22:17:21.000Z",
+      "score": 373,
+      "comments": 305,
+      "tags": []
+    },
+    {
+      "id": "hn-49984736",
+      "title": "Show HN: An AI agent runs ten web errands a day, every transcript published",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://agentability.org/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-06T22:00:58.000Z",
+      "score": 5,
+      "comments": 0,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-49984716",
+      "title": "Penguin Mail – open-source Rust email client for Linux with AI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://penguin-mail.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-06T21:59:43.000Z",
+      "score": 56,
+      "comments": 15,
+      "tags": [
+        "开源"
+      ]
+    },
+    {
+      "id": "techcrunch-how-ai-decision-models-could-change-content-moderation",
+      "title": "How AI decision models could change content moderation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/06/how-ai-decision-models-could-change-content-moderation/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-06T20:35:20.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo",
+      "title": "AI computing startup Lambda to raise $4B ahead of planned IPO",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-06T20:00:30.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "deepmind-embeddinggemma-2-an-open-lightweight-multimodal-embedding-mo",
+      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "source": "deepmind",
+      "sourceName": "Google DeepMind",
+      "publishedAt": "2026-10-06T19:57:04.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-the-next-hurdle-for-ai-agents-getting-websites-to-let-them-i",
+      "title": "The next hurdle for AI agents: getting websites to let them in",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-06T19:56:50.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-hark-releases-an-ai-personal-assistant-with-a-focus-on-priva",
+      "title": "Hark releases an AI personal assistant with a focus on privacy",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/06/hark-releases-an-ai-personal-assistant-with-a-focus-on-privacy/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-06T18:22:45.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品",
+        "安全"
+      ]
+    },
+    {
+      "id": "hn-49981905",
+      "title": "Claude Code’s suggested message feature: I think the real customer is the model",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.zohaib.cc/blog/smartest-claude-code-feature",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-06T18:00:34.000Z",
+      "score": 86,
+      "comments": 47,
+      "tags": [
+        "模型",
+        "商业"
+      ]
+    },
+    {
+      "id": "hn-49981197",
+      "title": "Utah to let AI examine patients and prescribe medication without human oversight",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-06T17:01:52.000Z",
+      "score": 63,
+      "comments": 88,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-mirror-particle-is-building-a-world-model-of-human-behavior",
+      "title": "Mirror Particle is building a ‘world model’ of human behavior",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/06/mirror-particle-is-building-a-world-model-of-human-behavior/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-06T16:35:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-we-cant-just-change-the-definition-of-recording",
+      "title": "We can’t just change the definition of ‘recording’",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/column/1005697/we-cant-just-change-the-definition-of-recording",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-06T16:29:44.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-49980715",
+      "title": "OpenTPU – An open-source AI accelerator, developed by AI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/FeSens/openTPU",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-06T16:23:25.000Z",
+      "score": 223,
+      "comments": 293,
+      "tags": [
+        "开源"
+      ]
+    },
+    {
+      "id": "hn-49980487",
+      "title": "EmbeddingGemma 2: An open, lightweight multimodal embedding model",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-06T16:03:49.000Z",
+      "score": 211,
+      "comments": 29,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "openai-atlassian-partnership",
+      "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/atlassian-partnership",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-06T16:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "商业"
+      ]
+    },
+    {
+      "id": "techcrunch-anthropic-gives-startups-a-free-year-of-enterprise-service-a",
+      "title": "Anthropic is giving startups a free year of Claude Team and $1,000 in credits",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-06T16:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-libreoffice-says-no-ai-is-now-a-software-feature",
+      "title": "LibreOffice says ‘no AI’ is now a software feature",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/06/libreoffice-says-no-ai-is-now-a-software-feature/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-06T15:25:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rival",
+      "title": "Mistral’s new 1T model aims to leapfrog closed and open rivals",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-06T14:33:16.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-pinterests-ai-now-turns-beauty-pins-into-action-plans",
+      "title": "Pinterest’s AI now turns beauty Pins into action plans",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/06/pinterests-ai-now-turns-beauty-pins-into-action-plans/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-06T14:00:49.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-get-all-your-questions-answered-at-techcrunch-disrupt-2026-t",
+      "title": "Get all your questions answered at TechCrunch Disrupt 2026: The full breakout session agenda revealed",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/06/get-all-your-questions-answered-at-techcrunch-disrupt-2026-the-full-breakout-session-agenda-revealed/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-06T14:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-google-gemini-free-flash-lite-only",
+      "title": "Google is about to remove free access to Gemini Flash and Pro",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1005451/google-gemini-free-flash-lite-only",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-06T13:19:01.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-49977979",
+      "title": "Mistral Large 4",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://mistral.ai/news/mistral-large-4/\\",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-06T13:15:49.000Z",
+      "score": 1581,
+      "comments": 961,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-49977689",
+      "title": "Erdosproblems.com Succumbs to the AI Onslaught",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.erdosproblems.com/forum/thread/blog:9",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-06T12:53:58.000Z",
+      "score": 91,
+      "comments": 38,
+      "tags": []
+    },
+    {
+      "id": "openai-jump-trading",
+      "title": "How Jump Trading is scaling quant research with ChatGPT",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/jump-trading",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-06T12:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "研究"
+      ]
+    },
+    {
+      "id": "hn-49976751",
+      "title": "I'm the AGI that's wiping out humanity",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://ajmoon.com/posts/im-the-agi-thats-wiping-out-humanity-heres-how",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-06T10:59:55.000Z",
+      "score": 159,
+      "comments": 98,
+      "tags": []
+    },
+    {
+      "id": "theverge-amazon-alexa-plus-keeps-creepily-singing-lalala-for-minutes-",
+      "title": "Amazon Alexa Plus keeps creepily singing ‘lalala’ for minutes on end",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1005342/amazon-alexa-plus-keeps-creepily-singing-lalala-for-minutes-on-end",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-06T10:53:11.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "openai-advancing-computer-use-with-ironclad",
+      "title": "Advancing computer use with Ironclad",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/advancing-computer-use-with-ironclad",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-06T10:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-49973644",
+      "title": "LLMs may have helped my RSI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://vaughanhilts.me/2026/10/05/llms-immensely-helped-my-rsi.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-06T03:01:04.000Z",
+      "score": 32,
+      "comments": 19,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-49972125",
+      "title": "Ask HN: Are there AI models for generating sounds based on a text and reference?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://news.ycombinator.com/item?id=49972125",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-05T23:24:44.000Z",
+      "score": 20,
+      "comments": 8,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-google-gemini-call-for-me-expansion-rumors",
+      "title": "Gemini Call for Me might tell your mom you’re running late",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-05T23:09:55.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-49970871",
+      "title": "Dust: Pretraining Transformers Without Backpropagation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://qlabs.sh/research/dust",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-05T21:15:07.000Z",
+      "score": 272,
+      "comments": 79,
+      "tags": []
+    },
+    {
+      "id": "hn-49970667",
+      "title": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-05T21:00:21.000Z",
+      "score": 482,
+      "comments": 325,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-openai-will-start-watermarking-chatgpts-text-in-the-eu",
+      "title": "OpenAI will start watermarking ChatGPT’s text in the EU",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-05T20:36:48.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-nolla-health-acne-ai-prescriptions",
+      "title": "This startup is issuing AI-generated acne prescriptions",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-05T20:14:57.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-reflection-debuts-beam-a-open-weight-ai-model-to-rival-chine",
+      "title": "Reflection debuts Beam, an open-weight AI model to rival Chinese models at lower compute cost",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-05T19:33:53.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "开源"
+      ]
+    },
+    {
+      "id": "theverge-ai-math-openai-breakthrough-solution",
+      "title": "All the drama around AI’s takeover of mathematics",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004933/ai-math-openai-breakthrough-solution",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-05T19:28:59.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-49969183",
+      "title": "Beam: Reflection's 501B open-weight model",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://reflection.ai/blog/introducing-beam",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-05T19:16:35.000Z",
+      "score": 541,
+      "comments": 168,
+      "tags": [
+        "模型",
+        "开源"
+      ]
+    },
+    {
+      "id": "theverge-wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
+      "title": "Wikipedia operator says OpenAI’s ‘rogue’ bots may be linked to a May outage",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-05T19:05:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-instinct-brings-its-ai-agent-to-group-chats-even-for-friends",
+      "title": "Instinct brings its AI agent to group chats, even for friends without an account",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/05/instinct-brings-its-ai-agent-to-group-chats-even-for-friends-without-an-account/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-05T18:54:30.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-chec",
+      "title": "TikTok rolls out an AI shopping assistant and one-click checkout",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/05/tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-checkout/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-05T18:29:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "theverge-openai-chatgpt-text-watermarks-eu-ai-act",
+      "title": "OpenAI is adding text watermarking in ChatGPT and Codex",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-05T18:08:39.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.06852",
+      "title": "One Figure, Every Canvas: Editable Flowchart Relayout via Agentic Pipeline",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.06852v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-05T17:59:54.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.06851",
+      "title": "Base Models Can Reason By Taking a Cue From Training Data",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.06851v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-05T17:59:52.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI",
+        "模型",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.06846",
+      "title": "BiasFlow: Geometric Monitoring and Backbone Regularization for Spurious Feature Reliance",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.06846v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-05T17:59:28.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.06844",
+      "title": "Learning to Read the Contextual Tokens in Diffusion Transformers",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.06844v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-05T17:59:17.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.06843",
+      "title": "Recursive Video In-Context Learning for Agentic Robot",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.06843v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-05T17:59:11.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.06834",
+      "title": "Direct Intermediate Initialization for Tilted Diffusion Samplers",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.06834v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-05T17:58:18.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "统计学习",
+        "机器学习",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.06833",
+      "title": "Towards Looped Models Done Right, Part II: Rethinking at Fixed Points",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.06833v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-05T17:58:15.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.06831",
+      "title": "UniSlider: Perceptually Uniform Sliders for Continuous Image Editing",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.06831v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-05T17:58:11.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.06830",
+      "title": "MemPilot: Orchestrating On-Demand Multimodal Memory Curation for LLM Agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.06830v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-05T17:58:06.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.06829",
+      "title": "CLIFT: Conformal Self-Verification for Web Agent Training and Test-Time Scaling",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.06829v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-05T17:57:51.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "Agent",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.06825",
+      "title": "PlotGround: Grounding Plot Digitization in Real Scientific Figures and Their Source Data",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.06825v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-05T17:57:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "计算机视觉"
+      ]
+    },
+    {
+      "id": "arxiv-2610.06824",
+      "title": "TasteVal: Measuring the Experimental Research Taste of AI Systems Against Human Experts",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.06824v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-05T17:57:15.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.06823",
+      "title": "Deep Learning for Sleep Heart Rate Estimation from Accelerometers: Toward Population-Scale Cardiac Insight Without Optical Sensors",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.06823v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-05T17:56:57.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.06822",
+      "title": "Private online learning and prediction for Littlestone classes",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.06822v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-05T17:56:47.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.06817",
+      "title": "Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice Text-to-Speech Model",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.06817v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-05T17:56:07.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "语音",
+        "AI",
+        "模型"
+      ]
+    }
+  ]
+}
