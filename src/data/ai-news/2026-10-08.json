@@ -1,0 +1,955 @@
+{
+  "date": "2026-10-08",
+  "generatedAt": "2026-10-08T09:34:50.804+08:00",
+  "source": "news",
+  "degraded": [
+    "venturebeat"
+  ],
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "count": 11
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "count": 27
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "count": 1
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch AI",
+      "count": 13
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge AI",
+      "count": 8
+    }
+  ],
+  "totalCount": 60,
+  "items": [
+    {
+      "id": "hn-50000431",
+      "title": "100 days later: Microsoft still steers Windows and Copilot users to Edge",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://blog.mozilla.org/en/mozilla/over-the-edge-2-100-days-later/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-08T00:06:27.000Z",
+      "score": 7,
+      "comments": 1,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50000356",
+      "title": "What is the actual percentage of people For and Against AI?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://news.ycombinator.com/item?id=50000356",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-07T23:55:21.000Z",
+      "score": 7,
+      "comments": 37,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-nous-research-confirms-it-hit-1-5b-valuation-launches-ai-age",
+      "title": "Nous Research confirms it hit $1.5B valuation, launches AI agents for business users",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-07T20:48:45.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent",
+        "研究",
+        "产品"
+      ]
+    },
+    {
+      "id": "techcrunch-microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-wind",
+      "title": "Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-07T20:22:37.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品",
+        "硬件"
+      ]
+    },
+    {
+      "id": "theverge-openai-chatgpt-intelligent-ui-gpt-6",
+      "title": "ChatGPT’s ‘Intelligent UI’ update fills its responses with pictures, charts, and buttons",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-07T19:10:42.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "产品"
+      ]
+    },
+    {
+      "id": "hn-49997161",
+      "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-07T18:49:40.000Z",
+      "score": 269,
+      "comments": 271,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-microsoft-surface-laptop-ultra-windows-event-everything-anno",
+      "title": "Everything announced at Microsoft’s Surface Laptop Ultra event",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1007147/microsoft-surface-laptop-ultra-windows-event-everything-announced",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-07T18:42:22.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "techcrunch-metas-muse-launches-on-ipad-just-a-month-after-its-mobile-de",
+      "title": "Meta’s Muse launches on iPad just a month after its mobile debut",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/07/metas-muse-launches-on-ipad-just-a-month-after-its-mobile-debut/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-07T18:30:57.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "techcrunch-chatgpt-for-teens-keeps-teens-talking-even-during-mental-hea",
+      "title": "ChatGPT for Teens keeps teens talking, even during mental health crises",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/07/chatgpt-for-teens-keeps-teens-talking-even-during-mental-health-crises/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-07T18:15:28.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-49996542",
+      "title": "AI Model Groupthink",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://magicnumbers.io/2026/10/06/ai-model-groupthink/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-07T18:08:38.000Z",
+      "score": 23,
+      "comments": 7,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-49996437",
+      "title": "Claude Haiku 5.5",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.anthropic.com/claude-haiku-5-5",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-07T18:01:32.000Z",
+      "score": 672,
+      "comments": 336,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-microsoft-windows-copilot-ai-control-search-hybrid-intellige",
+      "title": "Microsoft is giving Copilot more control over Windows and your files",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1007113/microsoft-windows-copilot-ai-control-search-hybrid-intelligence",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-07T18:01:20.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-49996425",
+      "title": "GPT‑6 and Intelligent UI for everyone",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/gpt-6-for-everyone/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-07T18:00:58.000Z",
+      "score": 492,
+      "comments": 259,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-ne",
+      "title": "ChatGPT is getting a lot more visual, with the launch of a new interface",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-07T18:00:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "产品"
+      ]
+    },
+    {
+      "id": "hn-49996259",
+      "title": "Docker Agent",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/docker/docker-agent",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-07T17:48:38.000Z",
+      "score": 178,
+      "comments": 82,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "theverge-microsoft-surface-rtx-spark-dev-box-preorder",
+      "title": "Surface RTX Spark Dev Box is available for preorder for $5,999",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1006915/microsoft-surface-rtx-spark-dev-box-preorder",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-07T17:46:44.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-49995778",
+      "title": "Show HN: Pinrail – A desktop inbox where coding agents wait for your review",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/forgeplane/pinrail",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-07T17:15:03.000Z",
+      "score": 19,
+      "comments": 3,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-49995539",
+      "title": "Show HN: Agent.reviews – Where AI agents read and write reviews on tools",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://agent.reviews/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-07T16:59:11.000Z",
+      "score": 45,
+      "comments": 38,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-meta-rolls-out-new-ai-tools-to-detect-ads-that-secretly-lead",
+      "title": "Meta rolls out new AI tools to detect ads that secretly lead to child sexual abuse material",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/07/meta-rolls-out-new-ai-tools-to-detect-ads-that-secretly-lead-to-child-sexual-abuse-material/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-07T16:53:46.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "theverge-openai-chatgpt-teens-college-planner-notecards",
+      "title": "ChatGPT is getting college planning tools",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1005194/openai-chatgpt-teens-college-planner-notecards",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-07T16:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-muse-ai-agent-ios-app-ipad-support",
+      "title": "Muse launches on the iPad",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1006813/muse-ai-agent-ios-app-ipad-support",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-07T15:37:23.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "techcrunch-healthleap-raises-38m-for-its-ai-that-flags-hospital-patient",
+      "title": "Healthleap raises $38M for its AI that flags hospital patients who may need a closer look",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/07/healthleap-raises-38m-for-its-ai-that-flags-hospital-patients-who-may-need-a-closer-look/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-07T15:07:08.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "techcrunch-tony-fadell-on-why-the-first-wave-of-ai-gadgets-failed-and-w",
+      "title": "Tony Fadell on why the first wave of AI gadgets failed — and what comes next",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/07/tony-fadell-on-why-the-first-wave-of-ai-gadgets-failed-and-what-comes-next/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-07T14:41:38.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-google-meta-biohub-investment-virtual-cell",
+      "title": "Google invests millions in Mark Zuckerberg’s efforts to create a ‘virtual cell’",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1006766/google-meta-biohub-investment-virtual-cell",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-07T14:40:52.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-google-experiments-with-an-ai-powered-gaming-platform",
+      "title": "Google experiments with an AI-powered gaming platform",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/07/google-experiments-with-an-ai-powered-gaming-platform/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-07T14:36:23.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-openais-alexander-embiricos-is-coming-to-techcrunch-disrupt-",
+      "title": "OpenAI’s Alexander Embiricos is coming to TechCrunch Disrupt 2026 — days after the launch of Dots",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/07/openais-alexander-embiricos-is-coming-to-techcrunch-disrupt-2026-days-after-the-launch-of-dots/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-07T14:30:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "techcrunch-get-hands-on-the-full-lineup-of-interactive-roundtables-at-t",
+      "title": "Get hands-on: The full lineup of interactive roundtables at TechCrunch Disrupt 2026",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/07/get-hands-on-the-full-lineup-of-interactive-roundtables-at-techcrunch-disrupt-2026/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-07T14:15:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-49993121",
+      "title": "AI-assisted proof of optimal packing for 11 squares",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/Queuingtheorydotcom/11SquaresFormalized",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-07T14:10:55.000Z",
+      "score": 109,
+      "comments": 52,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-6-days-to-techcrunch-disrupt-2026-save-on-your-pass-before-d",
+      "title": "6 days to TechCrunch Disrupt 2026: Save on your pass before doors open",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/07/6-days-to-techcrunch-disrupt-2026-save-on-your-pass-before-doors-open/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-07T14:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-googles-new-synthid-website-can-identify-ai-generated-media",
+      "title": "Google’s new SynthID website can identify AI-generated media",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/07/googles-new-synthid-website-can-identify-ai-generated-media/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-07T14:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "arxiv-2610.09946",
+      "title": "Learning Traffic Flow Dynamics with Stochastic Physics-Informed Neural Cellular Automata",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09946v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T12:27:22.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09944",
+      "title": "AgentTime: Can Agents Estimate and Control Their Own Runtime?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09944v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T12:26:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09943",
+      "title": "Many Ways to Succeed: Diversity-Driven RL Fine-Tuning for VLA Generalization",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09943v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T12:26:21.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09938",
+      "title": "Fast holographic inversion of superconducting domes",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09938v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T12:24:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "hep-th",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09937",
+      "title": "Where Can a Decision Model Diagnose HVAC Faults? Reasoning Demand, Physical Representation, and Robustness Under Shift",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09937v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T12:23:55.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09934",
+      "title": "Itgan at NADI 2026 shared task: Parameter-Efficient Whisper Adaptation for Robust, Mixed-Dialect and Code-Switched Arabic ASR",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09934v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T12:18:40.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09929",
+      "title": "Expected Sample Complexity in Multi-Armed Bandits",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09929v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T12:16:27.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "统计学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09927",
+      "title": "KGATE : a Knowledge Graph Embedding Training Environment",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09927v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T12:14:50.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09920",
+      "title": "Inverting Multi-Vector Visual Document Indices",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09920v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T12:10:11.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "信息检索",
+        "NLP"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09919",
+      "title": "Eigenvalues of the Hessian in Deep Learning: The Origin of Symmetry and Its Breaking",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09919v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T12:08:48.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "math.OC"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09916",
+      "title": "NeuralZip: Reusable Setup for Fast Lossless Compression",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09916v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T12:06:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09914",
+      "title": "RollVerify: Bridging Efficiency and Accuracy in Long-Tail Rollout Reinforcement Learning",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09914v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T12:05:33.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "hn-49991580",
+      "title": "Write Like It's 1866: LLMs Relearn Telegraphese",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://fiveminutesforward.com/post/2026-10-04-telegraph-test/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-07T12:04:36.000Z",
+      "score": 84,
+      "comments": 53,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09906",
+      "title": "Constrained-Action AI Remediation for SIEM/XDR via a NeMo-Guardrails Proxy",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09906v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T12:00:51.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "安全",
+        "AI"
+      ]
+    },
+    {
+      "id": "openai-teens-learn-and-plan",
+      "title": "Helping teens learn, plan, and shape the future of AI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/teens-learn-and-plan",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-07T12:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-doordash-ai-agentic-food-delivery-bites",
+      "title": "AI could upend food delivery",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1005726/doordash-ai-agentic-food-delivery-bites",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-07T12:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "arxiv-2610.09898",
+      "title": "Learning joint probabilistic weather forecasts from station observations alone",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09898v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T11:57:10.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "stat.AP",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09896",
+      "title": "NL2Hull: A Natural Language-Driven Constrained Ship Design Decision Framework",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09896v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T11:55:01.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09894",
+      "title": "QCATS: Query Context-Aware Transformer Slicing for Efficient Predictive Query Processing",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09894v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T11:52:57.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "cs.DB",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09892",
+      "title": "Defensive Sufficiency in a Stackelberg Model of AI Security",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09892v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T11:51:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "安全",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09891",
+      "title": "A Scoping Review and Experimental Study on Reinforcement Learning from Human Feedback for Human-Robot Collaboration",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09891v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T11:51:54.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "人机交互",
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09890",
+      "title": "Outperformance Inverse Optimization: Learning Objective Functions that Outperform Agent Decisions",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09890v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T11:51:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "math.OC",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09889",
+      "title": "Identifiability of a dissipative knowledge-dynamics model: exact recovery under designed excitation, degeneration on observational data",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09889v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T11:50:29.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "math.OC",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09886",
+      "title": "Sparsifying Stochasticity, Not Capacity: Partial Stochasticity via Deep Weight Factorization of Prior Scales",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09886v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T11:45:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "统计学习",
+        "机器学习",
+        "开源"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09877",
+      "title": "Layerwise Error Attribution for Fast and Robust Mixed-Precision Post-Training Quantization",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09877v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T11:37:14.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09876",
+      "title": "Think Before You Paint: Recursive Latent Reasoning for Diffusion Models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09876v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T11:36:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "机器学习",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09872",
+      "title": "LiveMACE: Process-Aware Evaluation of LLM Agent Capabilities in Evolving Markets",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09872v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T11:33:21.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "NLP",
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09871",
+      "title": "An AI-assisted conditioning and geological interpretation workflow for usage in implicit geological modeling",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09871v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T11:32:47.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "physics.geo-ph",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09870",
+      "title": "Deadline-Aware Multi-Agent Reinforcement Learning for TSN-Based Vehicular Edge Networks",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09870v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T11:30:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "cs.NI",
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.09866",
+      "title": "MUNITE: Unified Multimodal Latent Inference for Any-to-Any Multimodal Generation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.09866v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-07T11:27:35.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "模型"
+      ]
+    }
+  ]
+}
