@@ -1,0 +1,937 @@
+{
+  "date": "2026-10-09",
+  "generatedAt": "2026-10-09T09:45:30.758+08:00",
+  "source": "news",
+  "degraded": [
+    "venturebeat"
+  ],
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "count": 10
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "count": 23
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "count": 3
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch AI",
+      "count": 15
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge AI",
+      "count": 9
+    }
+  ],
+  "totalCount": 60,
+  "items": [
+    {
+      "id": "hn-50014150",
+      "title": "Show HN: Edi Life OS – self-hosted life dashboard with an MCP server for AI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/edrisranjbar/lifeos",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-09T00:02:19.000Z",
+      "score": 15,
+      "comments": 2,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50014011",
+      "title": "I gave four coding agents $100 budget to build a PDF editor",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://blog.nielstron.de/2026/10/08/the-remaining-shortcomings-of-coding-agents/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-08T23:43:50.000Z",
+      "score": 4,
+      "comments": 2,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50013902",
+      "title": "OpenAI, the Partition Principle, and Mathematics",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://karagila.org/2026/openai-pp/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-08T23:29:43.000Z",
+      "score": 84,
+      "comments": 99,
+      "tags": []
+    },
+    {
+      "id": "theverge-anthropic-open-source-oss-scanner",
+      "title": "Anthropic launches free AI security scans for open-source projects",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-08T21:53:51.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "开源",
+        "产品",
+        "安全"
+      ]
+    },
+    {
+      "id": "techcrunch-pretend-youre-sitting-at-elizabeth-holmes-desk-on-this-weird",
+      "title": "Pretend you’re sitting at Elizabeth Holmes’ desk on this weirdly detailed website",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/08/pretend-youre-sitting-at-elizabeth-holmes-desk-on-this-weirdly-detailed-website/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-08T21:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50011999",
+      "title": "AI-ready biological data: $1.8B global commitment",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://biohub.org/news/virtual-biology-initiative-expansion/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-08T20:46:25.000Z",
+      "score": 69,
+      "comments": 7,
+      "tags": []
+    },
+    {
+      "id": "theverge-california-shut-down-rek-fighting-robot-company-human",
+      "title": "California is trying to shut down robot vs. human cage matches",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1008401/california-shut-down-rek-fighting-robot-company-human",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-08T20:06:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-fired-openai-safety-researchers-dispute-misconduct-claims-wa",
+      "title": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-08T20:04:26.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "研究",
+        "安全"
+      ]
+    },
+    {
+      "id": "hn-50010936",
+      "title": "We have LLMs now. Why are the docs still wrong?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://amendary.com/blog/keeping-docs-in-sync-with-code",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-08T19:38:41.000Z",
+      "score": 11,
+      "comments": 7,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50010656",
+      "title": "Vitalik Buterin backs crypto ‘bunker mode’ amid rapid AI math advances",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://cointelegraph.com/news/justin-drake-urges-crypto-bunker-mode-as-ai-could-break-wallet-security-within-months",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-08T19:17:51.000Z",
+      "score": 60,
+      "comments": 49,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed",
+      "title": "Ben Affleck is an AI nerd, and the internet is impressed",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-08T18:20:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1",
+      "title": "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-08T18:19:45.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "techcrunch-openais-revenue-is-reportedly-20-billion-less-than-previousl",
+      "title": "OpenAI’s revenue is reportedly $20 billion less than previously projected",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-08T18:19:42.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "商业"
+      ]
+    },
+    {
+      "id": "techcrunch-google-brings-agentic-ai-to-gemini-starting-with-businesses",
+      "title": "Google brings agentic AI to Gemini, starting with businesses",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-08T18:18:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-anthropic-changes-usage-policy-to-ban-model-abuse-and-electi",
+      "title": "Anthropic changes usage policy to ban model abuse and election interference",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-08T18:16:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "安全"
+      ]
+    },
+    {
+      "id": "hn-50009634",
+      "title": "Show HN: Pocketty – iPhone SSH terminal that pings you when an agent is blocked",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://pocketty.app/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-08T18:11:52.000Z",
+      "score": 22,
+      "comments": 9,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-openais-math-solutions-arent-meeting-the-fields-standards-ye",
+      "title": "OpenAI’s math solutions aren’t meeting the field’s standards yet",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-08T18:10:55.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-usa-today-openai-copyright-lawsuit",
+      "title": "USA Today becomes the latest publisher to sue OpenAI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-08T17:58:33.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-spacexai-omarchy-grok-david-heinemeier-hansson",
+      "title": "SpaceXAI backs Omarchy, the controversial Linux distro, with $1.5 million in compute",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1008148/spacexai-omarchy-grok-david-heinemeier-hansson",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-08T17:57:01.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-anthropic-new-usage-policy-abuse-claude",
+      "title": "Anthropic bans ‘abusive or cruel behavior’ toward Claude",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-08T17:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50008187",
+      "title": "OpenAI annualised revenues $20B less than previously signalled",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-08T16:45:58.000Z",
+      "score": 351,
+      "comments": 246,
+      "tags": []
+    },
+    {
+      "id": "hn-50007993",
+      "title": "Show HN: Jevman – AI decision models play Pac-Man",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://opper.ai/jevman-benchmark/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-08T16:34:13.000Z",
+      "score": 29,
+      "comments": 4,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "openai-oracle",
+      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/oracle",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-08T16:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-naturas-smart-ring-puts-ai-agents-on-your-finger",
+      "title": "Natura’s $99 smart ring puts AI agents on your finger",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/08/naturas-smart-ring-puts-ai-agents-on-your-finger/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-08T16:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-age",
+      "title": "Goodfire says its new ‘inside-out’ monitors catch rogue AI agents at a fraction of the cost",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-08T16:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "theverge-google-ai-notetaking-app-transcribe-offline",
+      "title": "Google’s AI note-taking app transcribes your meetings completely offline",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-08T15:27:30.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-hear-from-ambrosia-energy-and-bloom-energy-execs-on-where-th",
+      "title": "Hear from Ambrosia Energy and Bloom Energy execs on where the AI infrastructure boom is creating opportunity at TechCrunch Disrupt 2026",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/08/hear-from-ambrosia-energy-and-bloom-energy-execs-on-where-the-ai-infrastructure-boom-is-creating-opportunity-at-disrupt-2026/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-08T15:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-google-gemini-ai-agent-enterprise",
+      "title": "Google is launching a one-stop Gemini agent for your work tasks",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-08T14:28:03.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "Agent",
+        "产品"
+      ]
+    },
+    {
+      "id": "techcrunch-5-days-to-techcrunch-disrupt-2026-dont-pay-more-at-the-door",
+      "title": "5 days to TechCrunch Disrupt 2026: Don’t pay more at the door for your pass",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/08/5-days-to-techcrunch-disrupt-2026-dont-pay-more-at-the-door/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-08T14:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-cal-ais-19-year-old-founder-just-raised-10m-for-his-new-ai-s",
+      "title": "Cal AI’s 19-year-old founder just raised $10M for his new AI startup",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/08/cal-ais-19-year-old-founder-just-raised-10m-for-his-new-ai-startup/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-08T14:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "theverge-meta-muse-openai-dots-ai-agent-race-privacy-free",
+      "title": "Can you trust Meta’s Muse or OpenAI’s Dots to run your life?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/podcast/1007408/meta-muse-openai-dots-ai-agent-race-privacy-free",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-08T14:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-artificial-is-a-wicked-satire-that-also-sticks-to-the-facts",
+      "title": "Artificial is a wicked satire that also sticks to the facts",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1007786/artificial-is-a-wicked-satire-that-also-sticks-to-the-facts",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-08T14:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50005608",
+      "title": "Sub-1-Bit LLM Compression via Latent Factorization",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/SamsungLabs/LittleBit",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-08T13:29:46.000Z",
+      "score": 77,
+      "comments": 22,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-google-releases-a-new-local-first-granola-competitor",
+      "title": "Google releases a new local-first Granola competitor",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-competitor/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-08T13:28:39.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "techcrunch-chinas-manus-raises-over-500m-in-first-funding-round-since-s",
+      "title": "China’s Manus raises over $500M in first funding round since split with Meta",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/08/chinas-manus-raises-over-500m-in-first-funding-round-since-split-with-meta/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-08T13:20:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "openai-pollo-ai",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/pollo-ai",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "openai-legalon-halves-codex-costs",
+      "title": "LegalOn halves Codex costs while maintaining development speed",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/legalon-halves-codex-costs",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-08T12:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "arxiv-2610.11707",
+      "title": "DeltaReplay: Task-Relative Memory Reuse for Mobile GUI Agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11707v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T11:12:57.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11706",
+      "title": "Does an Illumination Prior Help Face-Swap Detection? A Controlled Study of Temporal Self-Blended Images",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11706v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T11:12:45.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11704",
+      "title": "Intervention anchors and scientific verification in synthetic vascular predictive representations",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11704v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T11:10:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11697",
+      "title": "What is the goal of unsupervised machine learning?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11697v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T11:07:04.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11696",
+      "title": "A 3D Characterization Framework for Intelligent Sequential Decision Making",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11696v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T11:06:51.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11695",
+      "title": "Structured Sentiment Analysis Using Sequence Labeling as Dependency Graph Parsing",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11695v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T11:06:29.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11694",
+      "title": "Elucidating the Space of Enzymatic Reaction: A Unified Benchmark and Pretrained Model",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11694v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T11:05:48.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "q-bio.QM",
+        "AI",
+        "模型",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11692",
+      "title": "Can Jev be Your Q or Policy in Reinforcement Learning?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11692v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T11:02:14.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11690",
+      "title": "Epistemic Disturbance in the Graph Model for Conflict Resolution: State-Preserving Actions, Four-Valued Assessments, and the Distinction between Capability and Intention",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11690v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T11:00:34.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "cs.GT",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11685",
+      "title": "HI3D 3.0 (Twinkle3D): Object-specific 3D Asset Generation with High Resolution",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11685v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T10:57:06.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11683",
+      "title": "Camera-Noise Residuals for Face-Swap Detection: Redundant, Not Complementary, and Why",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11683v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T10:55:41.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11678",
+      "title": "TRACE: Diagnosing Verifier Brittleness in Agentic Evaluation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11678v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T10:52:26.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11670",
+      "title": "Early Signatures of Memorization in Diffusion Models via Basin Geometry and Cyclic Denoising",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11670v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T10:47:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11668",
+      "title": "$σ$Transfer: Uncertainty Transfer from Small to Large Networks under $μ\\mathrm{P}$",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11668v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T10:40:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "统计学习",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11665",
+      "title": "Evi-VN: Hard Region Guided Virtual Node Evidence Injection for GNN-Based Fraud Detection",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11665v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T10:39:10.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11663",
+      "title": "Constrained Command-Conditioned Reinforcement Learning with Bandit Strategy Selection in Real-Time Strategy Games",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11663v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T10:37:33.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11662",
+      "title": "Lamarck's Driving School: Discovering Autonomous Driving Training Strategies through Evolutionary Competition",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11662v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T10:36:41.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11659",
+      "title": "DIAL-OPD: Learning More from Fewer Tokens in On-Policy Distillation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11659v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T10:36:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11655",
+      "title": "Harness Evolution Hits a Ceiling: When Weight Training Should Begin",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11655v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T10:33:29.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "NLP",
+        "开源",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11651",
+      "title": "Evidence-Traceable Dynamic Interviewer Architecture for Expertise-Adaptive Qualitative Interviews Using Local LLMs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11651v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T10:26:13.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11650",
+      "title": "SkillContrast: Difference-Guided Text Selection for Agent Skill Reranking",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11650v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T10:25:33.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "信息检索",
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11647",
+      "title": "One Skill Too Many: How Co-Installed Skills Conflict in Coding Agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11647v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T10:20:47.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "cs.SE",
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.11646",
+      "title": "Phonologically Informed Tokenization for German Speech Recognition: A Cross-Domain Study",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.11646v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T10:20:43.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "机器学习",
+        "研究"
+      ]
+    }
+  ]
+}
