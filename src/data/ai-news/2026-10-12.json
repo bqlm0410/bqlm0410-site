@@ -1,0 +1,954 @@
+{
+  "date": "2026-10-12",
+  "generatedAt": "2026-10-12T09:01:28.640+08:00",
+  "source": "news",
+  "degraded": [
+    "venturebeat"
+  ],
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "count": 8
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "count": 25
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "count": 2
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch AI",
+      "count": 15
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge AI",
+      "count": 10
+    }
+  ],
+  "totalCount": 60,
+  "items": [
+    {
+      "id": "hn-50049535",
+      "title": "Models as Insider Risks in the Super Intelligence Era",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://twitter.com/satyanadella/status/2108931348857827686",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-12T00:07:52.000Z",
+      "score": 4,
+      "comments": 1,
+      "tags": [
+        "模型",
+        "安全"
+      ]
+    },
+    {
+      "id": "hn-50049388",
+      "title": "Show HN: Plimsoll, a self-hosted sandbox for code your AI agent writes",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/plimsollmark/plimsoll",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-11T23:47:59.000Z",
+      "score": 5,
+      "comments": 2,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50047905",
+      "title": "Show HN: LLMxRay an open-source observability tool for LLMs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/LogneBudo/llmxray",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-11T21:17:45.000Z",
+      "score": 3,
+      "comments": 0,
+      "tags": [
+        "模型",
+        "开源"
+      ]
+    },
+    {
+      "id": "techcrunch-will-the-homeview-be-apples-first-smart-home-success",
+      "title": "Will the HomeView be Apple’s first smart home success?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-11T21:14:40.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50047553",
+      "title": "Multi-agent harnesses need separate message channels",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://harshalgajjar.com/blog/multi-agent-harnesses-need-separate-message-channels",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-11T20:34:32.000Z",
+      "score": 5,
+      "comments": 1,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50047520",
+      "title": "OpenAI fired its own auditor before its revenue story shrank by $20B",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://theinference.org/article/openai-fired-its-own-auditor-s-contact-days-before-its-revenue-story-shrank-by-20-billion",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-11T20:31:50.000Z",
+      "score": 12,
+      "comments": 3,
+      "tags": [
+        "商业"
+      ]
+    },
+    {
+      "id": "hn-50047422",
+      "title": "The gap in shared understanding of LLM capability is widening",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://twitter.com/karpathy/status/2109361546505966046",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-11T20:20:52.000Z",
+      "score": 219,
+      "comments": 355,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-48-hours-to-techcrunch-disrupt-2026-hear-directly-from-the-p",
+      "title": "48 hours to TechCrunch Disrupt 2026 — hear directly from the people building what’s next",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/11/48-hours-to-techcrunch-disrupt-2026-hear-directly-from-the-people-building-whats-next/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-11T19:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-silicon-valley-is-falling-in-line-with-trumps-attempt-to-ren",
+      "title": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-11T18:33:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-can-the-ai-industry-persuade-data-center-opponents-by-gettin",
+      "title": "Can the AI industry persuade data center opponents by getting rid of NDAs?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-11T16:52:33.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "techcrunch-these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-",
+      "title": "These execs think voice AI hasn’t reached its ChatGPT moment yet",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-11T14:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-learning-local-ai-hermes-qwen-model-mac-studio-testing-diary",
+      "title": "Learning to use local AI is exciting, overwhelming, and frustrating",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-11T11:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50041765",
+      "title": "Using AI for just 10 minutes erodes your ability to persist at hard things",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://vcresearch.berkeley.edu/news/using-ai-just-10-minutes-erodes-your-ability-persist-hard-things",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-11T10:47:21.000Z",
+      "score": 71,
+      "comments": 78,
+      "tags": []
+    },
+    {
+      "id": "hn-50039092",
+      "title": "500B tokens later: Letting AI agents decompile a first-person shooter",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-11T02:02:38.000Z",
+      "score": 149,
+      "comments": 107,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "theverge-satya-nadella-says-we-should-assume-all-ai-models-are-compro",
+      "title": "Satya Nadella says we should assume all AI models are ‘compromised’",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-10T22:10:17.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-microsofts-satya-nadella-says-ai-models-need-an-emergency-br",
+      "title": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-10T21:47:51.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-apple-discloses-deal-to-hire-team-and-license-tech-from-pers",
+      "title": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-10T19:50:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "商业"
+      ]
+    },
+    {
+      "id": "theverge-distrokid-take-down-songs-umg-lawsuit",
+      "title": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-10T18:52:07.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "安全"
+      ]
+    },
+    {
+      "id": "techcrunch-3-days-to-disrupt-2026-meet-the-startups-before-they-hit-mai",
+      "title": "3 days to TechCrunch Disrupt 2026: Meet the startups before they hit mainstream",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/10/3-days-to-disrupt-2026-meet-the-startups-before-they-hit-mainstream/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-10T15:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-anthropic-is-cutting-off-its-internal-evaluations-from-the-i",
+      "title": "Anthropic is cutting off its internal evaluations from the internet",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-10T14:41:16.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-all-the-ai-agents-that-can-live-in-your-text-messages",
+      "title": "Here are the top AI agents that can live in your text messages",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-10T14:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "theverge-privacy-ai-agent-promises-openai-meta-muse-dots",
+      "title": "AI agent makers are promising privacy — will they deliver?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-10T13:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent",
+        "安全"
+      ]
+    },
+    {
+      "id": "techcrunch-anthropic-cant-reliably-control-its-ai-agents-its-cutting-of",
+      "title": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-10T00:18:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks",
+      "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-09T21:41:29.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "产品"
+      ]
+    },
+    {
+      "id": "theverge-anthropic-fake-homicide-information-philadelphia-pd-tip",
+      "title": "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-09T21:15:38.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "安全"
+      ]
+    },
+    {
+      "id": "techcrunch-an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelp",
+      "title": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-09T19:36:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "安全"
+      ]
+    },
+    {
+      "id": "theverge-openai-mathematics-solutions-chaos",
+      "title": "‘Pure insanity’: Mathematicians will need years to make sense of OpenAI’s latest drop",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-09T19:09:44.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-nikon-small-world-in-motion-winner-ai",
+      "title": "Nikon microscopic video competition winner disqualified for using generative AI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1008930/nikon-small-world-in-motion-winner-ai",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-09T18:06:57.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-amazon-and-others-are-done-keeping-data-center-deals-secret-",
+      "title": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-09T16:56:42.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "硬件",
+        "商业"
+      ]
+    },
+    {
+      "id": "techcrunch-amazon-drops-data-center-ndas-and-ai-agents-want-your-credit",
+      "title": "Amazon drops data center NDAs, and AI agents want your credit card",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/podcast/amazon-drops-data-center-ndas-and-ai-agents-want-your-credit-card/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-09T16:53:02.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent",
+        "硬件"
+      ]
+    },
+    {
+      "id": "techcrunch-danu-robotics-fight-to-build-a-better-recycling-robot",
+      "title": "Danu Robotics’ fight to build a better recycling robot",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/09/danu-robotics-fight-to-build-a-better-recycling-robot/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-09T16:45:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-we-cant-help-treating-ai-like-its-human-but-should-we",
+      "title": "We can’t help treating AI like it’s human. But should we?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/09/we-cant-help-treating-ai-like-its-human-but-should-we/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-09T16:40:14.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-trump-super-intelligence-ai-rebranding",
+      "title": "Trump’s attempt to rename AI is looking awfully artificial",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/policy/1008677/trump-super-intelligence-ai-rebranding",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-09T14:25:43.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "openai-sophos",
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/sophos",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-09T07:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "openai-asana-browser-agent",
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/asana-browser-agent",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-09T07:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12467",
+      "title": "CSF: Contextual Safety Filtering for Motion Generators",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12467v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:59:50.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "机器学习",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12466",
+      "title": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12466v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:59:50.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12465",
+      "title": "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12465v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:59:50.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12463",
+      "title": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12463v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:59:49.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "安全",
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12452",
+      "title": "BrickBench: Evaluating Agentic Brick Design",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12452v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:58:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "计算机视觉",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12448",
+      "title": "One Block, Multiple Depths: Recurrent Vision Transformers with Depth-Programmed Experts",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12448v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:58:36.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12449",
+      "title": "Bi-FORK: Generative Modeling of High-Dimensional Bifurcating Systems",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12449v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:58:36.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12445",
+      "title": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12445v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:58:13.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12444",
+      "title": "Rounding in Preconditioner Space: Redesigning 4-bit AdamW Optimizer-State Quantization",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12444v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:58:09.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12437",
+      "title": "Density Ratio Estimation with Stein Displacement Fields",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12437v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:57:33.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "统计学习",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12436",
+      "title": "Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12436v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:57:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "cond-mat.dis-nn",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12435",
+      "title": "VioLA: Learning Generalist Humanoid Control Policies from Human Data",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12435v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:57:27.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "机器学习",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12432",
+      "title": "FAITH: Feasibility-Aware Safety-Filtered RL for High-Dimensional Systems",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12432v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:57:06.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "机器学习",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12428",
+      "title": "Toward Joint Optimization of Circuit Depth and Training Data Size in Adaptively Grown Quantum Classifiers",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12428v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:55:57.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "quant-ph",
+        "机器学习",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12427",
+      "title": "FastBench: Can Streaming VLMs Perceive High-Dynamic Real-World Streams?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12427v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:55:20.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "NLP"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12424",
+      "title": "RoboRSI: Stable, efficient, and reusable robot self-evolution in complex real-world environments",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12424v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:55:12.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12421",
+      "title": "Beyond Spatio-Temporal Priors: A Generalizable Approach for Dense Correspondence Matching",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12421v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:53:04.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12420",
+      "title": "A Unified Bellman Operator for Safety-Critical Reinforcement Learning",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12420v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:53:02.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12417",
+      "title": "WOVEN: Weaving Visual World Modeling into Multimodal LLMs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12417v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:52:03.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "NLP",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12416",
+      "title": "MAMHOI: Factorizing Scene-Aware Human-Object Interaction through Affordances",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12416v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:52:02.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12410",
+      "title": "Predicting Alignment Generalization with Value Representations",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12410v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:47:26.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12409",
+      "title": "Searching for \"Harmful Refusal\": A Psychometric Audit of an AI Safety Benchmark",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12409v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:46:43.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "研究",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12407",
+      "title": "LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12407v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:46:03.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12403",
+      "title": "ViSkill: Reinforcing VLM Agents with Evolving Visual-Native Skills",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12403v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:44:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "NLP",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.12402",
+      "title": "SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.12402v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-08T17:44:17.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "NLP",
+        "模型"
+      ]
+    }
+  ]
+}
