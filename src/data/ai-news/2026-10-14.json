@@ -1,0 +1,908 @@
+{
+  "date": "2026-10-14",
+  "generatedAt": "2026-10-14T08:53:55.154+08:00",
+  "source": "news",
+  "degraded": [
+    "venturebeat"
+  ],
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "count": 20
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "count": 11
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "count": 1
+    },
+    {
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "count": 3
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch AI",
+      "count": 15
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge AI",
+      "count": 10
+    }
+  ],
+  "totalCount": 60,
+  "items": [
+    {
+      "id": "techcrunch-science-corporation-implants-its-vision-restoring-chip-in-it",
+      "title": "Science Corporation implants its vision-restoring chip in its first Stargardt disease patient",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T23:13:31.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "hn-50080275",
+      "title": "Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://pulseos.finance",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T23:13:23.000Z",
+      "score": 28,
+      "comments": 16,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a",
+      "title": "Cerebras CEO says we’re nearing a future where everyone has a personal AI assistant at home",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T23:05:34.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-industrial-next-wants-factory-robots-to-switch-tasks-in-minu",
+      "title": "Industrial Next wants factory robots to switch tasks in minutes, not weeks",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T23:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-cerebras-ceo-pushes-back-on-ai-doomsday-warnings",
+      "title": "Cerebras CEO pushes back on AI doomsday warnings",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T22:36:59.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50079437",
+      "title": "Physical Intelligence API Beta: Frontier Models for Every Robot",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.pi.website/blog/api-beta",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T21:55:25.000Z",
+      "score": 22,
+      "comments": 0,
+      "tags": [
+        "模型",
+        "产品"
+      ]
+    },
+    {
+      "id": "hn-50078653",
+      "title": "OpenAI employee arrested by FBI over hidden listening device, company says",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.reuters.com/world/us/fbi-arrests-former-openai-employee-planting-listening-device-2026-10-13/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T20:59:13.000Z",
+      "score": 29,
+      "comments": 6,
+      "tags": []
+    },
+    {
+      "id": "theverge-openai-employee-arrested-recording-device",
+      "title": "OpenAI employee arrested for allegedly planting a bug in a conference room",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-13T20:45:25.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-judge-orders-openai-to-turn-over-hiring-records-in-apple-tra",
+      "title": "Judge orders OpenAI to turn over hiring records in Apple trade secrets case",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T20:36:44.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50078141",
+      "title": "OpenAI engineer arrested in bugging of executive conference room",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T20:23:55.000Z",
+      "score": 382,
+      "comments": 343,
+      "tags": []
+    },
+    {
+      "id": "hn-50077619",
+      "title": "Show HN: Parsimony – an open-source benchmark for how much code AI models add",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://parsimony.lasu.dev/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T19:50:31.000Z",
+      "score": 40,
+      "comments": 3,
+      "tags": [
+        "模型",
+        "开源",
+        "研究"
+      ]
+    },
+    {
+      "id": "deepmind-developing-gemini-4-argon-responsibly-and-safely",
+      "title": "Developing Gemini 4 Argon responsibly and safely",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "source": "deepmind",
+      "sourceName": "Google DeepMind",
+      "publishedAt": "2026-10-13T19:43:07.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-shopify-opens-its-catalog-up-to-more-ai-agents",
+      "title": "Shopify opens its catalog up to more AI agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-13T19:42:42.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50077166",
+      "title": "Indra OCR: a 1M-parameter OCR model that reads 49 pages per second on CPU",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.datalab.to/blog/indra-ocr",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T19:21:25.000Z",
+      "score": 31,
+      "comments": 0,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-xbox-labs-game-decompiling-emulation-exploration",
+      "title": "Xbox is officially embracing the chaos of AI-powered game ports",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-13T19:00:48.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-flox-intelligence-is-building-ai-to-keep-wildlife-away-from-",
+      "title": "Flox Intelligence is building AI to keep wildlife away from trains, airports, and roads",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/flox-intelligence-is-building-ai-to-keep-wildlife-away-from-trains-airports-and-roads/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T18:30:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-facebook-is-giving-users-more-control-over-their-algorithm",
+      "title": "Facebook is giving users more control over their algorithm",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/facebook-is-giving-users-more-control-over-their-algorithm/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T18:05:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-ray-ban-meta-audio-glasses-review-smart-glasses-headphones-w",
+      "title": "I don’t miss the camera on the Ray-Ban Meta Audio glasses",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1009128/ray-ban-meta-audio-glasses-review-smart-glasses-headphones-wearables",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-13T18:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50075809",
+      "title": "Show HN: Deslop – Oxlint rules for AI-generated TypeScript",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/maharshi365/deslop",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T17:52:57.000Z",
+      "score": 25,
+      "comments": 6,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-laplace-intelligence-red-teams-robots-and-self-driving-cars-",
+      "title": "Laplace Intelligence red-teams robots and self-driving cars before they hit the real world",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/laplace-intelligence-red-teams-robots-and-self-driving-cars-before-they-hit-the-real-world/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T17:30:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-pluto-security-raises-42m-as-ai-gives-enterprise-security-te",
+      "title": "Pluto Security raises $42M as AI gives enterprise security teams a new headache",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T17:18:25.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资",
+        "安全",
+        "商业"
+      ]
+    },
+    {
+      "id": "theverge-meta-facebook-your-algorithm-ai",
+      "title": "Facebook will let you customize your feed algorithm using AI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1010344/meta-facebook-your-algorithm-ai",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-13T17:01:31.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-google-play-now-supports-private-vibe-coded-apps-built-just-",
+      "title": "Google Play now lets anyone build private, vibe-coded apps that run on Android",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T17:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-google-play-vibe-coded-android-apps-launch",
+      "title": "Google makes it easier to launch your vibe-coded apps",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1009066/google-play-vibe-coded-android-apps-launch",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-13T17:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "hn-50074869",
+      "title": "Gemini 4 Argon for Robotics",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T16:55:47.000Z",
+      "score": 189,
+      "comments": 45,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-mia-goth-instagram-ai-shirt-deepfake-divorce",
+      "title": "It’s ‘incomprehensible’ that Instagram allowed an AI image of Mia Goth to spread, say her reps",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1010277/mia-goth-instagram-ai-shirt-deepfake-divorce",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-13T16:42:51.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-satlyt-founded-by-a-former-google-and-spacex-product-manager",
+      "title": "SpaceX and Google both said no. Now his software is riding a SpaceX rocket next to Google’s",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T16:30:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50073879",
+      "title": "Gemini 4 Argon",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://deepmind.google/models/gemini/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T16:03:16.000Z",
+      "score": 960,
+      "comments": 737,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "deepmind-gemini-4-argon-for-robotics",
+      "title": "Gemini 4 Argon for Robotics",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "source": "deepmind",
+      "sourceName": "Google DeepMind",
+      "publishedAt": "2026-10-13T16:01:58.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "deepmind-introducing-gemini-4-argon",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "source": "deepmind",
+      "sourceName": "Google DeepMind",
+      "publishedAt": "2026-10-13T16:01:52.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-google-releases-gemini-4-argon",
+      "title": "Google finally releases Gemini 4 Argon",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-13T16:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "产品"
+      ]
+    },
+    {
+      "id": "hn-50073633",
+      "title": "Redesigning source control at Anthropic",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T15:49:56.000Z",
+      "score": 509,
+      "comments": 508,
+      "tags": []
+    },
+    {
+      "id": "hn-50073471",
+      "title": "Launch HN: Consus (YC F24) – LLM gateway for companies handling sensitive data",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://news.ycombinator.com/item?id=50073471",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T15:41:00.000Z",
+      "score": 33,
+      "comments": 16,
+      "tags": [
+        "模型",
+        "产品"
+      ]
+    },
+    {
+      "id": "hn-50073221",
+      "title": "I posted to HN, and then my website was flooded with AI bot traffic",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T15:25:50.000Z",
+      "score": 236,
+      "comments": 145,
+      "tags": []
+    },
+    {
+      "id": "theverge-epic-games-disney-project-ai-coding-art",
+      "title": "Epic shifts to ‘AI-accelerated development’ for upcoming Disney game",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/games/1010097/epic-games-disney-project-ai-coding-art",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-13T15:12:59.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50072120",
+      "title": "How to engineer an AI harness for game development",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T14:14:23.000Z",
+      "score": 128,
+      "comments": 58,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-techcrunch-disrupt-2026-day-1",
+      "title": "TechCrunch Disrupt 2026: Day 1",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/techcrunch-disrupt-2026-day-1/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T14:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-dlss-5-hogwarts-legacy-changes-improvements",
+      "title": "DLSS 5 gets toned down for its Hogwarts Legacy debut next month",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/news/1009904/dlss-5-hogwarts-legacy-changes-improvements",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-13T13:55:45.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-spacexsi-bundles-x-premium-grok-and-cursor-into-one-subscrip",
+      "title": "SpaceXSI bundles X Premium, Grok, and Cursor into one subscription",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/spacexsi-bundles-x-premium-grok-and-cursor-into-one-subscription/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T13:50:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-the-final-disrupt-stage-lineup-three-days-of-conversations-y",
+      "title": "The final Disrupt Stage lineup: Three days of conversations you won’t hear anywhere outside of TechCrunch Disrupt 2026",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/the-final-disrupt-stage-lineup-three-days-of-conversations-you-wont-hear-anywhere-outside-of-techcrunch-disrupt-2026/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T13:28:06.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-amex-introduces-a-framework-to-prevent-ai-agents-from-making",
+      "title": "Amex introduces a framework to prevent AI agents from making unauthorized purchases",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T13:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50070593",
+      "title": "A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T12:26:36.000Z",
+      "score": 217,
+      "comments": 92,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "openai-higgsfield-longer-videos-voice",
+      "title": "Higgsfield takes AI video from 1 minute to over 10",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-13T12:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50069971",
+      "title": "We turned EmbeddingGemma 2 into a speech-to-text model",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://eg2.haku.sh/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T11:27:14.000Z",
+      "score": 391,
+      "comments": 85,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50069337",
+      "title": "Show HN: Use your OpenAI subscription to create audiobooks",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://pdftomp3.com/connect-ai/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T10:08:34.000Z",
+      "score": 159,
+      "comments": 80,
+      "tags": []
+    },
+    {
+      "id": "hn-50068036",
+      "title": "Character.ai has initiated voluntary Chapter 11 bankruptcy",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://blog.character.ai/an-update-on-character-ai/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-13T07:28:34.000Z",
+      "score": 283,
+      "comments": 265,
+      "tags": []
+    },
+    {
+      "id": "hn-50063427",
+      "title": "AI is a tool and using it well takes skill",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-12T21:40:18.000Z",
+      "score": 646,
+      "comments": 511,
+      "tags": []
+    },
+    {
+      "id": "hn-50059096",
+      "title": "Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://news.ycombinator.com/item?id=50059096",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-12T16:46:34.000Z",
+      "score": 157,
+      "comments": 110,
+      "tags": [
+        "Agent",
+        "产品"
+      ]
+    },
+    {
+      "id": "hn-50057612",
+      "title": "Rebuilding the Original Odhner Model 127 Pinwheel Calculator",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.johnwolff.au/calculators/Tech/OdhnerPinwheel/Odhner127Rebuild.htm",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-12T15:12:37.000Z",
+      "score": 4,
+      "comments": 0,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.13948",
+      "title": "Can Language Models Play the Wikipedia Game?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.13948v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-09T17:59:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "信息检索",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.13935",
+      "title": "Hide and Seek: HIDE Concepts to SEEK explanations for black box models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.13935v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-09T17:56:59.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.13931",
+      "title": "Constructive Bounds for the Topological Expressivity of Neural Networks",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.13931v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-09T17:55:33.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "math.AT",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.13928",
+      "title": "AI Models Can Provably Hide Arbitrary Capabilities",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.13928v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-09T17:55:06.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "安全",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.13924",
+      "title": "KL Before and After Mixing: A Round-Complexity Separation in Parallel Sampling",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.13924v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-09T17:54:16.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "cs.IT"
+      ]
+    },
+    {
+      "id": "arxiv-2610.13923",
+      "title": "Goal-Oriented Bundle Management and Flow Control for Deep-Space Communications via Reinforcement Learning",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.13923v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-09T17:53:46.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "cs.NI",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.13918",
+      "title": "DyssomniaNN: Multi-Scale Spiking Neural Modeling of Human Sleep Disorders and Perceived Restedness",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.13918v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-09T17:52:23.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "神经网络",
+        "cs.ET"
+      ]
+    },
+    {
+      "id": "arxiv-2610.13917",
+      "title": "Designing Protein Structures from Natural Language",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.13917v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-09T17:51:55.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "q-bio.BM"
+      ]
+    },
+    {
+      "id": "arxiv-2610.13912",
+      "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.13912v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-09T17:50:30.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.13910",
+      "title": "When VLMs Destroy What They Know: Spatial Representations Fall Below Lexical Priors",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.13910v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-09T17:50:03.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP"
+      ]
+    },
+    {
+      "id": "arxiv-2610.13909",
+      "title": "Revisiting Tabular Deep Regression: Objectives and the Limits of Global Early Stopping",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.13909v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-09T17:49:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    }
+  ]
+}
