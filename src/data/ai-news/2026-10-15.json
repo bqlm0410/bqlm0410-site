@@ -1,0 +1,917 @@
+{
+  "date": "2026-10-15",
+  "generatedAt": "2026-10-15T08:18:12.827+08:00",
+  "source": "news",
+  "degraded": [
+    "venturebeat"
+  ],
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "count": 15
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "count": 13
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "count": 5
+    },
+    {
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "count": 2
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch AI",
+      "count": 15
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge AI",
+      "count": 10
+    }
+  ],
+  "totalCount": 60,
+  "items": [
+    {
+      "id": "hn-50097369",
+      "title": "LFM2.5-24B-A2B: Built for Fast On-Device Agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T23:59:37.000Z",
+      "score": 12,
+      "comments": 0,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50097104",
+      "title": "Chaos ensues when AI interviewer meets AI interviewee",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theregister.com/offbeat/2026/10/14/chaos-ensues-when-ai-interviewer-meets-ai-interviewee/5303144",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T23:32:32.000Z",
+      "score": 5,
+      "comments": 0,
+      "tags": []
+    },
+    {
+      "id": "hn-50097025",
+      "title": "Bank of America added 1k contractors to patch AI-exposed software flaws",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://runtimewire.com/article/bank-of-america-mythos-contractors-software-patching",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T23:25:06.000Z",
+      "score": 5,
+      "comments": 2,
+      "tags": []
+    },
+    {
+      "id": "hn-50096825",
+      "title": "ICE Wants to Use AI to Monitor Detainee Calls and Movements",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.washingtonsun.com/immigration/ice-ai-monitor-detainees",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T23:06:24.000Z",
+      "score": 9,
+      "comments": 1,
+      "tags": []
+    },
+    {
+      "id": "theverge-mckinsey-ai-client-interview",
+      "title": "McKinsey is making job applicants spar with a fake AI client",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-14T22:53:31.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50096477",
+      "title": "Anthropic revenue jumps to $16.8B in third quarter",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T22:37:26.000Z",
+      "score": 15,
+      "comments": 6,
+      "tags": [
+        "商业"
+      ]
+    },
+    {
+      "id": "techcrunch-flock-ceo-says-its-microphones-detect-just-gunshots-its-webs",
+      "title": "Flock CEO says its microphones detect ‘just gunshots’ — its website says different",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/14/flock-ceo-says-its-microphones-detect-just-gunshots-its-website-says-different/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-14T21:30:33.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-openai-state-lawsuits-chatgpt-safety",
+      "title": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-14T21:11:28.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50094694",
+      "title": "Anthropic's Scion is heavily inspired by Mononoke",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://sunshowers.io/posts/anthropic-mononoke/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T20:30:54.000Z",
+      "score": 222,
+      "comments": 98,
+      "tags": []
+    },
+    {
+      "id": "theverge-the-ai-race-is-back-on",
+      "title": "The AI race is back on",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-14T19:06:03.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-new-york-ag-characterai-bankruptcy",
+      "title": "Now that Character.AI is going bankrupt, what happens to all of its users’ data?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-14T18:47:54.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50092664",
+      "title": "Banks are now trying to offload the AI data center debt they just underwrote",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T18:32:52.000Z",
+      "score": 254,
+      "comments": 202,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "techcrunch-youtube-music-launches-new-labels-as-ai-generated-music-floo",
+      "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-14T18:23:46.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "theverge-youtube-music-ai-label",
+      "title": "YouTube sticks new labels on AI-generated songs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-14T18:22:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-",
+      "title": "Apate sends AI agents undercover to get scammed so they can gather fraud intelligence",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-14T18:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50091794",
+      "title": "Neckbeard – A DevOps/platform/SRE plugin for your agent",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/bealesh/neckbeard",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T17:45:34.000Z",
+      "score": 60,
+      "comments": 49,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50091788",
+      "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T17:45:23.000Z",
+      "score": 818,
+      "comments": 441,
+      "tags": []
+    },
+    {
+      "id": "theverge-digital-twin-metabolism-ai-twin-health",
+      "title": "My AI doppelganger tells me what to eat",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/column/1011264/digital-twin-metabolism-ai-twin-health",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-14T17:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50090799",
+      "title": "Has AI tells",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://theconsensus.dev/blog/2026/10/14/has-ai-tells.html?focus=1",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T16:52:42.000Z",
+      "score": 66,
+      "comments": 71,
+      "tags": []
+    },
+    {
+      "id": "theverge-openai-employee-unreleased-product-plans",
+      "title": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-14T16:43:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50090443",
+      "title": "Why do LLM pelicans look like this?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arcfu.com/post/the-emperor-pelican-has-no-clothes/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T16:33:34.000Z",
+      "score": 151,
+      "comments": 131,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-ai-weather-forecast-microsoft",
+      "title": "Microsoft has a new machine learning tool to improve weather forecasts",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-14T16:05:21.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-square-kiosk",
+      "title": "Square’s new kiosk lets you talk to AI for help with your order",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1009086/square-kiosk",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-14T16:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-android-scam-protection-enhanced-protection-google-messages",
+      "title": "Android is using AI to suss out scammers in Google Messages",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1010928/android-scam-protection-enhanced-protection-google-messages",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-14T16:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-deezer-will-soon-let-you-filter-out-ai-generated-music",
+      "title": "Deezer will soon let you filter out AI-generated music",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/14/deezer-will-soon-let-you-filter-out-ai-generated-music/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-14T15:16:04.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-save-50-on-your-techcrunch-disrupt-2026-ticket-and-join-the-",
+      "title": "Save 50% on your TechCrunch Disrupt 2026 ticket and join the last 2 days in San Francisco’s Moscone West",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/14/save-50-on-your-techcrunch-disrupt-2026-ticket-and-join-the-last-two-days-in-san-francisco/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-14T15:13:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-w",
+      "title": "Zenzap raises $44M for its AI chat app that aims to replace WhatsApp in the workplace",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-14T15:08:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "hn-50088713",
+      "title": "Show HN: Graphicle, a Rust port of Graphify with memory for coding agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/graphicle-ai/graphicle",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T15:00:41.000Z",
+      "score": 40,
+      "comments": 11,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-floqers-ai-agents-help-b2b-revenue-teams-research-customers",
+      "title": "Floqer’s AI agents research sales prospects so teams don’t have to",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/14/floqers-ai-agents-help-b2b-revenue-teams-research-customers/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-14T15:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent",
+        "研究"
+      ]
+    },
+    {
+      "id": "techcrunch-techcrunch-disrupt-2026-day-2",
+      "title": "TechCrunch Disrupt 2026: Day 2",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/14/techcrunch-disrupt-2026-day-2/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-14T14:30:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50086363",
+      "title": "Nvidia's first GPU: GeForce 256",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://dfarq.homeip.net/nvidias-first-gpu-geforce-256/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T12:05:44.000Z",
+      "score": 67,
+      "comments": 41,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "openai-amp-beyond-coding",
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/amp-beyond-coding",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-14T12:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "openai-sentinelone",
+      "title": "SentinelOne cuts malware analysis from weeks to hours",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/sentinelone",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-14T12:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-scimplify-raises-25m-to-challenge-chinas-grip-on-critical-ma",
+      "title": "Scimplify raises $25M to challenge China’s grip on critical materials with AI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-14T11:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "hn-50085323",
+      "title": "TV4 postpones show after AI agent erases edited material",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://swedenherald.com/article/tv4-postpones-the-challenge-until-2027-after-technical-failure-erases-edited-footage",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T10:28:26.000Z",
+      "score": 139,
+      "comments": 78,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50085296",
+      "title": "I let an AI run my startup for a week",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://daily.tinyprojects.dev/221",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T10:25:48.000Z",
+      "score": 56,
+      "comments": 57,
+      "tags": []
+    },
+    {
+      "id": "openai-third-moment-research",
+      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/third-moment-research",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-14T07:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent",
+        "研究"
+      ]
+    },
+    {
+      "id": "openai-block-ai-powered-security",
+      "title": "How Block is building AI-powered security with OpenAI technology",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/block-ai-powered-security",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-14T07:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "安全"
+      ]
+    },
+    {
+      "id": "deepmind-on-device-ai-scam-detection-mddi",
+      "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "source": "deepmind",
+      "sourceName": "Google DeepMind",
+      "publishedAt": "2026-10-14T02:00:14.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "openai-the-eus-next-chapter-in-ai-is-agentic",
+      "title": "The EU’s next chapter in AI is agentic",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-science-corporation-implants-its-vision-restoring-chip-in-it",
+      "title": "Science Corporation implants its vision-restoring chip in its first Stargardt disease patient",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T23:13:31.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "techcrunch-cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a",
+      "title": "Cerebras CEO says we’re nearing a future where everyone has a personal AI assistant at home",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T23:05:34.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-industrial-next-wants-factory-robots-to-switch-tasks-in-minu",
+      "title": "Industrial Next wants factory robots to switch tasks in minutes, not weeks",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T23:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-cerebras-ceo-pushes-back-on-ai-doomsday-warnings",
+      "title": "Cerebras CEO pushes back on AI doomsday warnings",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T22:36:59.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-judge-orders-openai-to-turn-over-hiring-records-in-apple-tra",
+      "title": "Judge orders OpenAI to turn over hiring records in Apple trade secrets case",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T20:36:44.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "deepmind-developing-gemini-4-argon-responsibly-and-safely",
+      "title": "Developing Gemini 4 Argon responsibly and safely",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "source": "deepmind",
+      "sourceName": "Google DeepMind",
+      "publishedAt": "2026-10-13T19:43:07.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-flox-intelligence-is-building-ai-to-keep-wildlife-away-from-",
+      "title": "Flox Intelligence is building AI to keep wildlife away from trains, airports, and roads",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/13/flox-intelligence-is-building-ai-to-keep-wildlife-away-from-trains-airports-and-roads/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-13T18:30:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "arxiv-2610.18874",
+      "title": "ChunkAct: Action Chunking for Agentic Robotics",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.18874v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-13T17:59:57.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.18871",
+      "title": "Cepheid: Decoupling Scale from Structure for Cross-Family Motion Completion",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.18871v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-13T17:59:53.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "cs.GR"
+      ]
+    },
+    {
+      "id": "arxiv-2610.18869",
+      "title": "What Matters in Quality-Aware VLA Pretraining: A Benchmark and Empirical Study",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.18869v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-13T17:59:52.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.18868",
+      "title": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.18868v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-13T17:59:51.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "Agent",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.18863",
+      "title": "Data Free Training of Diffusion Models for Lattice Field Theories",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.18863v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-13T17:59:33.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "hep-lat",
+        "机器学习",
+        "模型",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.18862",
+      "title": "DoubtLess: Training-Free Contrastive Decoding for Efficient Reasoning",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.18862v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-13T17:59:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.18860",
+      "title": "AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.18860v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-13T17:59:31.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.18861",
+      "title": "Hybrid Reasoning Agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.18861v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-13T17:59:31.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.18856",
+      "title": "Exact Topological Compliance: Generating Persistence-Equivalent Graphs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.18856v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-13T17:59:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "math.AT"
+      ]
+    },
+    {
+      "id": "arxiv-2610.18853",
+      "title": "Two Clocks: Why Larger Rollout Batches Learn Slower but Fail on Schedule in Reinforcement Learning with Verifiable Rewards",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.18853v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-13T17:58:57.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.18851",
+      "title": "MFG: Multi-turn Feedback Guided Molecular Optimization",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.18851v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-13T17:58:41.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.18845",
+      "title": "The Last Remote Sensing Model Built by Humans? Casting Any Earth Observation Task as Recursive Self-Improvement",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.18845v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-13T17:57:51.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "NLP",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.18843",
+      "title": "LIBERO-RIG: A Hardware-Setup Robustness Benchmark for Vision-Language-Action Models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.18843v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-13T17:57:18.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "模型",
+        "研究"
+      ]
+    }
+  ]
+}
