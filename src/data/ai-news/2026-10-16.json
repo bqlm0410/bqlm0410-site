@@ -1,0 +1,958 @@
+{
+  "date": "2026-10-16",
+  "generatedAt": "2026-10-16T08:05:49.559+08:00",
+  "source": "news",
+  "degraded": [
+    "venturebeat"
+  ],
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "count": 8
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "count": 24
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "count": 2
+    },
+    {
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "count": 1
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch AI",
+      "count": 15
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge AI",
+      "count": 10
+    }
+  ],
+  "totalCount": 60,
+  "items": [
+    {
+      "id": "techcrunch-when-it-came-to-cal-ais-viral-success-a-small-army-of-influe",
+      "title": "When it came to Cal AI’s viral success, a small army of influencers paid off",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-15T23:44:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-openai-chatgpt-google-chrome-tabs",
+      "title": "ChatGPT can peek at your Chrome tabs now",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-15T22:43:23.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-sega-total-war-shogun-2-remaster-pulled",
+      "title": "Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-15T22:35:55.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "theverge-hollywood-tech-backlash-you-can-see-everything-musk-the-soci",
+      "title": "The tech backlash is now in theaters",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-15T21:39:52.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-donald-trump-ai-photo-white-house-rennovation-column",
+      "title": "Trump posts AI-edited photo to brag about White House restoration work",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-15T21:09:33.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-meta-launches-an-open-weight-model-that-runs-on-macs",
+      "title": "Meta launches an open-weight AI model that runs on Macs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-15T20:04:53.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "开源",
+        "产品"
+      ]
+    },
+    {
+      "id": "theverge-bluesky-ai-attie-small-social-games-apps",
+      "title": "Bluesky’s AI tool now lets you make games and apps to share on social",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-15T19:57:16.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-amazon-devices-chief-panos-panay-sees-a-future-where-ai-devi",
+      "title": "Amazon devices chief Panos Panay sees a future where AI devices replace the need to use apps",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-15T19:55:25.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-anthropic-is-letting-metr-researchers-look-under-the-hood-wi",
+      "title": "Anthropic is letting METR researchers look under the hood with employee-level access",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-15T19:14:26.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "研究"
+      ]
+    },
+    {
+      "id": "openai-introducing-the-rosalind-academic-plan",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-15T19:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "研究"
+      ]
+    },
+    {
+      "id": "techcrunch-bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build",
+      "title": "Bluesky expands its AI-powered Attie app to let anyone build websites, games, and more",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-15T18:56:46.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-meta-apple-muse-spark-open-ai-model-mlx",
+      "title": "Meta and Apple team up to make Muse AI models run better on Macs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-15T18:15:36.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-last-chance-to-save-up-to-200-on-techcrunch-founder-summit-e",
+      "title": "Last chance to save up to $200 on your TechCrunch Founder Summit pass: Early booking ends October 16",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/15/last-chance-to-save-up-to-200-on-techcrunch-founder-summit-early-booking-ends-oct-16/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-15T18:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50106738",
+      "title": "More on Anthropic's Scion ripping off Mononoke",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://sunshowers.io/posts/anthropic-mononoke-2/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-15T17:05:19.000Z",
+      "score": 216,
+      "comments": 69,
+      "tags": []
+    },
+    {
+      "id": "hn-50106285",
+      "title": "Danish Supreme Court Finds That AI CSAM Is CSAM",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://domstol.fe1.tangora.com/Domsoversigt-(H%C3%B8jesteret).31478.aspx?recordid31478=2930",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-15T16:39:58.000Z",
+      "score": 14,
+      "comments": 15,
+      "tags": []
+    },
+    {
+      "id": "theverge-muse-ai-data-friends-consent",
+      "title": "Friends don’t let friends feed their data to AI agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-15T16:21:45.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50105791",
+      "title": "Frontier Pre-Training at Microsoft AI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-15T16:12:13.000Z",
+      "score": 31,
+      "comments": 3,
+      "tags": [
+        "研究"
+      ]
+    },
+    {
+      "id": "deepmind-accelerating-antimicrobial-discovery",
+      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "source": "deepmind",
+      "sourceName": "Google DeepMind",
+      "publishedAt": "2026-10-15T16:08:03.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50105648",
+      "title": "Krea 3 – An image model built for editing at scale",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.krea.ai/krea-3",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-15T16:04:05.000Z",
+      "score": 231,
+      "comments": 78,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50105647",
+      "title": "Neural networks are clean",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://already-clean.goodfire.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-15T16:04:01.000Z",
+      "score": 467,
+      "comments": 180,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-ai-agents-are-coming-to-rivians-cars",
+      "title": "AI agents are coming to Rivian’s cars",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-15T15:02:36.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50104654",
+      "title": "Simons Foundation launches $15M effort to help mathematicians navigate AI era",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-15T14:58:48.000Z",
+      "score": 224,
+      "comments": 180,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "hn-50104299",
+      "title": "Using AI to reverse engineer hardware",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-15T14:35:15.000Z",
+      "score": 91,
+      "comments": 103,
+      "tags": []
+    },
+    {
+      "id": "theverge-microsoft-windows-rtx-spark-platform-changes-notepad",
+      "title": "How Windows is being optimized for Nvidia’s RTX Spark laptops",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1011996/microsoft-windows-rtx-spark-platform-changes-notepad",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-15T14:30:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "techcrunch-googles-universal-cart-shopping-tool-launches-in-the-us",
+      "title": "Google’s Universal Cart shopping tool launches in the US",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/15/googles-universal-cart-shopping-tool-launches-in-the-us/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-15T14:29:33.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "theverge-instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth",
+      "title": "Nobody is safe from celebrity AI deepfakes",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/report/1011927/instagram-celebrity-ai-slop-likeness-taylor-swift-mia-goth",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-15T14:03:42.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "安全"
+      ]
+    },
+    {
+      "id": "techcrunch-techcrunch-disrupt-2026-last-day",
+      "title": "TechCrunch Disrupt 2026: Last day",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/15/techcrunch-disrupt-2026-last-day/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-15T14:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-benn-jordan-flock-cameras-alpr-ai-surveillance-privacy",
+      "title": "Benn Jordan on Flock, privacy, and the new surveillance backlash",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/podcast/1011170/benn-jordan-flock-cameras-alpr-ai-surveillance-privacy",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-15T14:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "安全"
+      ]
+    },
+    {
+      "id": "openai-teaching-students-to-think-and-learn-through-questions",
+      "title": "Teaching students to think and learn through questions",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-15T13:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-amazons-bee-launches-two-new-personal-ai-devices-starting-at",
+      "title": "Amazon’s Bee launches two new personal AI devices, starting at $75",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/15/amazons-bee-launches-two-new-personal-ai-devices-starting-at-75/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-15T12:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "techcrunch-figma-announces-new-features-to-define-how-agents-work-on-it",
+      "title": "Figma announces new features to define how agents work on its platform",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-15T04:30:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent",
+        "产品"
+      ]
+    },
+    {
+      "id": "techcrunch-ricursive-intelligence-is-betting-on-ai-designed-chips-to-he",
+      "title": "Ricursive Intelligence is betting on AI-designed chips to help solve the compute crisis",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-15T01:01:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "techcrunch-gudea-leverages-ai-to-help-organizations-prevent-social-medi",
+      "title": "Gudea leverages AI to help organizations prevent social media crises before they erupt",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/14/gudea-leverages-ai-to-help-organizations-prevent-social-media-crises-before-they-erupt/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50097369",
+      "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-14T23:59:37.000Z",
+      "score": 282,
+      "comments": 76,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-flock-ceo-says-its-microphones-detect-just-gunshots-its-webs",
+      "title": "Flock CEO says its microphones detect ‘just gunshots’ — its website says different",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/14/flock-ceo-says-its-microphones-detect-just-gunshots-its-website-says-different/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-14T21:30:33.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-youtube-music-launches-new-labels-as-ai-generated-music-floo",
+      "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-14T18:23:46.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20606",
+      "title": "Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20606v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:59:52.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "模型",
+        "开源"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20607",
+      "title": "Hierarchical Residual Policy Learning for Real-World Mobile Manipulation with Sparse Human Guidance",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20607v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:59:52.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20597",
+      "title": "Co-Evolving Acting and Forecasting for Language Agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20597v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:59:28.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "机器学习",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20588",
+      "title": "Your Transformer Is Secretly Elastic",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20588v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:58:08.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20587",
+      "title": "Price of Anarchy of First-Price Auctions in Agentic Markets",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20587v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:57:57.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "cs.GT",
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20586",
+      "title": "Continuum Attention",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20586v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:57:40.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20585",
+      "title": "Learnable Hodge-Laplacian Driven Mixture of Experts for Steady-PDE Surrogates on Coarse Unstructured Meshes",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20585v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:57:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "计算机视觉"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20584",
+      "title": "Player-1: Learning to Play from Synthetic Experience",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20584v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:57:12.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20582",
+      "title": "Latent Compaction with Test-Time Training",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20582v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:57:01.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "机器学习",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20576",
+      "title": "One Task, Many Interfaces: Simple Cross-Interface Consistency Training Improves LLM Agent Robustness",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20576v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:56:06.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI",
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20573",
+      "title": "Beyond LLM Judge: Mechanical Verification for Agentic Autoformalization",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20573v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:54:48.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "cs.LO",
+        "AI",
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20572",
+      "title": "Recovering Reliable Supervision via Critique-Guided On-Policy Distillation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20572v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:54:34.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20570",
+      "title": "Manacá-1B-Instruct-2: Reproducible Safety Alignment for a Native Brazilian-Portuguese LLM. Negative DPO Results, a Controlled Composition Scan, and a Silent Failure Mode of the LLM Judge",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20570v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:53:46.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "模型",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20563",
+      "title": "Scaling Discovery Requires Forgetting",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20563v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:49:37.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "NLP",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20560",
+      "title": "PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20560v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:47:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "计算机视觉",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20548",
+      "title": "PerSo: Investigating Facets of LLMs' Social Intelligence in Real-World Persuasion Scenarios",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20548v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:39:35.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20544",
+      "title": "Detection of Potato Plant Leaf Diseases using Convolutional Neural Networks",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20544v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:36:33.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20538",
+      "title": "PrismaCoder: Pushing the Boundaries of Open Multimodal Code Intelligence through Decomposed Rubric Synthesis",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20538v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:32:54.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20534",
+      "title": "Revisiting Simple Baselines for Relational Deep Learning",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20534v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:30:17.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20533",
+      "title": "Generative Representation Learning for Scalable Latent Tokenization",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20533v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:29:09.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "计算机视觉"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20532",
+      "title": "ActiveEvidence: Decision-Focused Evidence Graphs with Verifiable Acquisition Gaps",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20532v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:29:06.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "计算机视觉",
+        "融资"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20525",
+      "title": "The Physics Is the Network: Fast, Training-Free Neural Emulation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20525v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:24:48.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "eess.SY",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20518",
+      "title": "The Wealth of Agents: Scaling Agentic AI Across Developers",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20518v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:19:11.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "多智能体",
+        "Agent",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.20516",
+      "title": "VASPO: Self-Distillation with Privileged Value Estimation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.20516v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-14T17:17:18.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI"
+      ]
+    }
+  ]
+}
