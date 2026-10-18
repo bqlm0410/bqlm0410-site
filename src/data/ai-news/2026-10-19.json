@@ -1,0 +1,954 @@
+{
+  "date": "2026-10-19",
+  "generatedAt": "2026-10-19T07:55:30.201+08:00",
+  "source": "news",
+  "degraded": [
+    "venturebeat"
+  ],
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "count": 5
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "count": 26
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "count": 4
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch AI",
+      "count": 15
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge AI",
+      "count": 10
+    }
+  ],
+  "totalCount": 60,
+  "items": [
+    {
+      "id": "hn-50145337",
+      "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.18861",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-18T20:48:14.000Z",
+      "score": 150,
+      "comments": 89,
+      "tags": [
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-anthropic-says-its-committing-5-of-its-shares-to-a-public-be",
+      "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-18T20:37:40.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "theverge-a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+      "title": "A woman was arrested in Philly for blocking a delivery robot",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-18T18:28:10.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-disney-agrees-to-hire-the-majority-of-character-ais-workforc",
+      "title": "Disney agrees to hire the majority of Character.AI’s workforce",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-18T16:30:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "商业"
+      ]
+    },
+    {
+      "id": "hn-50138531",
+      "title": "DeepSeek search and fetch – $0.75 per 1000 successful requests",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://api-docs.deepseek.com/guides/search/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-18T06:50:36.000Z",
+      "score": 529,
+      "comments": 252,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50137950",
+      "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://sphinx-six-theta.vercel.app/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-18T04:33:49.000Z",
+      "score": 238,
+      "comments": 81,
+      "tags": []
+    },
+    {
+      "id": "hn-50135762",
+      "title": "I built a programming language that LLMs can't use",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://blog.picheta.me/post/killswitch-lang/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-17T22:26:47.000Z",
+      "score": 57,
+      "comments": 51,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-meta-removes-language-that-raised-scraping-and-ai-training-c",
+      "title": "Meta removes language that raised scraping and AI training concerns",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-17T21:31:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "研究",
+        "融资"
+      ]
+    },
+    {
+      "id": "techcrunch-anthropic-says-its-workforce-has-become-less-junior-and-is-s",
+      "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-17T20:21:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-replit-is-no-longer-working-with-anthropic-ceo-says",
+      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-17T18:48:08.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-meta-removes-language-that-may-have-allowed-it-to-scrape-new",
+      "title": "Meta removes language that may have allowed it to scrape news sites",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-17T15:04:36.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-ai-agents-blocked-web",
+      "title": "Websites are closing their doors to AI agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-17T13:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50122878",
+      "title": "You could have invented transformers from memory",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://alexwang.ai/posts/associative-memory/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-16T19:01:17.000Z",
+      "score": 621,
+      "comments": 141,
+      "tags": []
+    },
+    {
+      "id": "openai-itau-generative-ai",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/itau-generative-ai",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-16T19:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "商业"
+      ]
+    },
+    {
+      "id": "techcrunch-india-becomes-the-latest-country-to-report-rogue-ai-agent-ac",
+      "title": "India becomes the latest country to report rogue AI agent activity",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-16T17:52:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-cha",
+      "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-16T16:30:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "硬件"
+      ]
+    },
+    {
+      "id": "techcrunch-physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-",
+      "title": "Physical AI is more than robots, says the Nvidia veteran now investing in it",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-16T16:30:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "techcrunch-elorians-first-ai-model-wants-to-reason-with-images-not-just",
+      "title": "Elorian’s first AI model wants to reason with images, not just about them",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-16T16:01:37.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-jev-is-vercels-fastest-adopted-ai-model-ever",
+      "title": "Jev is Vercel’s fastest-adopted AI model ever",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-16T15:33:49.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressi",
+      "title": "A week with RTX Spark: everything we’ve learned using Nvidia’s new laptops",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-16T15:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "techcrunch-mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-op",
+      "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-16T14:26:51.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-meta-business-terms-scrape-news-publishers",
+      "title": "Meta’s new terms may allow it to train AI on news sites for free",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-16T14:02:40.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-veritas-is-building-a-chip-to-verify-luxury-goods",
+      "title": "Veritas expands its anti-counterfeit chip to jewelry, trophies, and fragrance bottles",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-16T14:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "techcrunch-replits-ceo-says-the-future-of-work-is-the-self-driving-comp",
+      "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-16T12:55:09.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "openai-benefit-street-partners",
+      "title": "Benefit Street Partners answers questions faster with Codex",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/benefit-street-partners",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "商业"
+      ]
+    },
+    {
+      "id": "openai-stack-overflow-chatgpt-plugin",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-when-it-came-to-cal-ais-viral-success-a-small-army-of-influe",
+      "title": "When it came to Cal AI’s viral success, a small army of influencers paid off",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-15T23:44:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-openai-chatgpt-google-chrome-tabs",
+      "title": "ChatGPT can peek at your Chrome tabs now",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-15T22:43:23.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-sega-total-war-shogun-2-remaster-pulled",
+      "title": "Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-15T22:35:55.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "theverge-hollywood-tech-backlash-you-can-see-everything-musk-the-soci",
+      "title": "The tech backlash is now in theaters",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-15T21:39:52.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-donald-trump-ai-photo-white-house-rennovation-column",
+      "title": "Trump posts AI-edited photo to brag about White House restoration work",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-15T21:09:33.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-meta-launches-an-open-weight-model-that-runs-on-macs",
+      "title": "Meta launches an open-weight AI model that runs on Macs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-15T20:04:53.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "开源",
+        "产品"
+      ]
+    },
+    {
+      "id": "theverge-bluesky-ai-attie-small-social-games-apps",
+      "title": "Bluesky’s AI tool now lets you make games and apps to share on social",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-15T19:57:16.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "openai-introducing-the-rosalind-academic-plan",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-15T19:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22372",
+      "title": "LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22372v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:59:59.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22367",
+      "title": "Discovering state-of-the-art quantum circuits with large language models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22367v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:59:20.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "quant-ph",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22364",
+      "title": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22364v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:59:11.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22362",
+      "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22362v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:59:02.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22358",
+      "title": "PathFM: Fast Generative Forecasting of Multivariate Trajectories",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22358v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:58:45.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22355",
+      "title": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22355v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:58:04.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22353",
+      "title": "Rethinking Routing Exploration in Modern Mixture-of-Experts",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22353v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:58:02.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22350",
+      "title": "FDE-Gym: The Last Mile of AI Delivery",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22350v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:57:23.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "NLP"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22344",
+      "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22344v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:56:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "NLP",
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22343",
+      "title": "GeoState: Learning View-Decoupled Geometry States for 3D World Modeling",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22343v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:56:18.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22341",
+      "title": "3DCodeVerse: Exploring 3D Worlds as Code",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22341v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:56:07.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22340",
+      "title": "Dexterity from Supervised Play",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22340v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:55:50.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22339",
+      "title": "Lean Graph Search for Formal Theorem Proving",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22339v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:55:21.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22336",
+      "title": "Robust Reinforcement Learning for Dynamic Treatment Regimes under Model and Measurement Uncertainty",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22336v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:54:13.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22333",
+      "title": "Evaluation Awareness Beyond English: Do LLMs Act Differently When Tested in Indic Languages?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22333v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:53:33.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "NLP",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22331",
+      "title": "KnowGPO: Knowledge-Grouped Policy Optimization for Search Agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22331v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:52:33.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "Agent",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22330",
+      "title": "Designing Transformers for Continuous Diffusion Language Models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22330v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:52:31.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22328",
+      "title": "ACEdit: Stable Multi-Turn Image Editing via Asymmetric Conditioning",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22328v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:52:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22327",
+      "title": "Twice Upon a Time: Complementary Representations for Time-Series Reasoning",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22327v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:52:18.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22324",
+      "title": "Training Reasoning Models to Generate Diverse Scientific Ideas",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22324v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:52:12.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "模型",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22322",
+      "title": "Learning Self-Orchestration in Decentralized Agent Swarms",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22322v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:51:57.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "多智能体",
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22321",
+      "title": "AVC-Reward: Event-Centric Audio-Video Consistency Evaluation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22321v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:51:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22319",
+      "title": "A team of Gemini 4 Argon agents beats Minecraft",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22319v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:51:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22316",
+      "title": "Learning to Steer LLM Agents and Multi-Agent Systems",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22316v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:51:17.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI",
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22314",
+      "title": "MindEval2: Clinically Grounded Patients and Rubrics for Evaluating Language Models in Mental Health Support",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22314v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:51:01.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.22312",
+      "title": "Grid-Bench: Can LLMs Predict How Discrete Worlds Change?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.22312v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-15T17:50:57.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "模型"
+      ]
+    }
+  ]
+}
