@@ -1,0 +1,943 @@
+{
+  "date": "2026-10-20",
+  "generatedAt": "2026-10-20T08:55:10.966+08:00",
+  "source": "news",
+  "degraded": [
+    "venturebeat"
+  ],
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "count": 14
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "count": 21
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "count": 2
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch AI",
+      "count": 15
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge AI",
+      "count": 8
+    }
+  ],
+  "totalCount": 60,
+  "items": [
+    {
+      "id": "techcrunch-nscale-and-anthropic-are-reportedly-in-talks-for-yet-another",
+      "title": "Nscale and Anthropic are reportedly in talks for yet another $45 billion compute deal",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-19T23:39:38.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "商业"
+      ]
+    },
+    {
+      "id": "hn-50159341",
+      "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T23:22:18.000Z",
+      "score": 8,
+      "comments": 2,
+      "tags": [
+        "模型",
+        "安全"
+      ]
+    },
+    {
+      "id": "hn-50159245",
+      "title": "“bonsoir, Elliot”: How abliterated models can get you pwned",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T23:08:52.000Z",
+      "score": 12,
+      "comments": 8,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-embedded-ai-evaluators-wont-be-an-easy-solution-hugging-face",
+      "title": "Embedded AI evaluators won’t be an easy solution, Hugging Face’s policy chief says",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-19T22:49:27.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "开源",
+        "安全"
+      ]
+    },
+    {
+      "id": "techcrunch-microsoft-says-ai-agents-are-like-insider-threats-as-frontie",
+      "title": "Microsoft says AI agents are like insider threats as ‘frontier models can’t be trusted’",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-19T22:04:28.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "theverge-fossil-fuel-power-infrastructure-data-centers-report",
+      "title": "The fossil fuel comeback is here",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-19T21:48:01.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-coreweave-stock-debt-sector-ai",
+      "title": "CoreWeave’s debt is becoming the whole AI industry’s problem",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-19T21:28:20.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-tor",
+      "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-19T20:09:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "techcrunch-hackers-hit-ai-coding-tool-opencode-running-up-charges-on-us",
+      "title": "Hackers hit AI coding tool OpenCode, running up charges on users’ AI accounts",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-19T19:28:34.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-tolan-snags-30m-for-its-ai-companion-that-helps-users-naviga",
+      "title": "Tolan snags $30M for its AI companion that helps users navigate life",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/19/tolan-snags-30m-for-its-ai-companion-that-helps-users-navigate-life/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-19T19:00:12.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-replikas-founder-built-the-ai-assistant-she-pitched-at-disru",
+      "title": "Replika’s founder built the AI assistant she pitched at Disrupt 12 years ago",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-19T18:49:04.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chip",
+      "title": "Tenstorrent hits $6.2B valuation to scale open-weight AI chips",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-19T18:37:27.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "开源",
+        "融资",
+        "硬件"
+      ]
+    },
+    {
+      "id": "hn-50155245",
+      "title": "Mercury 3: Diffusion at scale",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T17:27:11.000Z",
+      "score": 219,
+      "comments": 85,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-people-are-using-ai-to-make-their-smart-tvs-dumb-again",
+      "title": "People are using AI to make their smart TVs dumb again",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-19T16:13:22.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50154029",
+      "title": "Launch HN: Laminar (YC S24) – RL-trained model that finds errors in agent traces",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://news.ycombinator.com/item?id=50154029",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T16:00:18.000Z",
+      "score": 45,
+      "comments": 22,
+      "tags": [
+        "模型",
+        "Agent",
+        "产品"
+      ]
+    },
+    {
+      "id": "techcrunch-nvidia-launches-new-open-models-to-run-agents-in-the-enterpr",
+      "title": "Nvidia launches new open models to run agents in the enterprise and on PCs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-19T15:37:09.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "Agent",
+        "产品"
+      ]
+    },
+    {
+      "id": "hn-50153630",
+      "title": "CERN and Mistral sign a statement of intent to establish a strategic partnership",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T15:28:24.000Z",
+      "score": 315,
+      "comments": 57,
+      "tags": [
+        "模型",
+        "商业"
+      ]
+    },
+    {
+      "id": "hn-50153225",
+      "title": "Agentic Monitoring",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://benjamincongdon.me/blog/2026/10/19/Agentic-Monitoring/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T14:52:04.000Z",
+      "score": 38,
+      "comments": 3,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50152976",
+      "title": "Detecting model weight tampering in GPU memory (Rome attacks)",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://stealthium.io/blog/hands-off-detecting-model-weight-tampering",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T14:31:27.000Z",
+      "score": 16,
+      "comments": 1,
+      "tags": [
+        "模型",
+        "开源",
+        "硬件"
+      ]
+    },
+    {
+      "id": "theverge-pritzker-ai-privacy-data-centers-flock-congress-laws",
+      "title": "JB Pritzker thinks AI could help us live to 100 — or threaten us like nukes",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/podcast/1012839/pritzker-ai-privacy-data-centers-flock-congress-laws",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-19T14:30:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-ai-agents-hack-john-deere-shark-ninja-cummins",
+      "title": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-19T13:58:41.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50152466",
+      "title": "Maxwell: A new kind of model that sits between code and hardware",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://heymaxwell.ai/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T13:47:56.000Z",
+      "score": 42,
+      "comments": 21,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50152302",
+      "title": "Cairn: Open windows into AI-driven cyber operations",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://norforge.com/blog/inside_cairn",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T13:35:12.000Z",
+      "score": 26,
+      "comments": 9,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-laplace-intelligence-red-teams-robots-and-self-driving-cars-",
+      "title": "Laplace Intelligence red-teams robots and self-driving cars before they hit the real world",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/19/laplace-intelligence-red-teams-robots-and-self-driving-cars-before-they-hit-the-real-world/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-19T12:30:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50151376",
+      "title": "The obscure trust looming over Anthropic's IPO",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.wsj.com/tech/ai/anthropic-ipo-private-trust-188f41f7?st=RtdGHg&reflink=desktopwebshare_permalink",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T12:06:03.000Z",
+      "score": 130,
+      "comments": 107,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "openai-low-resource-programming-languages",
+      "title": "Advancing coding in low‑resource programming languages",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/low-resource-programming-languages",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-democrats-ai-midterms",
+      "title": "Democrats think cracking down on AI could give them an edge",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/policy/1013113/democrats-ai-midterms",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50151036",
+      "title": "Ask HN: How to deal with shipping AI-written code you don't understand?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://news.ycombinator.com/item?id=50151036",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T11:24:34.000Z",
+      "score": 245,
+      "comments": 384,
+      "tags": [
+        "商业"
+      ]
+    },
+    {
+      "id": "hn-50150434",
+      "title": "Timestral: Mistral's time-series foundation models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://mistral.ai/news/timestral/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T09:59:32.000Z",
+      "score": 539,
+      "comments": 102,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50148855",
+      "title": "Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://crystl.dev/guides/tmux-for-ai-agents/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T05:55:31.000Z",
+      "score": 148,
+      "comments": 114,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-anthropic-says-its-committing-5-of-its-shares-to-a-public-be",
+      "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-18T20:37:40.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "theverge-a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+      "title": "A woman was arrested in Philly for blocking a delivery robot",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-18T18:28:10.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-disney-agrees-to-hire-the-majority-of-character-ais-workforc",
+      "title": "Disney agrees to hire the majority of Character AI’s workforce",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-18T16:30:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "商业"
+      ]
+    },
+    {
+      "id": "hn-50136126",
+      "title": "RuneScape Bench: MMOs for Agents [video]",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.youtube.com/watch?v=cNm4zyUtWj0",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-17T23:24:05.000Z",
+      "score": 146,
+      "comments": 59,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-meta-removes-language-that-raised-scraping-and-ai-training-c",
+      "title": "Meta removes language that raised scraping and AI training concerns",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-17T21:31:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "研究",
+        "融资"
+      ]
+    },
+    {
+      "id": "techcrunch-anthropic-says-its-workforce-has-become-less-junior-and-is-s",
+      "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-17T20:21:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-meta-removes-language-that-may-have-allowed-it-to-scrape-new",
+      "title": "Meta removes language that may have allowed it to scrape news sites",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-17T15:04:36.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-ai-agents-blocked-web",
+      "title": "Websites are closing their doors to AI agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-17T13:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "openai-itau-generative-ai",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/itau-generative-ai",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-16T19:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "商业"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23854",
+      "title": "Rethinking the design space of Vanilla Pixel Diffusion Transformers",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23854v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:59:30.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23847",
+      "title": "Behavioral Couplings: From Formation to Behavioral Emergence in Language Models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23847v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:58:08.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23845",
+      "title": "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23845v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:57:55.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "NLP"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23839",
+      "title": "DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23839v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:56:35.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23834",
+      "title": "Task-aligned spectral inductive biases in parameterized quantum circuits",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23834v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:53:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "quant-ph",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23831",
+      "title": "Beyond the Answer: Student-Conditioned Trace Construction for Reasoning Distillation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23831v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:52:58.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23830",
+      "title": "Waiting Buys Exactly Two Moments: Endogenous Identification in Prediction-Driven Allocation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23830v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:52:57.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23827",
+      "title": "Quality-of-Transmission Estimation in Quantum Networks: Compute, Simulate, or Learn?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23827v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:49:43.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "quant-ph",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23826",
+      "title": "Self-Building Labs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23826v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:48:29.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "多智能体"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23825",
+      "title": "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23825v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:48:26.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "统计学习",
+        "astro-ph.CO",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23821",
+      "title": "Learning without relearning physical symmetry: an SO(3)-equivariant convolutional network (CNN) on the sphere",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23821v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:45:43.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "统计学习",
+        "astro-ph.CO"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23820",
+      "title": "CocoRNA: Collective RNA Design with Cooperative Multi-agent Reinforcement Learning",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23820v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:43:25.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "多智能体",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23818",
+      "title": "Acceptance Is Not Speed: Length Inflation in Training-Free Lossy Speculative Decoding",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23818v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:41:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23812",
+      "title": "Learning Personalized Memory Gating from Delayed One-Sided Feedback",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23812v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:34:45.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23811",
+      "title": "Explainable Machine Learning Analysis of Temperature Effects on Mechanical Strength of Fiber-Reinforced High-Performance Concrete",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23811v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:34:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23807",
+      "title": "Steering beyond Language: Improving Multilingual Training-Free Text Embeddings via Paired-Residual Subspace Removal",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23807v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:30:43.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23801",
+      "title": "Beyond SAEs: Consistent Concept Discovery with Sparse Coding",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23801v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:25:11.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23798",
+      "title": "Task-aware Kernel Stein certificates for Rényi differential privacy",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23798v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:24:09.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "统计学习",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23796",
+      "title": "FuTransformer: FP8 prefill and INT4 decode for Llama-style inference on Hopper",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23796v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:22:01.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23791",
+      "title": "DrugHarness: An Evolvable Agent Harness for Computational Drug Discovery",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23791v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:20:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.23788",
+      "title": "Parametric Resonance in Primal-Dual Learning for Slowly Non-Stationary Constrained MDPs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.23788v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-16T17:19:08.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "统计学习",
+        "机器学习"
+      ]
+    }
+  ]
+}
