@@ -1,0 +1,959 @@
+{
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-21T08:23:34.781+08:00",
+  "source": "news",
+  "degraded": [
+    "venturebeat"
+  ],
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "count": 11
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "count": 25
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "count": 2
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch AI",
+      "count": 15
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge AI",
+      "count": 7
+    }
+  ],
+  "totalCount": 60,
+  "items": [
+    {
+      "id": "theverge-sam-altman-ann-altman-lawsuit-dismissed",
+      "title": "Judge dismisses Sam Altman’s sister’s sexual abuse lawsuit",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-20T23:04:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "安全"
+      ]
+    },
+    {
+      "id": "techcrunch-anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-5",
+      "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T23:01:23.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "安全"
+      ]
+    },
+    {
+      "id": "hn-50173557",
+      "title": "Anthropic recorded a staggering $80B net loss in the first half of 2026",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://twitter.com/Polymarket/status/2112634886070919426",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-20T22:27:07.000Z",
+      "score": 20,
+      "comments": 10,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-hugging-face-ceo-warns-that-netflixs-openai-hack-documentary",
+      "title": "Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T22:24:02.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "开源"
+      ]
+    },
+    {
+      "id": "theverge-google-gemini-ai-cars-android-auto",
+      "title": "Google’s more personalized Gemini AI is heading to your car",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-20T22:11:34.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-anthropics-cloud-partnerships-are-getting-messy",
+      "title": "Anthropic’s cloud partnerships are getting messy",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T21:25:22.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "商业"
+      ]
+    },
+    {
+      "id": "techcrunch-spacexs-ai-business-is-beating-expectations",
+      "title": "SpaceX’s AI business is beating expectations",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T20:40:41.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-openai-acquires-startup-orchestra-bio-e2-81-a0-to-beef-up-it",
+      "title": "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T20:35:10.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "hn-50171966",
+      "title": "Anthropic logged net loss of over $80B in first half of 2026",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-20T20:09:46.000Z",
+      "score": 92,
+      "comments": 48,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-google-has-joined-amazon-in-attacking-nvidias-stronghold-wit",
+      "title": "Google has joined Amazon in attacking Nvidia’s stronghold with AI app developers",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T18:38:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "techcrunch-chatgpt-now-lets-you-lock-your-chats",
+      "title": "ChatGPT now lets you lock your chats",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T18:36:53.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-meta-muse-ai-sharing-ai-chats",
+      "title": "Meta pauses Muse sharing after researchers find AI chats on the web",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-20T18:07:34.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "研究"
+      ]
+    },
+    {
+      "id": "techcrunch-eric-schmidt-reportedly-owns-about-half-as-much-of-anthropic",
+      "title": "Eric Schmidt reportedly owns about half as much of Anthropic as CEO Dario Amodei",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/eric-schmidt-reportedly-owns-about-half-as-much-of-anthropic-as-ceo-dario-amodei/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T17:55:12.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50170021",
+      "title": "Claude designed protein binders against scorpion neurotoxins",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-20T17:48:29.000Z",
+      "score": 88,
+      "comments": 61,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-rea",
+      "title": "Meta’s Muse hits 10M U.S. downloads in 40 days, a milestone reached by only 11 other apps",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T17:12:48.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50169506",
+      "title": "Benchmarking Bot Detection Systems Against Modern AI Agents in 2026",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://research.poh.org/bot-benchmarking-2026/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-20T17:10:31.000Z",
+      "score": 14,
+      "comments": 0,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50169053",
+      "title": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/google-pytorch/torch_tpu",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-20T16:40:24.000Z",
+      "score": 249,
+      "comments": 58,
+      "tags": [
+        "开源",
+        "硬件"
+      ]
+    },
+    {
+      "id": "techcrunch-plants-can-speak-using-electricity-so-this-startup-built-an-",
+      "title": "Plants can speak using electricity, so this startup built an AI model to decipher their language",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/plants-can-speak-using-electricity-so-this-startup-built-an-ai-model-to-decipher-their-language/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T16:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50167604",
+      "title": "Show HN: Penmentor – Claude marks up your handwritten math like a teacher",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/AbdullahAlhariri/penmentor",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-20T15:10:54.000Z",
+      "score": 53,
+      "comments": 6,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50167583",
+      "title": "Launch HN: Respan (YC W24) – Open-source Rust AI gateway built around plugins",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://news.ycombinator.com/item?id=50167583",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-20T15:09:29.000Z",
+      "score": 41,
+      "comments": 16,
+      "tags": [
+        "开源",
+        "产品"
+      ]
+    },
+    {
+      "id": "theverge-spotify-ai-slop-spam-songs-removed",
+      "title": "Spotify pulled 50 million AI slop and spam tracks from its recommendations",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/entertainment/1014284/spotify-ai-slop-spam-songs-removed",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-20T14:18:37.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-figma-co-founder-dylan-field-thinks-mcp-is-not-a-perfect-pro",
+      "title": "Figma co-founder Dylan Field thinks MCP is not a perfect protocol",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/figma-co-founder-dylan-field-thinks-mcp-is-not-a-perfect-protocol/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T14:13:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from",
+      "title": "US orders federal agencies to remove China’s DeepSeek AI from their systems",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T13:07:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-adobe-lightroom-mobile-ai-quick-action-open-eyes-closed-blin",
+      "title": "Adobe Lightroom mobile can now open closed eyes in photos with a simple tap",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1014246/adobe-lightroom-mobile-ai-quick-action-open-eyes-closed-blink-repair",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-20T13:06:44.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50165801",
+      "title": "Publish fake stats, get cited in LLMs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-20T13:06:22.000Z",
+      "score": 315,
+      "comments": 180,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that",
+      "title": "Eka is worth $1.45B thanks to a physical AI model that has experts raving",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T13:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-otter-ai-raises-320-million-from-general-catalysts-growth-fu",
+      "title": "Otter.ai raises $320 million from General Catalyst’s growth fund for its meeting tool",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T11:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "techcrunch-yelp-can-now-call-on-your-behalf-to-check-wait-times-at-a-re",
+      "title": "Yelp can now call on your behalf to check wait times at a restaurant",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/yelp-can-now-call-on-your-behalf-to-check-wait-times-at-a-restaurant/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T11:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "openai-ted-taylor-restaurant",
+      "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/ted-taylor-restaurant",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-20T10:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50163277",
+      "title": "DeepInfer: High-performance inference framework for DeepSeek models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/deepseek-ai/DeepInfer",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-20T09:08:54.000Z",
+      "score": 2107,
+      "comments": 822,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "openai-openai-to-acquire-orchestra-bio",
+      "title": "OpenAI acquires Orchestra Bio",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "hn-50159341",
+      "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T23:22:18.000Z",
+      "score": 713,
+      "comments": 208,
+      "tags": [
+        "模型",
+        "安全"
+      ]
+    },
+    {
+      "id": "hn-50159245",
+      "title": "How abliterated models can get you pwned",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-19T23:08:52.000Z",
+      "score": 227,
+      "comments": 132,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-fossil-fuel-power-infrastructure-data-centers-report",
+      "title": "The fossil fuel comeback is here",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-19T21:48:01.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-coreweave-stock-debt-sector-ai",
+      "title": "CoreWeave’s debt is becoming the whole AI industry’s problem",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-19T21:28:20.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "arxiv-2610.26863",
+      "title": "Text-to-Image Generative Modeling Without Language Pretraining",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26863v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:59:59.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "计算机视觉"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26860",
+      "title": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26860v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:59:58.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26861",
+      "title": "Can It Actually Work? Synthesizing Functional CAD Mechanisms",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26861v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:59:58.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "NLP"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26856",
+      "title": "Reinforcement Learning with Visually Attributable On-Policy Self-Distillation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26856v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:59:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26852",
+      "title": "CoopUQ: Robust Multi-Robot Social Navigation via Uncertainty-Aware Cooperative Forecasting",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26852v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:59:49.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26848",
+      "title": "Where is Physical RSI capability from? An Observational Scaling Law of LLM-as-policy",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26848v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:59:30.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "模型",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26847",
+      "title": "WeAct: Dynamic Weight Switching as Agent Actions",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26847v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:59:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI",
+        "开源",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26845",
+      "title": "Train An Imaginative Agent",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26845v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:59:12.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26844",
+      "title": "AnyGoal: On World Model Generalization Beyond Expert Rollouts",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26844v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:59:05.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26840",
+      "title": "LatComm: Reusable Context Compression for Latent Communication between Large Language Models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26840v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:58:41.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26839",
+      "title": "Newton-Based Methods for Bilevel Optimization Beyond Lower-Level Strong Convexity",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26839v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:58:34.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "math.OC",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26836",
+      "title": "Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26836v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:57:41.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26834",
+      "title": "Kronecker Delta Rule for Long Context Linear Attention",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26834v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:56:52.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26833",
+      "title": "Supervised Learning with Quantum Hamiltonian Embeddings",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26833v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:56:44.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "quant-ph",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26830",
+      "title": "Competing Learning in Hybrid Architectures",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26830v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:55:55.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26829",
+      "title": "ProteinGeoBench: Frontier Structural-Biology Agents Are Fluent at Lookup but Lost in Geometry",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26829v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:55:38.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "机器学习",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26828",
+      "title": "Agent World Model in the Wild: Computer-Use Agent Environment Synthesis",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26828v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:55:35.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "NLP",
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26827",
+      "title": "KEEP-Bench: Evaluating Evidence Preservation in Context Compression",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26827v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:55:18.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26826",
+      "title": "RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26826v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:55:06.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26825",
+      "title": "MemT-1.0: Towards Memory-Native Evolution",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26825v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:54:35.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26824",
+      "title": "SpecMRL: Redesign Matryoshka Representation Learning within Parametric Spectrum",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26824v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:54:20.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26821",
+      "title": "AfriBED: a Speech Recognition Bias Evaluation Dataset for Low Resource African Languages",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26821v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:53:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26819",
+      "title": "ASTOR: Benchmarking and Improving Autoformulation for Soft-Constraint Optimization with a Formal Grammar",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26819v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:52:35.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26817",
+      "title": "Next Best Action: Causal Constrained Offline RL for Business Action Targeting",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26817v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:51:53.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.26809",
+      "title": "Safety Mid-Training: Internalizing LLM Safety as a Foundational Capability",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.26809v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-19T17:49:49.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "模型",
+        "研究",
+        "安全"
+      ]
+    }
+  ]
+}
