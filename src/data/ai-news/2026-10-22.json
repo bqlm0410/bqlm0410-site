@@ -1,0 +1,952 @@
+{
+  "date": "2026-10-22",
+  "generatedAt": "2026-10-22T08:26:43.413+08:00",
+  "source": "news",
+  "degraded": [
+    "venturebeat"
+  ],
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "count": 9
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "count": 22
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "count": 5
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch AI",
+      "count": 15
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge AI",
+      "count": 9
+    }
+  ],
+  "totalCount": 60,
+  "items": [
+    {
+      "id": "techcrunch-blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-",
+      "title": "Blackstone’s Jas Khaira says fears over AI-buildout debt are overblown",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-21T22:51:22.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-data-center-pollution-rising-report",
+      "title": "Data centers could erase decades of air quality gains",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-21T22:33:44.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-meta-shares-class-ai-q3-2026-earnings",
+      "title": "Meta to create a new class of shares to fund AI push",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-21T21:30:02.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "techcrunch-techcrunch-founder-summit-2026-everything-you-need-to-know",
+      "title": "TechCrunch Founder Summit 2026: Everything you need to know",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/21/techcrunch-founder-summit-2026-everything-you-need-to-know/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-21T21:16:20.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-meta-says-muse-has-over-10m-users-with-shopping-a-top-activi",
+      "title": "Meta says Muse has over 10M users, with shopping a top activity",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-21T21:14:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "openai-broad-access-through-consistent-standards",
+      "title": "Broad access through consistent standards",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/broad-access-through-consistent-standards",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-21T21:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-recursive-launches-flint-a-laptop-coding-model-it-says-was-l",
+      "title": "Recursive launches Flint, a laptop coding model it says was largely built by AI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-21T20:27:41.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "产品"
+      ]
+    },
+    {
+      "id": "theverge-anthropic-claude-duet-ai-agent",
+      "title": "Anthropic takes on Muse with Claude Duet, its new AI agent",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-21T19:53:20.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50186455",
+      "title": "Claude Duet",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://claude.com/resources/articles/claude-duet",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-21T19:40:18.000Z",
+      "score": 56,
+      "comments": 6,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-",
+      "title": "While Amazon blocks AI agents, Walmart rolls out the welcome mat",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-21T19:30:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent",
+        "产品"
+      ]
+    },
+    {
+      "id": "theverge-walmart-ai-shopping-agents",
+      "title": "Walmart is inviting AI agents to shop for you",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-21T19:30:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50186043",
+      "title": "Google staff resign in backlash over its AI contracts with military",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.bbc.com/news/articles/cmreyvepnv0po",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-21T19:14:21.000Z",
+      "score": 107,
+      "comments": 19,
+      "tags": [
+        "商业"
+      ]
+    },
+    {
+      "id": "hn-50186037",
+      "title": "Claude Duet",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://claude.com/product/claude-duet",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-21T19:14:01.000Z",
+      "score": 297,
+      "comments": 254,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-php-armageddon-openai-googles-wiz-find-ancient-holes-panicki",
+      "title": "PHP Armageddon: OpenAI, Google’s Wiz find ancient holes, panicking the internet",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-21T17:59:12.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-blacksmith-hits-unicorn-valuation-after-sequoia-leads-series",
+      "title": "Blacksmith hits unicorn valuation after Sequoia leads Series C",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-21T17:18:27.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "openai-att-legal",
+      "title": "How AT&T is rethinking in-house legal work with OpenAI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/att-legal",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-21T17:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50183892",
+      "title": "Show HN: Omnara – Open-Source Alternative to Claude Managed Agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/omnara-ai/omnara",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-21T16:44:53.000Z",
+      "score": 18,
+      "comments": 6,
+      "tags": [
+        "模型",
+        "开源",
+        "Agent"
+      ]
+    },
+    {
+      "id": "hn-50183344",
+      "title": "The bridge to agent-scale Git infrastructure",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-21T16:09:28.000Z",
+      "score": 55,
+      "comments": 15,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "theverge-gemini-ai-apple-carplay-voice-google-maps",
+      "title": "Conversational Gemini navigation comes to Apple CarPlay",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/transportation/1015281/gemini-ai-apple-carplay-voice-google-maps",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-21T15:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50181175",
+      "title": "Patch the Planet: global response coordination as agents uncover vulnerabilities",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-21T14:03:43.000Z",
+      "score": 228,
+      "comments": 152,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-ai-promises-productivity-but-for-managers-its-mostly-a-heada",
+      "title": "AI promises productivity, but for managers, it’s mostly a headache for now",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-21T14:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-openai-ai-agent-disabling-monitoring-systems",
+      "title": "OpenAI says an AI agent lied about disabling its safety monitoring system",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-21T13:57:43.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent",
+        "安全"
+      ]
+    },
+    {
+      "id": "hn-50180752",
+      "title": "Using thousands of AI agents to uncover new leads in biological data",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-21T13:37:00.000Z",
+      "score": 126,
+      "comments": 81,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "openai-chatgpt-ads-expands-26-new-countries",
+      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-21T13:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50180079",
+      "title": "OpenAI models are coming to Google Cloud",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/openai-models-google-cloud/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-21T12:53:11.000Z",
+      "score": 224,
+      "comments": 98,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "openai-building-chatgpt-ad-stack",
+      "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/building-chatgpt-ad-stack",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-21T07:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50176908",
+      "title": "Launch HN: Alter (YC S25) – Access control for multi-user agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://alterauth.com/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-21T06:42:12.000Z",
+      "score": 52,
+      "comments": 20,
+      "tags": [
+        "Agent",
+        "产品"
+      ]
+    },
+    {
+      "id": "openai-empowering-cyber-defenders",
+      "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/empowering-cyber-defenders",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-sam-altman-ann-altman-lawsuit-dismissed",
+      "title": "Judge dismisses Sam Altman’s sister’s sexual abuse lawsuit",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-20T23:04:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "安全"
+      ]
+    },
+    {
+      "id": "techcrunch-anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-5",
+      "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T23:01:23.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "安全"
+      ]
+    },
+    {
+      "id": "techcrunch-hugging-face-ceo-warns-that-netflixs-openai-hack-documentary",
+      "title": "Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T22:24:02.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "开源"
+      ]
+    },
+    {
+      "id": "theverge-google-gemini-ai-cars-android-auto",
+      "title": "Google’s more personalized Gemini AI is heading to your car",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-20T22:11:34.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-anthropics-cloud-partnerships-are-getting-messy",
+      "title": "Anthropic’s cloud partnerships are getting messy",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T21:25:22.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "商业"
+      ]
+    },
+    {
+      "id": "techcrunch-spacexs-ai-business-is-beating-expectations",
+      "title": "SpaceX’s AI business is beating expectations",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T20:40:41.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-openai-acquires-startup-orchestra-bio-e2-81-a0-to-beef-up-it",
+      "title": "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T20:35:10.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "techcrunch-google-has-joined-amazon-in-attacking-nvidias-stronghold-wit",
+      "title": "Google has joined Amazon in attacking Nvidia’s stronghold with AI app developers",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T18:38:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "techcrunch-chatgpt-now-lets-you-lock-your-chats",
+      "title": "ChatGPT now lets you lock your chats",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-20T18:36:53.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-meta-muse-ai-sharing-ai-chats",
+      "title": "Meta pauses Muse sharing after researchers find AI chats on the web",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1014627/meta-muse-ai-sharing-ai-chats",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-20T18:07:34.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28632",
+      "title": "Joints, Camera, Action! Co-Generating 3D Motion and Video for Arbitrary Rigs",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28632v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:59:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28629",
+      "title": "GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28629v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:59:40.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "cond-mat.mtrl-sci",
+        "cond-mat.mes-hall",
+        "Agent",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28628",
+      "title": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28628v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:59:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "计算机视觉"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28626",
+      "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28626v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:59:04.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28624",
+      "title": "Industrial ReMEmbR: Scaling Spatiotemporal Memory to Robot Fleets",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28624v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:58:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28623",
+      "title": "Planning under Noise with Neural Operators",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28623v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:58:30.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "机器人"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28622",
+      "title": "MindView: Benchmarking Generative Multi-View Spatial Intelligence",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28622v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:58:25.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28619",
+      "title": "Adaptive Multi-Token Prediction: How far should we go?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28619v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:56:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28618",
+      "title": "Efficient Edge-aware Attention Network for Graph Generation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28618v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:56:05.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28616",
+      "title": "NarraSpace: Multimodal Scene-Grounded Evidence for Picture-Description Dementia Classification",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28616v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:55:44.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28611",
+      "title": "Semantic Observability for Autonomous Systems Diagnostics",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28611v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:53:32.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28607",
+      "title": "Benchmarking Arabic Dialects for Math Problems",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28607v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:50:13.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28604",
+      "title": "Value-Rich, Differently Organized: Measuring Value Expression and Organization in AI-Generated Debates",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28604v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:48:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28602",
+      "title": "Turning TS2Vec into a Foundation Model for Time Series Classification",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28602v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:47:51.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28601",
+      "title": "Evolving Agent Interfaces",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28601v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:47:37.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28598",
+      "title": "Neural Implicit Energy Optimization for LiDAR Mapping",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28598v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:47:07.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "cs.GR"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28595",
+      "title": "What Do RTL Repair Benchmarks Actually Measure?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28595v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:45:57.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28591",
+      "title": "PaPi: Parallel Picard-Duhamel Integration for Fast Neuro-Spectral Architectures",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28591v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:42:52.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28590",
+      "title": "WildMAE: Structure-Aware Masked Autoencoding for Wildlife Image Reconstruction",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28590v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:41:31.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28587",
+      "title": "Two $\\operatorname{ReLU}$ Layers is All You Need",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28587v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:40:21.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "cs.CC",
+        "cs.CG"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28586",
+      "title": "Capable Teacher, Myopic Scorer: Reward-Free Teacher Repair for Agentic On-Policy Distillation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28586v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:40:08.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "Agent",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.28585",
+      "title": "SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.28585v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-20T17:39:42.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "Agent"
+      ]
+    }
+  ]
+}
