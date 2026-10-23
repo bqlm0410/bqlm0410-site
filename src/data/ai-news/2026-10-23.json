@@ -1,0 +1,928 @@
+{
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-23T08:24:25.032+08:00",
+  "source": "news",
+  "degraded": [
+    "venturebeat"
+  ],
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "count": 13
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "count": 17
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "count": 4
+    },
+    {
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "count": 1
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch AI",
+      "count": 15
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge AI",
+      "count": 10
+    }
+  ],
+  "totalCount": 60,
+  "items": [
+    {
+      "id": "hn-50202671",
+      "title": "AI compute is the new oil–and needs a new market",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.economist.com/finance-and-economics/2026/10/22/ai-compute-is-the-new-oil-and-needs-a-new-market",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T23:45:16.000Z",
+      "score": 3,
+      "comments": 2,
+      "tags": []
+    },
+    {
+      "id": "hn-50202373",
+      "title": "US appeals court ejects judge from case over AI errors",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.reuters.com/legal/government/appeals-court-lifts-block-mississippis-dei-ban-ejects-judge-over-ai-errors-2026-10-22/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T23:11:19.000Z",
+      "score": 6,
+      "comments": 0,
+      "tags": []
+    },
+    {
+      "id": "hn-50202217",
+      "title": "LLMs are making formal software verification feasible at a much larger scale",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.anthropic.com/research/formal-verification",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T22:54:43.000Z",
+      "score": 35,
+      "comments": 5,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50201860",
+      "title": "Show HN: CATT 0.2.1: Test agents/services against a Muse/Instinct-alike, in CI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/Coverage-Cat/consumer-agent-testing-tool",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T22:18:40.000Z",
+      "score": 5,
+      "comments": 0,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-",
+      "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T22:08:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "theverge-canva-craft-in-house-ai-model",
+      "title": "Canva’s first AI image model plans designs before generating them",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-22T21:51:25.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50200843",
+      "title": "Most Americans Say AI Is Bad for Society, Oppose More Data Centers",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://abcnews.com/Politics/americans-ai-bad-society-oppose-data-centers-abcpostipsos/story?id=137414085",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T20:51:23.000Z",
+      "score": 37,
+      "comments": 29,
+      "tags": []
+    },
+    {
+      "id": "theverge-meta-terms-update-ai-training-concerns",
+      "title": "Meta’s AI could still scrape news sites, legal experts say",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-22T20:32:05.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-meta-muse-sharing-back-on-artifiacts",
+      "title": "Meta turns Muse sharing back on",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1017066/meta-muse-sharing-back-on-artifiacts",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-22T20:24:04.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-spacex-tesla-cursed-katamari",
+      "title": "Sure, let’s smoosh SpaceX and Tesla together, who cares",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1016879/spacex-tesla-cursed-katamari",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-22T19:45:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-1password-launches-a-way-for-ai-agents-to-log-in-on-your-beh",
+      "title": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T19:07:09.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent",
+        "产品"
+      ]
+    },
+    {
+      "id": "openai-decisions-api",
+      "title": "Build more responsive apps with the Decisions API",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/decisions-api",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-22T19:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "techcrunch-openai-makes-its-jev-competitor-widely-available-as-decision",
+      "title": "OpenAI makes its Jev competitor widely available as decision model competition heats up",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T19:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-canva-releases-its-first-image-generation-model",
+      "title": "Canva releases its first image generation model",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T19:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "产品"
+      ]
+    },
+    {
+      "id": "theverge-discord-markdown-previews-organize-servers-channels",
+      "title": "Discord now formats Markdown previews right",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/news/1017012/discord-markdown-previews-organize-servers-channels",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-22T18:58:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-",
+      "title": "Microsoft’s Mustafa Suleyman says its AI outperforms doctors on hard cases as he chases ‘medical superintelligence’",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T18:43:53.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50199290",
+      "title": "Show HN: UI micro interactions prompts for AI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.typeui.sh/micro-interactions",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T18:32:57.000Z",
+      "score": 68,
+      "comments": 42,
+      "tags": []
+    },
+    {
+      "id": "hn-50199232",
+      "title": "Award-winning AI literature",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://jamesyu.org/award-winning-ai-literature/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T18:28:26.000Z",
+      "score": 57,
+      "comments": 60,
+      "tags": []
+    },
+    {
+      "id": "hn-50199230",
+      "title": "AI and the Enclosure of the Scientific Commons",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.27251",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T18:28:16.000Z",
+      "score": 104,
+      "comments": 59,
+      "tags": []
+    },
+    {
+      "id": "theverge-meta-earnings-fall-2026-muse-network",
+      "title": "In Meta’s version of the future, I’ll have my Muse call your Muse",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1016905/meta-earnings-fall-2026-muse-network",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-22T18:15:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50198940",
+      "title": "AI analysis of CT scans finds 42.9% of patients have coronary inflammation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.biograph.com/newsroom/biograph-completes-first-u.s.-study-with-caristo-diagnostics%E2%80%99-ai-powered-coronary-inflammation-detection-finding-risk-in-over-42-of-asymptomatic-patients",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T18:02:54.000Z",
+      "score": 74,
+      "comments": 40,
+      "tags": []
+    },
+    {
+      "id": "hn-50198936",
+      "title": "Show HN: agent-usage-guard – a Claude Code mod to protect your usage window",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/rbartoli/agent-usage-guard",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T18:02:38.000Z",
+      "score": 20,
+      "comments": 7,
+      "tags": [
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "theverge-suleyman-microsoft-diagnostic-orchestrator-science-medical-s",
+      "title": "Microsoft says its AI tool is better than doctors at diagnosing conditions",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-22T18:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50198675",
+      "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://github.com/NVIDIA/OpenShell",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T17:44:06.000Z",
+      "score": 281,
+      "comments": 144,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "theverge-nintendo-switch-2-jailbreak-ai",
+      "title": "Someone hacked the Switch 2 by using an old game and AI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/games/1016862/nintendo-switch-2-jailbreak-ai",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-22T17:21:31.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-chinese-hackers-spied-on-thousands-of-companies-after-breach",
+      "title": "Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T16:47:17.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-wildwood-travis-knight-interview-ai-laika-stop-motion",
+      "title": "Wildwood’s director says AI is ‘antithetical to everything that we are at this studio’",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/entertainment/1016647/wildwood-travis-knight-interview-ai-laika-stop-motion",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-22T16:16:15.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50197313",
+      "title": "Every AI model has the same \"controversial\" take on humans",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T16:08:00.000Z",
+      "score": 214,
+      "comments": 256,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-uber-puts-all-30000-employees-on-chatgpt-work",
+      "title": "Uber puts all 30,000 employees on ChatGPT Work",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T16:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-openai-anthropic-nvidia-lobbying-records",
+      "title": "OpenAI, Anthropic, and Nvidia had record lobbying quarters",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/policy/1016585/openai-anthropic-nvidia-lobbying-records",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-22T15:50:30.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "techcrunch-spotifys-current-ai-bet-is-about-being-the-music-service-tha",
+      "title": "Spotify’s current AI bet is about being the music service that agents choose",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T15:03:58.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "deepmind-beyond-tree-cover-mapping-the-worlds-forest-types",
+      "title": "Beyond tree cover: mapping the world’s forest types",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "source": "deepmind",
+      "sourceName": "Google DeepMind",
+      "publishedAt": "2026-10-22T14:30:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-claude-duet-app-is-anthropics-bet-on-agents",
+      "title": "Claude Duet app is Anthropic’s bet on agents",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T13:53:26.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "techcrunch-nirva-raises-33m-for-a-pendant-that-only-listens-to-you",
+      "title": "Nirva raises $33M for a pendant that only listens to you",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/nirva-raises-33m-for-a-pendant-that-only-listens-to-you/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T13:26:52.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "techcrunch-deepseek-reportedly-raises-15b-days-after-us-restrictions",
+      "title": "DeepSeek reportedly raises $15B days after US restrictions",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T13:11:13.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "融资"
+      ]
+    },
+    {
+      "id": "openai-forward-deployed-engineering-means",
+      "title": "What FDE means at OpenAI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/forward-deployed-engineering-means",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-22T06:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "hn-50190363",
+      "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://simedw.com/2026/10/21/world-model-terminal/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T02:18:41.000Z",
+      "score": 500,
+      "comments": 156,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "openai-uber-chatgpt-work-rollout",
+      "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/uber-chatgpt-work-rollout",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-",
+      "title": "Blackstone’s Jas Khaira says fears over AI-buildout debt are overblown",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-21T22:51:22.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-meta-wants-to-pay-for-its-broad-ai-buildout-with-a-newly-cre",
+      "title": "Meta wants to pay for its broad AI buildout with a newly created class of stock",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/21/meta-wants-to-pay-for-its-broad-ai-buildout-with-a-newly-created-class-of-stock/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-21T22:45:34.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-techcrunch-founder-summit-2026-everything-you-need-to-know",
+      "title": "TechCrunch Founder Summit 2026: Everything you need to know",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/21/techcrunch-founder-summit-2026-everything-you-need-to-know/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-21T21:16:20.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-meta-says-muse-has-over-10m-users-with-shopping-a-top-activi",
+      "title": "Meta says Muse has over 10M users, with shopping a top activity",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-21T21:14:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "openai-broad-access-through-consistent-standards",
+      "title": "Broad access through consistent standards",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/broad-access-through-consistent-standards",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-21T21:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "arxiv-2610.30132",
+      "title": "LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.30132v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-21T17:59:14.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "机器学习",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.30128",
+      "title": "Think Harder Where It Matters: Item-Level Adaptive Recursion for Sequential Recommendation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.30128v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-21T17:58:06.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "信息检索",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.30125",
+      "title": "PhysiCalWorld: In-Context Physics Calibration for World Models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.30125v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-21T17:57:59.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.30122",
+      "title": "A Quasipolynomial Algorithm for $\\ell_\\infty$ Contractions",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.30122v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-21T17:57:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "cs.GT",
+        "cs.CC"
+      ]
+    },
+    {
+      "id": "arxiv-2610.30119",
+      "title": "Self-normalized Bernstein Inequalities for Regenerative Processes and Applications to Learning Without Independence",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.30119v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-21T17:56:37.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "math.PR"
+      ]
+    },
+    {
+      "id": "arxiv-2610.30118",
+      "title": "The role of locality and weight sharing in convolutional neural networks",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.30118v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-21T17:56:22.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "cond-mat.dis-nn",
+        "开源"
+      ]
+    },
+    {
+      "id": "arxiv-2610.30116",
+      "title": "Environment Duels: A Microcosm of LLM Co-Evolution",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.30116v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-21T17:55:31.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.30114",
+      "title": "The End of Consensus Research?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.30114v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-21T17:55:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "cs.DC",
+        "AI",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.30113",
+      "title": "Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.30113v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-21T17:54:01.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.30109",
+      "title": "Minimax Optimality of the NPMLE for Gaussian Mixtures in Hellinger Distance",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.30109v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-21T17:53:10.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "math.ST",
+        "cs.IT"
+      ]
+    },
+    {
+      "id": "arxiv-2610.30108",
+      "title": "Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.30108v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-21T17:52:48.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.30107",
+      "title": "Velocity Ambiguity Profiles: Time-Resolved Bayes-Risk Diagnostics for Flow Matching",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.30107v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-21T17:52:40.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.30105",
+      "title": "Asymmetric On-Policy Distillation Learns In-Context Exploration",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.30105v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-21T17:50:31.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.30104",
+      "title": "BatchBench: Benchmarking AI Robustness to Batch Effects and Domain Shift in Biomedical Images - A JUMP Cell Painting Leaderboard",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.30104v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-21T17:50:22.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.30103",
+      "title": "Did the Problem Actually Get Harder? Testing LLMs on Paired P and NP-Complete Problems Hardened by Adversarial Multi-Agent Rewriting",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.30103v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-21T17:50:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.30099",
+      "title": "Differentially Private Sparse Reward Estimation with Preference Feedback",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.30099v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-21T17:45:42.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.30097",
+      "title": "AtomicRL: Atomic Reinforcement Learning for Long-Horizon Robotic Manipulation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.30097v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-21T17:45:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器人",
+        "AI"
+      ]
+    }
+  ]
+}
