@@ -1,0 +1,957 @@
+{
+  "date": "2026-10-24",
+  "generatedAt": "2026-10-24T08:17:00.181+08:00",
+  "source": "news",
+  "degraded": [
+    "venturebeat"
+  ],
+  "sources": [
+    {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "count": 7
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "count": 30
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "count": 3
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch AI",
+      "count": 10
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge AI",
+      "count": 10
+    }
+  ],
+  "totalCount": 60,
+  "items": [
+    {
+      "id": "techcrunch-openai-says-it-will-no-longer-train-its-ai-models-on-the-liv",
+      "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-23T23:05:49.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "安全"
+      ]
+    },
+    {
+      "id": "hn-50215950",
+      "title": "AI devours a fifth of companies' IT budgets",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.computerworld.com/article/4239898/ai-accounts-for-one-fifth-of-companies-it-budgets.html",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-23T22:00:05.000Z",
+      "score": 7,
+      "comments": 1,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-mic",
+      "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-23T21:59:19.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "hn-50215398",
+      "title": "AI is devastating higher education, but the system was broken",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://theconversation.com/friday-essay-ai-is-devastating-higher-education-but-the-system-was-already-broken-292988",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-23T21:11:59.000Z",
+      "score": 9,
+      "comments": 0,
+      "tags": []
+    },
+    {
+      "id": "theverge-openai-training-top-ai-models-no-internet",
+      "title": "OpenAI now trains its frontier AI models with no internet access",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-23T21:11:07.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50214416",
+      "title": "Securing our frontier model training environment",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-23T19:50:56.000Z",
+      "score": 64,
+      "comments": 75,
+      "tags": [
+        "模型",
+        "研究"
+      ]
+    },
+    {
+      "id": "hn-50214373",
+      "title": "Show HN: Corgi, a helpful {agent, terminal} multiplexer",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://corgi.computer/",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-23T19:46:38.000Z",
+      "score": 20,
+      "comments": 1,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "theverge-jack-dorsey-block-dessa-ai-voice-speech",
+      "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-23T19:32:39.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50214185",
+      "title": "New AI Is More Than Twice as Good at Diagnosing Diseases as Doctors",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://gizmodo.com/microsoft-says-its-new-ai-is-more-than-twice-as-good-at-diagnosing-diseases-as-doctors-2000829562",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-23T19:31:36.000Z",
+      "score": 32,
+      "comments": 27,
+      "tags": []
+    },
+    {
+      "id": "hn-50213925",
+      "title": "Dessa: the most authentic full-duplex speech model ever built",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://block.xyz/dessa",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-23T19:09:54.000Z",
+      "score": 194,
+      "comments": 84,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-from-toast-to-bessemer-who-founders-will-hear-from-at-techcr",
+      "title": "From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-23T19:06:23.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-iphone-duo-ipad-review-score-vergecast",
+      "title": "The iPhone Duo should have been an iPad",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/podcast/1017447/iphone-duo-ipad-review-score-vergecast",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-23T17:00:18.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "openai-scaling-storage-one-billion-users-part-two",
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-23T17:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "研究"
+      ]
+    },
+    {
+      "id": "theverge-google-personal-intelligence-privacy-policy-ads-update",
+      "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-23T16:52:55.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-meta-business-terms-delayed-ai-scraping",
+      "title": "Meta delays new business terms after publisher pushback on AI scraping",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-23T14:47:41.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-ai-retro-games-decomp-recomp-port",
+      "title": "Retro gaming is being overrun with AI",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-23T12:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-",
+      "title": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony AI and Nvidia",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "硬件"
+      ]
+    },
+    {
+      "id": "techcrunch-left-alone-with-nothing-to-do-ai-agents-started-playing",
+      "title": "Left alone with nothing to do, AI agents started playing",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-23T00:45:37.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent"
+      ]
+    },
+    {
+      "id": "openai-openai-nask-ai-safety-security-partnership",
+      "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "安全",
+        "商业"
+      ]
+    },
+    {
+      "id": "techcrunch-openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-",
+      "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T22:08:24.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "融资"
+      ]
+    },
+    {
+      "id": "theverge-canva-craft-in-house-ai-model",
+      "title": "Canva’s first AI image model plans designs before generating them",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-22T21:51:25.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "hn-50200997",
+      "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://news.ycombinator.com/item?id=50200997",
+      "source": "hackernews",
+      "sourceName": "Hacker News",
+      "publishedAt": "2026-10-22T21:03:55.000Z",
+      "score": 590,
+      "comments": 655,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "theverge-meta-terms-update-ai-training-concerns",
+      "title": "Meta’s AI could still scrape news sites, legal experts say",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-22T20:32:05.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-meta-muse-sharing-back-on-artifiacts",
+      "title": "Meta turns Muse sharing back on",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/tech/1017066/meta-muse-sharing-back-on-artifiacts",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-22T20:24:04.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "theverge-spacex-tesla-cursed-katamari",
+      "title": "Sure, let’s smoosh SpaceX and Tesla together, who cares",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1016879/spacex-tesla-cursed-katamari",
+      "source": "theverge",
+      "sourceName": "The Verge AI",
+      "publishedAt": "2026-10-22T19:45:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "techcrunch-1password-launches-a-way-for-ai-agents-to-log-in-on-your-beh",
+      "title": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T19:07:09.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "Agent",
+        "产品"
+      ]
+    },
+    {
+      "id": "openai-decisions-api",
+      "title": "Build more responsive apps with the Decisions API",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://openai.com/index/decisions-api",
+      "source": "openai",
+      "sourceName": "OpenAI",
+      "publishedAt": "2026-10-22T19:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "产品"
+      ]
+    },
+    {
+      "id": "techcrunch-canva-releases-its-first-image-generation-model",
+      "title": "Canva releases its first image generation model",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T19:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型",
+        "产品"
+      ]
+    },
+    {
+      "id": "techcrunch-openai-makes-its-jev-competitor-widely-available-as-decision",
+      "title": "OpenAI makes its Jev competitor widely available as decision model competition heats up",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T19:00:00.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "模型"
+      ]
+    },
+    {
+      "id": "techcrunch-microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-",
+      "title": "Microsoft’s Mustafa Suleyman says its AI outperforms doctors on hard cases as he chases ‘medical superintelligence’",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+      "source": "techcrunch",
+      "sourceName": "TechCrunch AI",
+      "publishedAt": "2026-10-22T18:43:53.000Z",
+      "score": null,
+      "comments": null,
+      "tags": []
+    },
+    {
+      "id": "arxiv-2610.31670",
+      "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31670v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:59:51.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "机器学习",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31667",
+      "title": "Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31667v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:59:48.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "NLP"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31663",
+      "title": "Phase Transition from Random Features to Fully Trainable Networks",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31663v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:59:29.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "math.NA",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31662",
+      "title": "Reliable AI-Assisted Decisions via Selective Auditing",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31662v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:59:22.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "统计学习",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31659",
+      "title": "SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31659v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:59:03.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "机器学习",
+        "研究"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31657",
+      "title": "Cost-Aware Abstention for LLM-Based IT Ticket Classification",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31657v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:58:52.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31656",
+      "title": "METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31656v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:58:27.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31650",
+      "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31650v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:57:04.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "机器学习",
+        "模型",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31646",
+      "title": "Low-Bit N-Gram Embeddings for Language Models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31646v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:56:13.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31642",
+      "title": "A Fix for Softmax and Cross-Entropy",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31642v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:54:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31639",
+      "title": "Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31639v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:52:56.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31636",
+      "title": "Can an Agent Debug a Web Corpus? Agentic Auditing of Slovak FineWeb2",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31636v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:52:22.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "Agent"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31633",
+      "title": "BeNice! Closing Looping's Inference-Memory Gap via KV-Sharing",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31633v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:49:44.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31624",
+      "title": "Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31624v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:44:41.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31620",
+      "title": "Bilingual Language Models Capture Cross-Linguistic Influence in Second-Language Reading",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31620v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:42:06.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31616",
+      "title": "OP-Print: Tracing Membership Imprints in On-Policy Self-Distillation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31616v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:41:04.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31612",
+      "title": "Efficient and Optimal Learning of Discrete Distributions with Person-Level Privacy",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31612v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:40:13.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31606",
+      "title": "How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31606v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:36:14.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31594",
+      "title": "CRANE: Post-Hoc Counterfactual Retrieval for Multimodal Classifiers",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31594v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:26:58.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31593",
+      "title": "Simulated Control Evals",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31593v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:26:42.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31592",
+      "title": "Beyond Best-of-$k$: Prior-Consistent DAPS for Ambiguous Nonlinear Inverse Problems",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31592v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:26:34.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "计算机视觉",
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31588",
+      "title": "VERA: A Responsible AI Dashboard for Assessing LLM Deployments in Light of the EU AI Act",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31588v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:23:39.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "cs.SE",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31586",
+      "title": "Would an LLM Match into a Residency? Uncertainty, Reasoning and Image Use of Open Language Models on the Spanish MIR Examination",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31586v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:23:11.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "NLP",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31585",
+      "title": "Action Learning for Scientific Simulations",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31585v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:22:08.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31579",
+      "title": "Who Is Sycophantic to Whom? Confident LLMs, Human Deference, and the Collapse of Trust Calibration",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31579v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:15:59.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "人机交互",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31576",
+      "title": "What Makes a Good Unmasking Policy? A Controlled Study of Learned Unmasking in Diffusion Language Models",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31576v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:15:04.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "AI",
+        "模型",
+        "研究",
+        "安全"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31574",
+      "title": "Rethinking Sequence Compression with Test-time Regression",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31574v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:14:38.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31573",
+      "title": "Social-HUMINT: An LLM-Augmented Unified Framework for Measuring Social Media Exposure",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31573v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:13:46.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "安全",
+        "AI",
+        "模型"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31572",
+      "title": "On the Token Collapse Phenomenon in Textual Graph Soft Prompting",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31572v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:13:03.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习"
+      ]
+    },
+    {
+      "id": "arxiv-2610.31563",
+      "title": "When to Follow the Teacher: Advantage-Based On-Policy Distillation",
+      "titleZh": "",
+      "summaryZh": "",
+      "link": "https://arxiv.org/abs/2610.31563v1",
+      "source": "arxiv",
+      "sourceName": "arXiv",
+      "publishedAt": "2026-10-22T17:05:21.000Z",
+      "score": null,
+      "comments": null,
+      "tags": [
+        "机器学习",
+        "AI",
+        "安全"
+      ]
+    }
+  ]
+}
